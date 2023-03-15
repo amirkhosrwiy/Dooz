@@ -80,11 +80,16 @@ class _HomeState extends State<Home> {
                   color: Color(0xff30CCFF),
                 ),
               ),
-              child: Text(
-                xOrOList[index],
-                style: TextStyle(
-                  fontSize: 40,
-                  color: Colors.white,
+              child: Center(
+                child: Text(
+                  xOrOList[index],
+                  style: TextStyle(
+                    fontSize: 60,
+                    fontWeight: FontWeight.bold,
+                    color: xOrOList[index] == 'X'
+                        ? Color(0xff30CCFF)
+                        : Color(0xffE23E58),
+                  ),
                 ),
               ),
             ),
@@ -97,14 +102,69 @@ class _HomeState extends State<Home> {
   void tapped(int index) {
     print('$index');
     setState(() {
+      if (xOrOList[index] != '') {
+        return;
+      }
+
       if (isTurnO) {
         xOrOList[index] = 'O';
       } else {
         xOrOList[index] = 'X';
       }
-
       isTurnO = !isTurnO;
+
+      checkWineer();
     });
+  }
+
+  void checkWineer() {
+    if (xOrOList[0] == xOrOList[1] &&
+        xOrOList[0] == xOrOList[2] &&
+        xOrOList[0] != '') {
+      print('Wineer is ' + xOrOList[0]);
+    }
+
+    if (xOrOList[3] == xOrOList[4] &&
+        xOrOList[3] == xOrOList[5] &&
+        xOrOList[3] != '') {
+      print('Wineer is ' + xOrOList[3]);
+    }
+
+    if (xOrOList[6] == xOrOList[7] &&
+        xOrOList[6] == xOrOList[8] &&
+        xOrOList[6] != '') {
+      print('Wineer is ' + xOrOList[6]);
+    }
+
+    if (xOrOList[0] == xOrOList[3] &&
+        xOrOList[0] == xOrOList[6] &&
+        xOrOList[0] != '') {
+      print('Wineer is ' + xOrOList[0]);
+    }
+
+    if (xOrOList[1] == xOrOList[4] &&
+        xOrOList[1] == xOrOList[7] &&
+        xOrOList[1] != '') {
+      print('Wineer is ' + xOrOList[1]);
+    }
+
+    if (xOrOList[2] == xOrOList[5] &&
+        xOrOList[2] == xOrOList[8] &&
+        xOrOList[2] != '') {
+      print('Wineer is ' + xOrOList[2]);
+    }
+
+    if (xOrOList[2] == xOrOList[4] &&
+        xOrOList[2] == xOrOList[6] &&
+        xOrOList[2] != '') {
+      print('Wineer is ' + xOrOList[2]);
+    }
+
+    if (xOrOList[0] == xOrOList[4] &&
+        xOrOList[0] == xOrOList[8] &&
+        xOrOList[0] != '') {
+      print('Wineer is ' + xOrOList[0]);
+    }
   }
 
   Widget getScoreBoard() {
@@ -118,7 +178,7 @@ class _HomeState extends State<Home> {
                 child: Text(
                   'Player O',
                   style: TextStyle(
-                    color: Color(0xff30CCFF),
+                    color: Color(0xffE23E58),
                     fontSize: 25,
                     fontWeight: FontWeight.bold,
                   ),
@@ -129,7 +189,7 @@ class _HomeState extends State<Home> {
                 child: Text(
                   '0',
                   style: TextStyle(
-                    color: Color(0xff30CCFF),
+                    color: Color(0xffE23E58),
                     fontSize: 25,
                     fontWeight: FontWeight.bold,
                   ),
