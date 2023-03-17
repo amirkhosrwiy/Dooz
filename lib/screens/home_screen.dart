@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:application_dooz/about_screen.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -18,37 +19,67 @@ class _HomeState extends State<Home> {
 
   int scoreX = 0;
   int scoreO = 0;
+  String winnerTitle = '';
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         actions: [
-          IconButton(
-            onPressed: () {
-              clearGame();
-            },
-            icon: Icon(Icons.refresh),
-            color: Color(0xffE23E58),
-            iconSize: 30,
-          ),
-        ],
-        title: Padding(
-          padding: const EdgeInsets.only(left: 50),
-          child: Center(
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 85),
             child: Text(
               'Dooz',
               style: TextStyle(
-                color: Color(0xff30CCFF),
+                shadows: [
+                  Shadow(
+                    blurRadius: 10.0, // shadow blur
+                    color: Colors.grey.shade300, // shadow color
+                    offset: Offset(3.0, 2.0), // how much shadow will be shown
+                  ),
+                ],
+                color: Colors.white,
                 // fontFamily:
-                fontSize: 30,
+                fontSize: 40,
                 fontWeight: FontWeight.bold,
               ),
             ),
           ),
+          //
+          //
+          //
+          Padding(
+            padding: const EdgeInsets.only(right: 15),
+            child: IconButton(
+              onPressed: () {
+                clearGame();
+              },
+              icon: Icon(Icons.refresh),
+              color: Colors.white,
+              iconSize: 30,
+            ),
+          ),
+          //
+          //
+          //
+        ],
+        title: IconButton(
+          onPressed: () {
+            Navigator.of(context).push(
+              MaterialPageRoute(builder: (BuildContext Context) {
+                return AboutScreen();
+              }),
+            );
+          },
+          icon: Padding(
+            padding: const EdgeInsets.only(right: 15),
+            child: Icon(Icons.person),
+          ),
+          color: Colors.white,
+          iconSize: 30,
         ),
         backgroundColor: Color(0xff1A1D27),
-        elevation: 20,
+        elevation: 40,
       ),
       backgroundColor: Color(0xff1A1D27),
       body: SafeArea(
@@ -58,10 +89,10 @@ class _HomeState extends State<Home> {
               height: 10,
             ),
             getScoreBoard(),
-            SizedBox(
-              height: 20,
-            ),
+            SizedBox(height: 10),
             getGridView(),
+            // SizedBox(height: 10),
+            getResultButton(),
             getTurn(),
           ],
         ),
@@ -69,13 +100,57 @@ class _HomeState extends State<Home> {
     );
   }
 
+  Widget getResultButton() {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 20),
+      child: Visibility(
+        visible: GameHasResult,
+        child: OutlinedButton(
+          style: OutlinedButton.styleFrom(
+            backgroundColor: Color(0xff1A1D27),
+            side: BorderSide(
+              color: Color(0xffFFFFFF),
+              width: 2,
+            ),
+          ),
+          onPressed: () {
+            setState(() {
+              GameHasResult = false;
+              clearGame();
+            });
+          },
+          child: Text(
+            '$winnerTitle  play again! ',
+            style: TextStyle(
+              color: Color(0xffFFFFFF),
+              fontSize: 25,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
   Widget getTurn() {
-    return Text(
-      isTurnO ? 'Turn O' : 'Turn X',
-      style: TextStyle(
-        color: Color(0xff30CCFF),
-        fontSize: 20,
-        fontWeight: FontWeight.bold,
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 30),
+      child: Text(
+        isTurnO ? 'Turn O' : 'Turn X',
+        style: TextStyle(
+          shadows: [
+            Shadow(
+              blurRadius: 10.0, // shadow blur
+              color: isTurnO
+                  ? Color(0xffE23E58)
+                  : Color(0xff30CCFF), // shadow color
+              offset: Offset(4.0, 4.0), // how much shadow will be shown
+            ),
+          ],
+          color: isTurnO ? Color(0xffE23E58) : Color(0xff30CCFF),
+          fontSize: 40,
+          fontWeight: FontWeight.bold,
+        ),
       ),
     );
   }
@@ -97,7 +172,11 @@ class _HomeState extends State<Home> {
               height: 100,
               decoration: BoxDecoration(
                 border: Border.all(
-                  color: Color(0xff30CCFF),
+                  color: xOrOList[index] == 'X'
+                      ? Color(0xff30CCFF)
+                      : xOrOList[index] == 'O'
+                          ? Color(0xffE23E58)
+                          : Color(0xffFFFFFF),
                 ),
               ),
               child: Center(
@@ -120,6 +199,9 @@ class _HomeState extends State<Home> {
   }
 
   void tapped(int index) {
+    if (GameHasResult) {
+      return;
+    }
     print('$index');
     setState(() {
       if (xOrOList[index] != '') {
@@ -208,24 +290,40 @@ class _HomeState extends State<Home> {
           child: Column(
             children: [
               Padding(
-                padding: const EdgeInsets.all(30.0),
+                padding: const EdgeInsets.all(20.0),
                 child: Text(
                   'Player O',
                   style: TextStyle(
                     color: Color(0xffE23E58),
                     fontSize: 25,
                     fontWeight: FontWeight.bold,
+                    shadows: [
+                      Shadow(
+                        blurRadius: 10.0, // shadow blur
+                        color: Color(0xffE23E58), // shadow color
+                        offset:
+                            Offset(2.0, 2.0), // how much shadow will be shown
+                      ),
+                    ],
                   ),
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(4.0),
                 child: Text(
                   '$scoreO',
                   style: TextStyle(
                     color: Color(0xffE23E58),
-                    fontSize: 25,
+                    fontSize: 35,
                     fontWeight: FontWeight.bold,
+                    shadows: [
+                      Shadow(
+                        blurRadius: 10.0, // shadow blur
+                        color: Color(0xffE23E58), // shadow color
+                        offset:
+                            Offset(2.0, 2.0), // how much shadow will be shown
+                      ),
+                    ],
                   ),
                 ),
               ),
@@ -236,24 +334,40 @@ class _HomeState extends State<Home> {
           child: Column(
             children: [
               Padding(
-                padding: const EdgeInsets.all(30.0),
+                padding: const EdgeInsets.all(20.0),
                 child: Text(
                   'Player X',
                   style: TextStyle(
                     color: Color(0xff30CCFF),
                     fontSize: 25,
                     fontWeight: FontWeight.bold,
+                    shadows: [
+                      Shadow(
+                        blurRadius: 10.0, // shadow blur
+                        color: Color(0xff30CCFF), // shadow color
+                        offset:
+                            Offset(2.0, 2.0), // how much shadow will be shown
+                      ),
+                    ],
                   ),
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(4.0),
                 child: Text(
                   '$scoreX',
                   style: TextStyle(
                     color: Color(0xff30CCFF),
-                    fontSize: 25,
+                    fontSize: 35,
                     fontWeight: FontWeight.bold,
+                    shadows: [
+                      Shadow(
+                        blurRadius: 10.0, // shadow blur
+                        color: Color(0xff30CCFF), // shadow color
+                        offset:
+                            Offset(2.0, 2.0), // how much shadow will be shown
+                      ),
+                    ],
                   ),
                 ),
               ),
@@ -268,6 +382,7 @@ class _HomeState extends State<Home> {
     setState(
       () {
         GameHasResult = true;
+        winnerTitle = title;
 
         if (winner == 'X') {
           scoreX = scoreX + 1;
