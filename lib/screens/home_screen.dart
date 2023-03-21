@@ -96,6 +96,7 @@ class _HomeState extends State<Home> {
             getScoreBoard(),
             SizedBox(height: 10),
             getGridView(),
+
             // SizedBox(height: 10),
             getResultButton(),
             getTurn(),
