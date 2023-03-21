@@ -27,10 +27,26 @@ flutter:
     - images/
   #   - images/a_dot_ham.jpeg
 
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
+  fonts:
+    - family: TN
+      fonts:
+        - asset: assets/fonts/tehran.ttf
+        #///
+        #///
+
+    - family: DB
+      fonts:
+        - asset: assets/fonts/dana_bold1.ttf
+        #///
+        #///
+    - family: DN
+      fonts:
+        - asset: assets/fonts/dana_neon1.ttf
+        #///
+        #///
+    - family: DBK
+      fonts:
+        - asset: assets/fonts/dana_black1.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

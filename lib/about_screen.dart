@@ -1,7 +1,5 @@
 import 'package:application_dooz/utils.dart';
 import 'package:flutter/material.dart';
-import 'package:application_dooz/screens/home_screen.dart';
-import 'package:application_dooz/screens/home_screen.dart';
 
 class AboutScreen extends StatefulWidget {
   const AboutScreen({super.key});

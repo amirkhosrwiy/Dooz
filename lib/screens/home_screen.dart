@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:application_dooz/about_screen.dart';
-import 'package:flutter_gradient_colors/flutter_gradient_colors.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
