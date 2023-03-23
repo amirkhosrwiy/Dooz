@@ -57,6 +57,28 @@ class _HomeState extends State<Home> {
             child: IconButton(
               onPressed: () {
                 clearGame();
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: Text(
+                      "صفحه دوز شما مجدداّّ آماده بازی است  \n    برای بازی مجدد دکمه رفرش را بزنید",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                        fontFamily: 'DN',
+                        fontWeight: FontWeight.bold,
+                        shadows: [
+                          Shadow(
+                            blurRadius: 30.0, // shadow blur
+                            color: Colors.grey.shade300, // shadow color
+                            offset: Offset(
+                                3.0, 2.0), // how much shadow will be shown
+                          ),
+                        ],
+                      ),
+                    ),
+                    backgroundColor: Color.fromARGB(255, 36, 42, 61),
+                  ),
+                );
               },
               icon: Icon(Icons.refresh),
               color: Colors.white,
@@ -86,20 +108,28 @@ class _HomeState extends State<Home> {
         elevation: 40,
       ),
       backgroundColor: Color(0xff1A1D27),
-      body: SafeArea(
-        child: Column(
-          children: [
-            SizedBox(
-              height: 10,
-            ),
-            getScoreBoard(),
-            SizedBox(height: 10),
-            getGridView(),
+      body: Container(
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('images/wall.jpg'),
+            fit: BoxFit.fitHeight,
+          ),
+        ),
+        child: SafeArea(
+          child: Column(
+            children: [
+              SizedBox(
+                height: 10,
+              ),
+              getScoreBoard(),
+              SizedBox(height: 10),
+              getGridView(),
 
-            // SizedBox(height: 10),
-            getResultButton(),
-            getTurn(),
-          ],
+              // SizedBox(height: 10),
+              getResultButton(),
+              getTurn(),
+            ],
+          ),
         ),
       ),
     );
@@ -119,10 +149,40 @@ class _HomeState extends State<Home> {
             ),
           ),
           onPressed: () {
-            setState(() {
-              GameHasResult = false;
-              clearGame();
-            });
+            setState(
+              () {
+                GameHasResult = false;
+                clearGame();
+                //FlashMessageScreen()
+                //FlashMessageScreen()
+                //FlashMessageScreen()
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: Text(
+                      "صفحه دوز شما مجدداّّ آماده بازی است  \n    برای بازی مجدد دکمه رفرش را بزنید",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                        fontFamily: 'DN',
+                        fontWeight: FontWeight.bold,
+                        shadows: [
+                          Shadow(
+                            blurRadius: 30.0, // shadow blur
+                            color: Colors.grey.shade300, // shadow color
+                            offset: Offset(
+                                3.0, 2.0), // how much shadow will be shown
+                          ),
+                        ],
+                      ),
+                    ),
+                    backgroundColor: Color.fromARGB(255, 36, 42, 61),
+                  ),
+                );
+                //FlashMessageScreen()
+                //FlashMessageScreen()
+                //FlashMessageScreen()
+              },
+            );
           },
           child: Container(
             child: Text(
@@ -174,7 +234,7 @@ class _HomeState extends State<Home> {
                 begin: Alignment.topLeft,
                 end: Alignment.bottomLeft,
                 colors: [
-                  Color(0xff1A1D27),
+                  Color(0xff1A1D27).withOpacity(0.1),
                   isTurnO ? Color(0xffE23E58) : Color(0xff30CCFF),
                 ],
                 stops: [
@@ -349,7 +409,7 @@ class _HomeState extends State<Home> {
                         begin: Alignment.topLeft,
                         end: Alignment.bottomLeft,
                         colors: [
-                          Color(0xff1A1D27),
+                          Color(0xff1A1D27).withOpacity(0.1),
                           Color(0xffE23E58),
                         ],
                         stops: [
@@ -389,7 +449,7 @@ class _HomeState extends State<Home> {
                         end: Alignment.bottomLeft,
                         colors: [
                           Color(0xffE23E58),
-                          Color.fromARGB(255, 54, 12, 18),
+                          Color.fromARGB(255, 54, 12, 18).withOpacity(0.5),
                         ],
                         stops: [
                           0.1,
@@ -433,7 +493,7 @@ class _HomeState extends State<Home> {
                         begin: Alignment.topLeft,
                         end: Alignment.bottomLeft,
                         colors: [
-                          Color(0xff1A1D27),
+                          Color(0xff1A1D27).withOpacity(0.1),
                           Color(0xff30CCFF),
                         ],
                         stops: [
@@ -473,7 +533,7 @@ class _HomeState extends State<Home> {
                         end: Alignment.bottomLeft,
                         colors: [
                           Color(0xff30CCFF),
-                          Color.fromARGB(255, 14, 57, 71),
+                          Color.fromARGB(255, 14, 57, 71).withOpacity(0.5),
                         ],
                         stops: [
                           0.2,

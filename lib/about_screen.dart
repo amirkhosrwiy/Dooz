@@ -1,3 +1,4 @@
+import 'package:application_dooz/flash.dart';
 import 'package:application_dooz/utils.dart';
 import 'package:flutter/material.dart';
 
@@ -31,6 +32,18 @@ class _AboutScreenState extends State<AboutScreen> {
                   body: 'This Work Great!',
                 ),
               ),
+              Container(
+                child: TextButton(
+                  onPressed: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(builder: (BuildContext Context) {
+                        return FlashMessageScreen();
+                      }),
+                    );
+                  },
+                  child: Text('Click Me'),
+                ),
+              ),
             ],
           ),
         ),
@@ -40,14 +53,18 @@ class _AboutScreenState extends State<AboutScreen> {
     required String text,
     required VoidCallback onClicked,
   }) =>
-      Container(
-        padding: EdgeInsets.symmetric(vertical: 12),
-        child: TextButton(
-          onPressed: onClicked,
-          child: Text(
-            'text',
-            style: TextStyle(fontSize: 24),
+      Column(
+        children: [
+          Container(
+            padding: EdgeInsets.symmetric(vertical: 12),
+            child: TextButton(
+              onPressed: onClicked,
+              child: Text(
+                'text',
+                style: TextStyle(fontSize: 24),
+              ),
+            ),
           ),
-        ),
+        ],
       );
 }

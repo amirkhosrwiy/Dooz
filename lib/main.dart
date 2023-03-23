@@ -1,7 +1,7 @@
 import 'dart:async';
-
-import 'package:flutter/material.dart';
 import 'package:application_dooz/screens/home_screen.dart';
+import 'package:application_dooz/selection_game.dart';
+import 'package:flutter/material.dart';
 
 void main() {
   runApp(const Application());
@@ -35,7 +35,7 @@ class _SplashScreenState extends State<SplashScreen> {
       Duration(seconds: 5),
       () => Navigator.of(context).pushReplacement(
         MaterialPageRoute(
-          builder: (BuildContext context) => Home(),
+          builder: (BuildContext context) => MainPageState(),
         ),
       ),
     );
