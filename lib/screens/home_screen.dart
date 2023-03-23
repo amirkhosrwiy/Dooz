@@ -31,7 +31,7 @@ class _HomeState extends State<Home> {
         )),
         actions: [
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 85),
+            padding: const EdgeInsets.symmetric(horizontal: 100),
             child: Text(
               'Dooz',
               style: TextStyle(
@@ -60,7 +60,7 @@ class _HomeState extends State<Home> {
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
                     content: Text(
-                      "صفحه دوز شما مجدداّّ آماده بازی است  \n    برای بازی مجدد دکمه رفرش را بزنید",
+                      "           صفحه دوز شما آماده بازی است  \n برای از سرگیری، بازی مجدد را انتخاب کنید",
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 20,
@@ -104,14 +104,30 @@ class _HomeState extends State<Home> {
           color: Colors.white,
           iconSize: 30,
         ),
-        backgroundColor: Color.fromARGB(255, 36, 42, 61),
-        elevation: 40,
+        flexibleSpace: Container(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(30),
+            gradient: LinearGradient(
+              begin: Alignment.centerLeft,
+              end: Alignment.centerRight,
+              colors: <Color>[
+                Color.fromARGB(255, 137, 35, 52),
+                // Color.fromARGB(255, 67, 76, 106),
+                Color(0xff1A1D27),
+                Color(0xff1A1D27),
+                // Color.fromARGB(255, 67, 76, 106),
+                Color.fromARGB(255, 77, 157, 238),
+              ],
+            ),
+          ),
+        ),
+        elevation: 20,
       ),
       backgroundColor: Color(0xff1A1D27),
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('images/wall.jpg'),
+            image: AssetImage('images/wall.png'),
             fit: BoxFit.fitHeight,
           ),
         ),
@@ -142,10 +158,13 @@ class _HomeState extends State<Home> {
         visible: GameHasResult,
         child: OutlinedButton(
           style: OutlinedButton.styleFrom(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(20),
+            ),
             backgroundColor: Color(0xff1A1D27),
             side: BorderSide(
               color: Color(0xffFFFFFF),
-              width: 2,
+              width: 5,
             ),
           ),
           onPressed: () {
@@ -159,7 +178,7 @@ class _HomeState extends State<Home> {
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
                     content: Text(
-                      "صفحه دوز شما مجدداّّ آماده بازی است  \n    برای بازی مجدد دکمه رفرش را بزنید",
+                      "           صفحه دوز شما آماده بازی است  \n برای از سرگیری، بازی مجدد را انتخاب کنید",
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 20,
@@ -184,20 +203,55 @@ class _HomeState extends State<Home> {
               },
             );
           },
+          // child: Container(
+          //   decoration: BoxDecoration(
+          //     borderRadius: BorderRadius.circular(30),
+          //     gradient: LinearGradient(
+          //       begin: Alignment.centerLeft,
+          //       end: Alignment.centerRight,
+          //       colors: <Color>[
+          //         Color.fromARGB(255, 137, 35, 52),
+          //         Color.fromARGB(255, 67, 76, 106),
+          //         Color(0xff1A1D27),
+          //         Color(0xff1A1D27),
+          //         Color.fromARGB(255, 67, 76, 106),
+          //         Color.fromARGB(255, 77, 157, 238),
+          //       ],
+          //     ),
+          //   ),
+          // ),
           child: Container(
-            child: Text(
-              '$winnerTitle  play again! ',
-              style: TextStyle(
-                color: Color(0xffFFFFFF),
-                fontSize: 25,
-                fontWeight: FontWeight.bold,
-                shadows: [
-                  Shadow(
-                    blurRadius: 10.0, // shadow blur
-                    color: Colors.grey.shade300, // shadow color
-                    offset: Offset(3.0, 2.0), // how much shadow will be shown
-                  ),
+            width: 250,
+            height: 50,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(20),
+              gradient: LinearGradient(
+                begin: Alignment.centerLeft,
+                end: Alignment.centerRight,
+                colors: <Color>[
+                  Color(0xffE23E58),
+                  Color(0xff1A1D27),
+                  Color(0xff1A1D27),
+                  Color(0xff30CCFF)
                 ],
+              ),
+            ),
+            child: Center(
+              child: Text(
+                ' $winnerTitle  بازی مجدد ',
+                style: TextStyle(
+                  color: Color(0xffFFFFFF),
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'DB',
+                  shadows: [
+                    Shadow(
+                      blurRadius: 15, // shadow blur
+                      color: Colors.grey.shade300, // shadow color
+                      offset: Offset(3.0, 2.0), // how much shadow will be shown
+                    ),
+                  ],
+                ),
               ),
             ),
           ),
@@ -210,21 +264,22 @@ class _HomeState extends State<Home> {
     return Padding(
         padding: const EdgeInsets.only(bottom: 30),
         child: Container(
-          width: 150,
-          height: 50,
+          width: 170,
+          height: 60,
           child: Center(
             child: Text(
-              isTurnO ? 'Turn O' : 'Turn X',
+              isTurnO ? 'O  نوبت ' : 'X  نوبت ',
               style: TextStyle(
+                fontFamily: 'DB',
                 shadows: [
                   Shadow(
-                    blurRadius: 10.0, // shadow blur
+                    blurRadius: 20.0, // shadow blur
                     color: Colors.white, // shadow color
                     offset: Offset(4.0, 4.0), // how much shadow will be shown
                   ),
                 ],
                 color: Colors.white,
-                fontSize: 40,
+                fontSize: 30,
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -275,7 +330,7 @@ class _HomeState extends State<Home> {
                 child: Text(
                   xOrOList[index],
                   style: TextStyle(
-                    fontSize: 60,
+                    fontSize: 70,
                     fontWeight: FontWeight.bold,
                     color: xOrOList[index] == 'X'
                         ? Color(0xff30CCFF)
@@ -317,61 +372,61 @@ class _HomeState extends State<Home> {
     if (xOrOList[0] == xOrOList[1] &&
         xOrOList[0] == xOrOList[2] &&
         xOrOList[0] != '') {
-      setResult(xOrOList[0], 'Winner is ' + xOrOList[0]);
+      setResult(xOrOList[0], 'برنده شد   ' + xOrOList[0]);
       return;
     }
 
     if (xOrOList[3] == xOrOList[4] &&
         xOrOList[3] == xOrOList[5] &&
         xOrOList[3] != '') {
-      setResult(xOrOList[3], 'Winner is ' + xOrOList[3]);
+      setResult(xOrOList[3], 'برنده شد   ' + xOrOList[3]);
       return;
     }
 
     if (xOrOList[6] == xOrOList[7] &&
         xOrOList[6] == xOrOList[8] &&
         xOrOList[6] != '') {
-      setResult(xOrOList[6], 'Winner is ' + xOrOList[6]);
+      setResult(xOrOList[6], 'برنده شد   ' + xOrOList[6]);
       return;
     }
 
     if (xOrOList[0] == xOrOList[3] &&
         xOrOList[0] == xOrOList[6] &&
         xOrOList[0] != '') {
-      setResult(xOrOList[0], 'Winner is ' + xOrOList[0]);
+      setResult(xOrOList[0], 'برنده شد   ' + xOrOList[0]);
       return;
     }
 
     if (xOrOList[1] == xOrOList[4] &&
         xOrOList[1] == xOrOList[7] &&
         xOrOList[1] != '') {
-      setResult(xOrOList[1], 'Winner is ' + xOrOList[1]);
+      setResult(xOrOList[1], 'برنده شد   ' + xOrOList[1]);
       return;
     }
 
     if (xOrOList[2] == xOrOList[5] &&
         xOrOList[2] == xOrOList[8] &&
         xOrOList[2] != '') {
-      setResult(xOrOList[2], 'Winner is ' + xOrOList[2]);
+      setResult(xOrOList[2], 'برنده شد   ' + xOrOList[2]);
       return;
     }
 
     if (xOrOList[2] == xOrOList[4] &&
         xOrOList[2] == xOrOList[6] &&
         xOrOList[2] != '') {
-      setResult(xOrOList[2], 'Winner is ' + xOrOList[2]);
+      setResult(xOrOList[2], 'برنده شد   ' + xOrOList[2]);
       return;
     }
 
     if (xOrOList[0] == xOrOList[4] &&
         xOrOList[0] == xOrOList[8] &&
         xOrOList[0] != '') {
-      setResult(xOrOList[0], 'Winner is ' + xOrOList[0]);
+      setResult(xOrOList[0], 'برنده شد   ' + xOrOList[0]);
       return;
     }
 
     if (filledBoxes == 9) {
-      setResult('', 'Draw');
+      setResult('', 'مساوی');
     }
   }
 
