@@ -1,5 +1,5 @@
+import 'package:application_dooz/widget/navigation_drawer_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:application_dooz/about_screen.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -24,16 +24,18 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: NavigationDrawerWidget(),
       appBar: AppBar(
         shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.vertical(
-          bottom: Radius.circular(40),
+            borderRadius: BorderRadius.only(
+          bottomLeft: Radius.circular(40),
+          bottomRight: Radius.circular(40),
         )),
         actions: [
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 100),
+            padding: const EdgeInsets.symmetric(horizontal: 70),
             child: Text(
-              'Dooz',
+              ' D o o z ',
               style: TextStyle(
                 shadows: [
                   Shadow(
@@ -45,7 +47,8 @@ class _HomeState extends State<Home> {
                 color: Colors.white,
                 // fontFamily:
                 fontSize: 40,
-                fontWeight: FontWeight.bold,
+                // fontWeight: FontWeight.bold,
+                fontFamily: 'CA',
               ),
             ),
           ),
@@ -53,17 +56,17 @@ class _HomeState extends State<Home> {
           //
           //
           Padding(
-            padding: const EdgeInsets.only(right: 15),
+            padding: const EdgeInsets.only(right: 25),
             child: IconButton(
               onPressed: () {
                 clearGame();
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
                     content: Text(
-                      "           صفحه دوز شما آماده بازی است  \n برای از سرگیری، بازی مجدد را انتخاب کنید",
+                      "               صفحه دوز شما آماده بازی است  \n   برای از سرگیری، بازی مجدد را انتخاب کنید",
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 20,
+                        fontSize: 17.5,
                         fontFamily: 'DN',
                         fontWeight: FontWeight.bold,
                         shadows: [
@@ -89,33 +92,19 @@ class _HomeState extends State<Home> {
           //
           //
         ],
-        title: IconButton(
-          onPressed: () {
-            Navigator.of(context).push(
-              MaterialPageRoute(builder: (BuildContext Context) {
-                return AboutScreen();
-              }),
-            );
-          },
-          icon: Padding(
-            padding: const EdgeInsets.only(right: 15),
-            child: Icon(Icons.person),
-          ),
-          color: Colors.white,
-          iconSize: 30,
-        ),
         flexibleSpace: Container(
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(30),
+            borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(40),
+              bottomRight: Radius.circular(40),
+            ),
             gradient: LinearGradient(
               begin: Alignment.centerLeft,
               end: Alignment.centerRight,
               colors: <Color>[
                 Color.fromARGB(255, 137, 35, 52),
-                // Color.fromARGB(255, 67, 76, 106),
                 Color(0xff1A1D27),
                 Color(0xff1A1D27),
-                // Color.fromARGB(255, 67, 76, 106),
                 Color.fromARGB(255, 77, 157, 238),
               ],
             ),
@@ -123,11 +112,11 @@ class _HomeState extends State<Home> {
         ),
         elevation: 20,
       ),
-      backgroundColor: Color(0xff1A1D27),
+      backgroundColor: Color.fromARGB(255, 42, 47, 65),
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('images/wall.png'),
+            image: AssetImage('images/wall.jpg'),
             fit: BoxFit.fitHeight,
           ),
         ),
@@ -178,10 +167,10 @@ class _HomeState extends State<Home> {
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
                     content: Text(
-                      "           صفحه دوز شما آماده بازی است  \n برای از سرگیری، بازی مجدد را انتخاب کنید",
+                      "                صفحه دوز شما آماده بازی است  \n   برای از سرگیری، بازی مجدد را انتخاب کنید",
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 20,
+                        fontSize: 17.5,
                         fontFamily: 'DN',
                         fontWeight: FontWeight.bold,
                         shadows: [
@@ -229,10 +218,8 @@ class _HomeState extends State<Home> {
                 begin: Alignment.centerLeft,
                 end: Alignment.centerRight,
                 colors: <Color>[
-                  Color(0xffE23E58),
                   Color(0xff1A1D27),
                   Color(0xff1A1D27),
-                  Color(0xff30CCFF)
                 ],
               ),
             ),

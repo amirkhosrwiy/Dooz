@@ -59,11 +59,12 @@ class _SplashScreenState extends State<SplashScreen> {
                 ),
                 SizedBox(height: 20),
                 Text(
-                  'Dooz',
+                  ' D o o z ',
                   style: TextStyle(
                     color: Color(0xff30CCFF),
                     fontSize: 40,
-                    fontWeight: FontWeight.bold,
+                    // fontWeight: FontWeight.bold,
+                    fontFamily: 'CA',
                     shadows: [
                       Shadow(
                         blurRadius: 20.0, // shadow blur

@@ -29,25 +29,51 @@ flutter:
   #   - images/a_dot_ham.jpeg
 
   fonts:
-    - family: TN
+    - family: CA
       fonts:
-        - asset: assets/fonts/tehran.ttf
+        - asset: assets/fonts/ca.ttf
         #///
         #///
 
     - family: DB
       fonts:
-        - asset: assets/fonts/dana_bold1.ttf
+        - asset: assets/fonts/db.ttf
         #///
         #///
     - family: DN
       fonts:
-        - asset: assets/fonts/dana_neon1.ttf
+        - asset: assets/fonts/dn.ttf
         #///
         #///
-    - family: DBK
+    - family: BA
       fonts:
-        - asset: assets/fonts/dana_black1.ttf
+        - asset: assets/fonts/ba.ttf
+        #///
+        #///
+    - family: GI
+      fonts:
+        - asset: assets/fonts/gi.ttf
+        #///
+        #///
+    - family: SK
+      fonts:
+        - asset: assets/fonts/sk.ttf
+    #     #///
+    #     #///
+    #     #///
+    #     #///
+    # - family: DE
+    #   fonts:
+    #     - asset: assets/fonts/de.ttf
+    #     #///
+    #     #///
+    #     #///
+    #     #///
+    # - family: JM
+    #   fonts:
+    #     - asset: assets/fonts/jm.ttf
+    #     #///
+    #     #///
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
