@@ -33,14 +33,14 @@ class _HomeState extends State<Home> {
         )),
         actions: [
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 70),
+            padding: const EdgeInsets.symmetric(horizontal: 85, vertical: 5),
             child: Text(
-              ' D o o z ',
+              'Dooz',
               style: TextStyle(
                 shadows: [
                   Shadow(
-                    blurRadius: 30.0, // shadow blur
-                    color: Colors.grey.shade300, // shadow color
+                    blurRadius: 25, // shadow blur
+                    color: Colors.white, // shadow color
                     offset: Offset(3.0, 2.0), // how much shadow will be shown
                   ),
                 ],
@@ -48,7 +48,7 @@ class _HomeState extends State<Home> {
                 // fontFamily:
                 fontSize: 40,
                 // fontWeight: FontWeight.bold,
-                fontFamily: 'CA',
+                fontFamily: 'GI',
               ),
             ),
           ),
@@ -228,9 +228,9 @@ class _HomeState extends State<Home> {
                 ' $winnerTitle  بازی مجدد ',
                 style: TextStyle(
                   color: Color(0xffFFFFFF),
-                  fontSize: 20,
+                  fontSize: 22.5,
                   fontWeight: FontWeight.bold,
-                  fontFamily: 'DB',
+                  fontFamily: 'QT',
                   shadows: [
                     Shadow(
                       blurRadius: 15, // shadow blur
@@ -255,9 +255,9 @@ class _HomeState extends State<Home> {
           height: 60,
           child: Center(
             child: Text(
-              isTurnO ? 'O  نوبت ' : 'X  نوبت ',
+              isTurnO ? 'Turn  O ' : 'Turn  X ',
               style: TextStyle(
-                fontFamily: 'DB',
+                fontFamily: 'GI',
                 shadows: [
                   Shadow(
                     blurRadius: 20.0, // shadow blur
@@ -318,6 +318,7 @@ class _HomeState extends State<Home> {
                   xOrOList[index],
                   style: TextStyle(
                     fontSize: 70,
+                    fontFamily: 'GI',
                     fontWeight: FontWeight.bold,
                     color: xOrOList[index] == 'X'
                         ? Color(0xff30CCFF)
@@ -433,7 +434,8 @@ class _HomeState extends State<Home> {
                       'Player O',
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 25,
+                        fontSize: 27.5,
+                        fontFamily: 'GI',
                         fontWeight: FontWeight.bold,
                         shadows: [
                           Shadow(
@@ -473,6 +475,7 @@ class _HomeState extends State<Home> {
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 35,
+                        fontFamily: 'GI',
                         fontWeight: FontWeight.bold,
                         shadows: [
                           Shadow(
@@ -517,8 +520,9 @@ class _HomeState extends State<Home> {
                       'Player X',
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 25,
+                        fontSize: 27.5,
                         fontWeight: FontWeight.bold,
+                        fontFamily: 'GI',
                         shadows: [
                           Shadow(
                             blurRadius: 10.0, // shadow blur
@@ -557,6 +561,7 @@ class _HomeState extends State<Home> {
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 35,
+                        fontFamily: 'GI',
                         fontWeight: FontWeight.bold,
                         shadows: [
                           Shadow(

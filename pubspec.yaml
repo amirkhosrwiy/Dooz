@@ -62,9 +62,9 @@ flutter:
     #     #///
     #     #///
     #     #///
-    # - family: DE
-    #   fonts:
-    #     - asset: assets/fonts/de.ttf
+    - family: QT
+      fonts:
+        - asset: assets/fonts/qt.ttf
     #     #///
     #     #///
     #     #///

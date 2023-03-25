@@ -24,9 +24,9 @@ class GotoHome_Screen extends StatelessWidget {
           ),
         ),
         title: Padding(
-          padding: const EdgeInsets.only(left: 70),
+          padding: const EdgeInsets.only(left: 80),
           child: Text(
-            ' D o o z ',
+            'Home',
             style: TextStyle(
               shadows: [
                 Shadow(
@@ -38,7 +38,7 @@ class GotoHome_Screen extends StatelessWidget {
               color: Colors.white,
               fontSize: 40,
               // fontWeight: FontWeight.bold,
-              fontFamily: 'CA',
+              fontFamily: 'GI',
             ),
           ),
         ),

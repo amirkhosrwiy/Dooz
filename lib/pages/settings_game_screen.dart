@@ -15,9 +15,9 @@ class SettingsScreen extends StatelessWidget {
           ),
         ),
         title: Padding(
-          padding: const EdgeInsets.only(left: 70),
+          padding: const EdgeInsets.only(left: 65),
           child: Text(
-            ' D o o z ',
+            'Settings',
             style: TextStyle(
               shadows: [
                 Shadow(
@@ -27,9 +27,9 @@ class SettingsScreen extends StatelessWidget {
                 ),
               ],
               color: Colors.white,
-              fontSize: 40,
+              fontSize: 35,
               // fontWeight: FontWeight.bold,
-              fontFamily: 'CA',
+              fontFamily: 'GI',
             ),
           ),
         ),

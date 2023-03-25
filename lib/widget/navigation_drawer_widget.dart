@@ -77,7 +77,9 @@ class NavigationDrawerWidget extends StatelessWidget {
 
     return ListTile(
       leading: Icon(icon, color: color),
-      title: Text(text, style: TextStyle(color: color)),
+      title: Text(text,
+          style: TextStyle(
+              color: color, fontFamily: 'GI', fontWeight: FontWeight.bold)),
       hoverColor: hoverColor,
       onTap: onClicked,
     );
