@@ -63,10 +63,10 @@ class _HomeState extends State<Home> {
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
                     content: Text(
-                      "               صفحه دوز شما آماده بازی است  \n   برای از سرگیری، بازی مجدد را انتخاب کنید",
+                      "                    صفحه دوز شما آماده بازی است  \n       برای از سرگیری، بازی مجدد را انتخاب کنید ",
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 17.5,
+                        fontSize: 15,
                         fontFamily: 'DN',
                         fontWeight: FontWeight.bold,
                         shadows: [
@@ -167,10 +167,10 @@ class _HomeState extends State<Home> {
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
                     content: Text(
-                      "                صفحه دوز شما آماده بازی است  \n   برای از سرگیری، بازی مجدد را انتخاب کنید",
+                      "                    صفحه دوز شما آماده بازی است  \n       برای از سرگیری، بازی مجدد را انتخاب کنید ",
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 17.5,
+                        fontSize: 15,
                         fontFamily: 'DN',
                         fontWeight: FontWeight.bold,
                         shadows: [
@@ -228,7 +228,7 @@ class _HomeState extends State<Home> {
                 ' $winnerTitle  بازی مجدد ',
                 style: TextStyle(
                   color: Color(0xffFFFFFF),
-                  fontSize: 22.5,
+                  fontSize: 20,
                   fontWeight: FontWeight.bold,
                   fontFamily: 'QT',
                   shadows: [
@@ -255,7 +255,7 @@ class _HomeState extends State<Home> {
           height: 60,
           child: Center(
             child: Text(
-              isTurnO ? 'Turn  O ' : 'Turn  X ',
+              isTurnO ? 'Turn  O' : 'Turn  X',
               style: TextStyle(
                 fontFamily: 'GI',
                 shadows: [

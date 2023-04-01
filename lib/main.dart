@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:application_dooz/screens/home_screen.dart';
+import 'package:application_dooz/screens/selection_game.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -34,7 +34,7 @@ class _SplashScreenState extends State<SplashScreen> {
       Duration(seconds: 5),
       () => Navigator.of(context).pushReplacement(
         MaterialPageRoute(
-          builder: (BuildContext context) => Home(),
+          builder: (BuildContext context) => GotoHome_Screen(),
         ),
       ),
     );
@@ -64,7 +64,7 @@ class _SplashScreenState extends State<SplashScreen> {
                     color: Color(0xff30CCFF),
                     fontSize: 40,
                     // fontWeight: FontWeight.bold,
-                    fontFamily: 'CA',
+                    fontFamily: 'GI',
                     shadows: [
                       Shadow(
                         blurRadius: 20.0, // shadow blur
@@ -80,8 +80,8 @@ class _SplashScreenState extends State<SplashScreen> {
                   'اپلیکیشن دوز برنامه ای برای سرگرمی',
                   style: TextStyle(
                     color: Colors.white,
-                    fontFamily: 'DB',
-                    fontSize: 15,
+                    fontFamily: 'QT',
+                    fontSize: 20,
                     fontWeight: FontWeight.bold,
                     shadows: [
                       Shadow(
