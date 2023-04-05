@@ -1,3 +1,4 @@
+import 'package:application_dooz/screens/home2_screen.dart';
 import 'package:application_dooz/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:gradient_borders/gradient_borders.dart';
@@ -15,7 +16,19 @@ class GotoHome_Screen extends StatelessWidget {
   const GotoHome_Screen({super.key});
 
   @override
-  Widget build(BuildContext context) => Scaffold(
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.centerRight,
+          end: Alignment.centerLeft,
+          colors: [
+            Color(0xff10416F),
+            Color(0xff411C2F),
+          ],
+        ),
+      ),
+      child: Scaffold(
         appBar: AppBar(
           elevation: 20,
           shape: ContinuousRectangleBorder(
@@ -24,8 +37,7 @@ class GotoHome_Screen extends StatelessWidget {
               bottomRight: Radius.circular(90),
             ),
           ),
-          title: Padding(
-            padding: const EdgeInsets.only(left: 140),
+          title: Center(
             child: Text(
               'Dooz',
               style: TextStyle(
@@ -41,6 +53,7 @@ class GotoHome_Screen extends StatelessWidget {
                 // fontWeight: FontWeight.bold,
                 fontFamily: 'GI',
               ),
+              textAlign: TextAlign.center,
             ),
           ),
           flexibleSpace: Container(
@@ -63,51 +76,101 @@ class GotoHome_Screen extends StatelessWidget {
           ),
           backgroundColor: Colors.transparent,
         ),
-        backgroundColor: Color.fromARGB(255, 42, 47, 65),
+        backgroundColor: Colors.transparent,
         body: Container(
           decoration: const BoxDecoration(
             image: DecorationImage(
-              image: AssetImage('images/wall.jpg'),
+              image: AssetImage('images/wall.png'),
               fit: BoxFit.fill,
             ),
           ),
           child: Center(
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(25),
-              child: Material(
-                child: InkWell(
-                  highlightColor: Colors.blue.withOpacity(0.5),
-                  splashColor: Colors.red.withOpacity(0.5),
-                  onTap: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (context) => Home(),
-                      ),
-                    );
-                  },
-                  child: Container(
-                    width: 200,
-                    height: 200,
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage('images/select1.jpg'),
-                      ),
-                      borderRadius: BorderRadius.circular(25),
-                      border: const GradientBoxBorder(
-                        gradient: LinearGradient(
-                          colors: [
-                            Color.fromARGB(255, 137, 35, 52),
-                            Color.fromARGB(255, 77, 157, 238)
-                          ],
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(25),
+                  child: Material(
+                    child: InkWell(
+                      highlightColor: Colors.blue.withOpacity(0.5),
+                      splashColor: Colors.red.withOpacity(0.5),
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => Home(),
+                          ),
+                        );
+                      },
+                      child: Container(
+                        width: 200,
+                        height: 200,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage('images/select1.jpg'),
+                          ),
+                          borderRadius: BorderRadius.circular(25),
+                          border: const GradientBoxBorder(
+                            gradient: LinearGradient(
+                              colors: [
+                                Color.fromARGB(255, 137, 35, 52),
+                                Color.fromARGB(255, 77, 157, 238)
+                              ],
+                            ),
+                            width: 7,
+                          ),
                         ),
-                        width: 7,
                       ),
                     ),
                   ),
                 ),
-              ),
+                Container(
+                  child: Center(
+                    child: Column(
+                      children: [
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(25),
+                          child: Material(
+                            child: InkWell(
+                              highlightColor: Colors.blue.withOpacity(0.5),
+                              splashColor: Colors.red.withOpacity(0.5),
+                              onTap: () {
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (context) => Home2(),
+                                  ),
+                                );
+                              },
+                              child: Container(
+                                width: 200,
+                                height: 200,
+                                decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                    image: AssetImage('images/select1.jpg'),
+                                  ),
+                                  borderRadius: BorderRadius.circular(25),
+                                  border: const GradientBoxBorder(
+                                    gradient: LinearGradient(
+                                      colors: [
+                                        Color.fromARGB(255, 137, 35, 52),
+                                        Color.fromARGB(255, 77, 157, 238)
+                                      ],
+                                    ),
+                                    width: 7,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
             ),
           ),
         ),
-      );
+      ),
+    );
+  }
 }

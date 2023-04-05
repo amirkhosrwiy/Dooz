@@ -91,8 +91,7 @@ class NavigationDrawerWidget extends StatelessWidget {
     //cpecchv nxxuw owdhp jkdwpwn qssk nssok[ j lwhdoihw]
     switch (index) {
       case 0:
-        Navigator.of(context).push(
-            MaterialPageRoute(builder: (context) => SelectionGameScreen()));
+        Navigator.of(context).pop();
         break;
 
       //'fnvfkn'nkbdnkdndwdoz,'z.cdcovv dcd;[skqs'Mkcn
