@@ -27,10 +27,11 @@ class _HomeState extends State<Home> {
       drawer: NavigationDrawerWidget(),
       appBar: AppBar(
         shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.only(
-          bottomLeft: Radius.circular(40),
-          bottomRight: Radius.circular(40),
-        )),
+          borderRadius: BorderRadius.only(
+            bottomLeft: Radius.circular(40),
+            bottomRight: Radius.circular(40),
+          ),
+        ),
         actions: [
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 85, vertical: 5),
@@ -63,11 +64,11 @@ class _HomeState extends State<Home> {
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
                     content: Text(
-                      "                    صفحه دوز شما آماده بازی است  \n       برای از سرگیری، بازی مجدد را انتخاب کنید ",
+                      "            صفحه دوز شما آماده بازی است  \n\n    برای از سرگیری، بازی مجدد را انتخاب کنید",
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 15,
-                        fontFamily: 'DN',
+                        fontSize: 20,
+                        fontFamily: 'QT',
                         fontWeight: FontWeight.bold,
                         shadows: [
                           Shadow(
@@ -167,11 +168,11 @@ class _HomeState extends State<Home> {
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
                     content: Text(
-                      "                    صفحه دوز شما آماده بازی است  \n       برای از سرگیری، بازی مجدد را انتخاب کنید ",
+                      "            صفحه دوز شما آماده بازی است  \n\n    برای از سرگیری، بازی مجدد را انتخاب کنید",
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 15,
-                        fontFamily: 'DN',
+                        fontSize: 20,
+                        fontFamily: 'QT',
                         fontWeight: FontWeight.bold,
                         shadows: [
                           Shadow(
@@ -192,22 +193,7 @@ class _HomeState extends State<Home> {
               },
             );
           },
-          // child: Container(
-          //   decoration: BoxDecoration(
-          //     borderRadius: BorderRadius.circular(30),
-          //     gradient: LinearGradient(
-          //       begin: Alignment.centerLeft,
-          //       end: Alignment.centerRight,
-          //       colors: <Color>[
-          //         Color.fromARGB(255, 137, 35, 52),
-          //         Color.fromARGB(255, 67, 76, 106),
-          //         Color(0xff1A1D27),
-          //         Color(0xff1A1D27),
-          //         Color.fromARGB(255, 67, 76, 106),
-          //         Color.fromARGB(255, 77, 157, 238),
-          //       ],
-          //     ),
-          //   ),
+
           // ),
           child: Container(
             width: 250,
@@ -249,43 +235,42 @@ class _HomeState extends State<Home> {
 
   Widget getTurn() {
     return Padding(
-        padding: const EdgeInsets.only(bottom: 30),
-        child: Container(
-          width: 170,
-          height: 60,
-          child: Center(
-            child: Text(
-              isTurnO ? 'Turn  O' : 'Turn  X',
-              style: TextStyle(
-                fontFamily: 'GI',
-                shadows: [
-                  Shadow(
-                    blurRadius: 20.0, // shadow blur
-                    color: Colors.white, // shadow color
-                    offset: Offset(4.0, 4.0), // how much shadow will be shown
-                  ),
-                ],
-                color: Colors.white,
-                fontSize: 30,
-                fontWeight: FontWeight.bold,
-              ),
+      padding: const EdgeInsets.only(bottom: 30),
+      child: Container(
+        width: 170,
+        height: 60,
+        child: Center(
+          child: Text(
+            isTurnO ? 'Turn  O' : 'Turn  X',
+            style: TextStyle(
+              fontFamily: 'GI',
+              shadows: [
+                Shadow(
+                  blurRadius: 20.0, // shadow blur
+                  color: Colors.white, // shadow color
+                  offset: Offset(4.0, 4.0), // how much shadow will be shown
+                ),
+              ],
+              color: Colors.white,
+              fontSize: 30,
+              fontWeight: FontWeight.bold,
             ),
           ),
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-                begin: Alignment.topLeft,
-                end: Alignment.bottomLeft,
-                colors: [
-                  Color(0xff1A1D27).withOpacity(0.1),
-                  isTurnO ? Color(0xffE23E58) : Color(0xff30CCFF),
-                ],
-                stops: [
-                  0.1,
-                  0.9
-                ]),
-            borderRadius: BorderRadius.circular(20),
+        ),
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomLeft,
+            colors: [
+              Color(0xff1A1D27).withOpacity(0.1),
+              isTurnO ? Color(0xffE23E58) : Color(0xff30CCFF),
+            ],
+            stops: [0.1, 0.9],
           ),
-        ));
+          borderRadius: BorderRadius.circular(20),
+        ),
+      ),
+    );
   }
 
   Widget getGridView() {
@@ -586,7 +571,7 @@ class _HomeState extends State<Home> {
                           0.2,
                           0.7
                         ]),
-                    borderRadius: BorderRadius.circular(20),
+                    borderRadius: BorderRadius.circular(10),
                   ),
                 ),
               ),

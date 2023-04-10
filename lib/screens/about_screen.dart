@@ -53,7 +53,50 @@ class AboutScreen extends StatelessWidget {
         ),
         backgroundColor: Colors.transparent,
       ),
-      body: Container(),
+      backgroundColor: Color.fromARGB(255, 33, 39, 58),
+      body: Center(
+        child: Stack(
+          children: [
+            Container(
+              decoration: const BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('images/wall.jpg'),
+                  fit: BoxFit.fill,
+                ),
+              ),
+            ),
+            Container(
+              child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(right: 105),
+                    child: Text(
+                      '■ Hello, I am Amir Khosrwiy',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 17.5,
+                          fontFamily: 'GI'),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(right: 10),
+                    child: Text(
+                      '■ My profession is mobile development',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 17.5,
+                        fontFamily: 'GI',
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

@@ -95,6 +95,28 @@ class GotoHome_Screen extends StatelessWidget {
                       highlightColor: Colors.blue.withOpacity(0.5),
                       splashColor: Colors.red.withOpacity(0.5),
                       onTap: () {
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(
+                            content: Text(
+                              '               به دوز   3 در 3   خوش آمدید',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 20,
+                                fontFamily: 'QT',
+                                fontWeight: FontWeight.bold,
+                                shadows: [
+                                  Shadow(
+                                    blurRadius: 30.0, // shadow blur
+                                    color: Colors.grey.shade300, // shadow color
+                                    offset: Offset(3.0,
+                                        2.0), // how much shadow will be shown
+                                  ),
+                                ],
+                              ),
+                            ),
+                            backgroundColor: Color.fromARGB(255, 36, 42, 61),
+                          ),
+                        );
                         Navigator.of(context).push(
                           MaterialPageRoute(
                             builder: (context) => Home(),
@@ -134,6 +156,30 @@ class GotoHome_Screen extends StatelessWidget {
                               highlightColor: Colors.blue.withOpacity(0.5),
                               splashColor: Colors.red.withOpacity(0.5),
                               onTap: () {
+                                ScaffoldMessenger.of(context).showSnackBar(
+                                  SnackBar(
+                                    content: Text(
+                                      '               به دوز   6 در 7   خوش آمدید',
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 20,
+                                        fontFamily: 'QT',
+                                        fontWeight: FontWeight.bold,
+                                        shadows: [
+                                          Shadow(
+                                            blurRadius: 30.0, // shadow blur
+                                            color: Colors
+                                                .grey.shade300, // shadow color
+                                            offset: Offset(3.0,
+                                                2.0), // how much shadow will be shown
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                    backgroundColor:
+                                        Color.fromARGB(255, 36, 42, 61),
+                                  ),
+                                );
                                 Navigator.of(context).push(
                                   MaterialPageRoute(
                                     builder: (context) => Home2(),
@@ -145,7 +191,7 @@ class GotoHome_Screen extends StatelessWidget {
                                 height: 200,
                                 decoration: BoxDecoration(
                                   image: DecorationImage(
-                                    image: AssetImage('images/select1.jpg'),
+                                    image: AssetImage('images/select2.jpg'),
                                   ),
                                   borderRadius: BorderRadius.circular(25),
                                   border: const GradientBoxBorder(

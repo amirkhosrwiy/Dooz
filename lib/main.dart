@@ -2,9 +2,14 @@ import 'dart:async';
 import 'package:application_dooz/screens/selection_game.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
+import 'package:flutter/services.dart';
 
-void main() {
+void main() async {
   runApp(const Application());
+  WidgetsFlutterBinding.ensureInitialized();
+  await SystemChrome.setPreferredOrientations(
+    [DeviceOrientation.portraitUp],
+  );
 }
 
 class Application extends StatelessWidget {
@@ -32,7 +37,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
 
     Timer(
-      Duration(seconds: 5),
+      Duration(seconds: 7),
       () => Navigator.of(context).pushReplacement(
         MaterialPageRoute(
           builder: (BuildContext context) => GotoHome_Screen(),
@@ -92,6 +97,16 @@ class _SplashScreenState extends State<SplashScreen> {
                             Offset(3.0, 2.0), // how much shadow will be shown
                       ),
                     ],
+                  ),
+                ),
+                SizedBox(height: 20),
+                Center(
+                  child: Positioned(
+                    child: Lottie.asset(
+                      'assets/lottie/load.json',
+                      width: 120,
+                      height: 120,
+                    ),
                   ),
                 ),
               ],

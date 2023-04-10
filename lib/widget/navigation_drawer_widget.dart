@@ -2,7 +2,6 @@ import 'package:application_dooz/pages/help_game_screen.dart';
 import 'package:application_dooz/pages/settings_game_screen.dart';
 import 'package:application_dooz/screens/about_screen.dart';
 import 'package:application_dooz/screens/flash.dart';
-import 'package:application_dooz/screens/selection_game.dart';
 import 'package:flutter/material.dart';
 
 class NavigationDrawerWidget extends StatelessWidget {
