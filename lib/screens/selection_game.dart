@@ -98,7 +98,7 @@ class GotoHome_Screen extends StatelessWidget {
                         ScaffoldMessenger.of(context).showSnackBar(
                           SnackBar(
                             content: Text(
-                              '               به دوز   3 در 3   خوش آمدید',
+                              '            به دوز   3 در 3   خوش آمدید',
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 20,
@@ -159,7 +159,7 @@ class GotoHome_Screen extends StatelessWidget {
                                 ScaffoldMessenger.of(context).showSnackBar(
                                   SnackBar(
                                     content: Text(
-                                      '               به دوز   6 در 7   خوش آمدید',
+                                      '            به دوز   6 در 7   خوش آمدید',
                                       style: TextStyle(
                                         color: Colors.white,
                                         fontSize: 20,

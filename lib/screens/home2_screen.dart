@@ -107,10 +107,10 @@ class _HomeState2 extends State<Home2> {
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
                     content: Text(
-                      "            صفحه دوز شما آماده بازی است  \n\n    برای از سرگیری، بازی مجدد را انتخاب کنید",
+                      "             صفحه دوز شما آماده بازی است  \n\n      برای از سرگیری، بازی مجدد را انتخاب کنید",
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 20,
+                        fontSize: 17.5,
                         fontFamily: 'QT',
                         fontWeight: FontWeight.bold,
                         shadows: [
@@ -209,10 +209,10 @@ class _HomeState2 extends State<Home2> {
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
                     content: Text(
-                      "            صفحه دوز شما آماده بازی است  \n\n    برای از سرگیری، بازی مجدد را انتخاب کنید",
+                      "             صفحه دوز شما آماده بازی است  \n\n      برای از سرگیری، بازی مجدد را انتخاب کنید",
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 20,
+                        fontSize: 17.5,
                         fontFamily: 'QT',
                         fontWeight: FontWeight.bold,
                         shadows: [
@@ -343,7 +343,7 @@ class _HomeState2 extends State<Home2> {
                 child: Text(
                   xOrOList[index],
                   style: TextStyle(
-                    fontSize: 70,
+                    fontSize: 60,
                     fontFamily: 'GI',
                     fontWeight: FontWeight.bold,
                     color: xOrOList[index] == 'X'
@@ -639,295 +639,303 @@ class _HomeState2 extends State<Home2> {
       return;
     }
 
-    if (xOrOList[8] == xOrOList[3] &&
-        xOrOList[8] == xOrOList[4] &&
-        xOrOList[8] == xOrOList[5] &&
+    if (xOrOList[8] == xOrOList[15] &&
+        xOrOList[8] == xOrOList[22] &&
+        xOrOList[8] == xOrOList[29] &&
         xOrOList[8] != '') {
       setResult(xOrOList[8], 'برنده شد   ' + xOrOList[8]);
       return;
     }
 
-    if (xOrOList[9] == xOrOList[3] &&
-        xOrOList[9] == xOrOList[4] &&
-        xOrOList[9] == xOrOList[5] &&
+    if (xOrOList[9] == xOrOList[16] &&
+        xOrOList[9] == xOrOList[23] &&
+        xOrOList[9] == xOrOList[30] &&
         xOrOList[9] != '') {
       setResult(xOrOList[9], 'برنده شد   ' + xOrOList[9]);
       return;
     }
 
-    if (xOrOList[10] == xOrOList[3] &&
-        xOrOList[10] == xOrOList[4] &&
-        xOrOList[10] == xOrOList[5] &&
+    if (xOrOList[10] == xOrOList[17] &&
+        xOrOList[10] == xOrOList[24] &&
+        xOrOList[10] == xOrOList[31] &&
         xOrOList[10] != '') {
       setResult(xOrOList[10], 'برنده شد   ' + xOrOList[10]);
       return;
     }
 
-    if (xOrOList[11] == xOrOList[3] &&
-        xOrOList[11] == xOrOList[4] &&
-        xOrOList[11] == xOrOList[5] &&
+    if (xOrOList[11] == xOrOList[18] &&
+        xOrOList[11] == xOrOList[25] &&
+        xOrOList[11] == xOrOList[32] &&
         xOrOList[11] != '') {
       setResult(xOrOList[11], 'برنده شد   ' + xOrOList[11]);
       return;
     }
 
-    if (xOrOList[12] == xOrOList[3] &&
-        xOrOList[12] == xOrOList[4] &&
-        xOrOList[12] == xOrOList[5] &&
+    if (xOrOList[12] == xOrOList[19] &&
+        xOrOList[12] == xOrOList[26] &&
+        xOrOList[12] == xOrOList[33] &&
         xOrOList[12] != '') {
       setResult(xOrOList[12], 'برنده شد   ' + xOrOList[12]);
       return;
     }
 
-    if (xOrOList[13] == xOrOList[3] &&
-        xOrOList[13] == xOrOList[4] &&
-        xOrOList[13] == xOrOList[5] &&
+    if (xOrOList[13] == xOrOList[20] &&
+        xOrOList[13] == xOrOList[27] &&
+        xOrOList[13] == xOrOList[34] &&
         xOrOList[13] != '') {
       setResult(xOrOList[13], 'برنده شد   ' + xOrOList[13]);
       return;
     }
 
-    if (xOrOList[14] == xOrOList[3] &&
-        xOrOList[14] == xOrOList[4] &&
-        xOrOList[14] == xOrOList[5] &&
+    if (xOrOList[14] == xOrOList[21] &&
+        xOrOList[14] == xOrOList[28] &&
+        xOrOList[14] == xOrOList[35] &&
         xOrOList[14] != '') {
       setResult(xOrOList[14], 'برنده شد   ' + xOrOList[14]);
       return;
     }
 
-    if (xOrOList[15] == xOrOList[3] &&
-        xOrOList[15] == xOrOList[4] &&
-        xOrOList[15] == xOrOList[5] &&
+    if (xOrOList[15] == xOrOList[22] &&
+        xOrOList[15] == xOrOList[29] &&
+        xOrOList[15] == xOrOList[36] &&
         xOrOList[15] != '') {
       setResult(xOrOList[15], 'برنده شد   ' + xOrOList[15]);
       return;
     }
 
-    if (xOrOList[16] == xOrOList[3] &&
-        xOrOList[16] == xOrOList[4] &&
-        xOrOList[16] == xOrOList[5] &&
+    if (xOrOList[16] == xOrOList[23] &&
+        xOrOList[16] == xOrOList[30] &&
+        xOrOList[16] == xOrOList[37] &&
         xOrOList[16] != '') {
       setResult(xOrOList[16], 'برنده شد   ' + xOrOList[16]);
       return;
     }
 
-    if (xOrOList[17] == xOrOList[3] &&
-        xOrOList[17] == xOrOList[4] &&
-        xOrOList[17] == xOrOList[5] &&
+    if (xOrOList[17] == xOrOList[24] &&
+        xOrOList[17] == xOrOList[31] &&
+        xOrOList[17] == xOrOList[38] &&
         xOrOList[17] != '') {
       setResult(xOrOList[17], 'برنده شد   ' + xOrOList[17]);
       return;
     }
 
-    if (xOrOList[18] == xOrOList[3] &&
-        xOrOList[18] == xOrOList[4] &&
-        xOrOList[18] == xOrOList[5] &&
+    if (xOrOList[18] == xOrOList[25] &&
+        xOrOList[18] == xOrOList[32] &&
+        xOrOList[18] == xOrOList[39] &&
         xOrOList[18] != '') {
       setResult(xOrOList[18], 'برنده شد   ' + xOrOList[18]);
       return;
     }
 
-    if (xOrOList[19] == xOrOList[3] &&
-        xOrOList[19] == xOrOList[4] &&
-        xOrOList[19] == xOrOList[5] &&
+    if (xOrOList[19] == xOrOList[26] &&
+        xOrOList[19] == xOrOList[33] &&
+        xOrOList[19] == xOrOList[40] &&
         xOrOList[19] != '') {
       setResult(xOrOList[19], 'برنده شد   ' + xOrOList[19]);
       return;
     }
 
-    if (xOrOList[20] == xOrOList[3] &&
-        xOrOList[20] == xOrOList[4] &&
-        xOrOList[20] == xOrOList[5] &&
+    if (xOrOList[20] == xOrOList[27] &&
+        xOrOList[20] == xOrOList[34] &&
+        xOrOList[20] == xOrOList[41] &&
         xOrOList[20] != '') {
       setResult(xOrOList[20], 'برنده شد   ' + xOrOList[20]);
       return;
     }
 
-    if (xOrOList[2] == xOrOList[3] &&
-        xOrOList[2] == xOrOList[4] &&
-        xOrOList[2] == xOrOList[5] &&
+    if (xOrOList[0] == xOrOList[8] &&
+        xOrOList[0] == xOrOList[16] &&
+        xOrOList[0] == xOrOList[24] &&
+        xOrOList[0] != '') {
+      setResult(xOrOList[0], 'برنده شد   ' + xOrOList[0]);
+      return;
+    }
+
+    if (xOrOList[8] == xOrOList[16] &&
+        xOrOList[8] == xOrOList[24] &&
+        xOrOList[8] == xOrOList[32] &&
+        xOrOList[8] != '') {
+      setResult(xOrOList[8], 'برنده شد   ' + xOrOList[8]);
+      return;
+    }
+
+    if (xOrOList[16] == xOrOList[24] &&
+        xOrOList[16] == xOrOList[32] &&
+        xOrOList[16] == xOrOList[40] &&
+        xOrOList[16] != '') {
+      setResult(xOrOList[16], 'برنده شد   ' + xOrOList[16]);
+      return;
+    }
+
+    if (xOrOList[1] == xOrOList[9] &&
+        xOrOList[1] == xOrOList[17] &&
+        xOrOList[1] == xOrOList[25] &&
+        xOrOList[1] != '') {
+      setResult(xOrOList[1], 'برنده شد   ' + xOrOList[1]);
+      return;
+    }
+
+    if (xOrOList[9] == xOrOList[17] &&
+        xOrOList[9] == xOrOList[25] &&
+        xOrOList[9] == xOrOList[33] &&
+        xOrOList[9] != '') {
+      setResult(xOrOList[9], 'برنده شد   ' + xOrOList[9]);
+      return;
+    }
+
+    if (xOrOList[17] == xOrOList[25] &&
+        xOrOList[17] == xOrOList[33] &&
+        xOrOList[17] == xOrOList[41] &&
+        xOrOList[17] != '') {
+      setResult(xOrOList[17], 'برنده شد   ' + xOrOList[17]);
+      return;
+    }
+
+    if (xOrOList[2] == xOrOList[10] &&
+        xOrOList[2] == xOrOList[18] &&
+        xOrOList[2] == xOrOList[26] &&
         xOrOList[2] != '') {
       setResult(xOrOList[2], 'برنده شد   ' + xOrOList[2]);
       return;
     }
 
-    if (xOrOList[2] == xOrOList[3] &&
-        xOrOList[2] == xOrOList[4] &&
-        xOrOList[2] == xOrOList[5] &&
-        xOrOList[2] != '') {
-      setResult(xOrOList[2], 'برنده شد   ' + xOrOList[2]);
+    if (xOrOList[10] == xOrOList[18] &&
+        xOrOList[10] == xOrOList[26] &&
+        xOrOList[10] == xOrOList[34] &&
+        xOrOList[10] != '') {
+      setResult(xOrOList[10], 'برنده شد   ' + xOrOList[10]);
       return;
     }
 
-    if (xOrOList[2] == xOrOList[3] &&
-        xOrOList[2] == xOrOList[4] &&
-        xOrOList[2] == xOrOList[5] &&
-        xOrOList[2] != '') {
-      setResult(xOrOList[2], 'برنده شد   ' + xOrOList[2]);
+    if (xOrOList[14] == xOrOList[22] &&
+        xOrOList[14] == xOrOList[30] &&
+        xOrOList[14] == xOrOList[38] &&
+        xOrOList[14] != '') {
+      setResult(xOrOList[14], 'برنده شد   ' + xOrOList[14]);
       return;
     }
 
-    if (xOrOList[2] == xOrOList[3] &&
-        xOrOList[2] == xOrOList[4] &&
-        xOrOList[2] == xOrOList[5] &&
-        xOrOList[2] != '') {
-      setResult(xOrOList[2], 'برنده شد   ' + xOrOList[2]);
+    if (xOrOList[3] == xOrOList[11] &&
+        xOrOList[3] == xOrOList[19] &&
+        xOrOList[3] == xOrOList[27] &&
+        xOrOList[3] != '') {
+      setResult(xOrOList[3], 'برنده شد   ' + xOrOList[3]);
       return;
     }
 
-    if (xOrOList[2] == xOrOList[3] &&
-        xOrOList[2] == xOrOList[4] &&
-        xOrOList[2] == xOrOList[5] &&
-        xOrOList[2] != '') {
-      setResult(xOrOList[2], 'برنده شد   ' + xOrOList[2]);
+    if (xOrOList[7] == xOrOList[15] &&
+        xOrOList[7] == xOrOList[23] &&
+        xOrOList[7] == xOrOList[31] &&
+        xOrOList[7] != '') {
+      setResult(xOrOList[7], 'برنده شد   ' + xOrOList[7]);
       return;
     }
 
-    if (xOrOList[2] == xOrOList[3] &&
-        xOrOList[2] == xOrOList[4] &&
-        xOrOList[2] == xOrOList[5] &&
-        xOrOList[2] != '') {
-      setResult(xOrOList[2], 'برنده شد   ' + xOrOList[2]);
+    if (xOrOList[15] == xOrOList[23] &&
+        xOrOList[15] == xOrOList[31] &&
+        xOrOList[15] == xOrOList[39] &&
+        xOrOList[15] != '') {
+      setResult(xOrOList[15], 'برنده شد   ' + xOrOList[15]);
       return;
     }
 
-    if (xOrOList[2] == xOrOList[3] &&
-        xOrOList[2] == xOrOList[4] &&
-        xOrOList[2] == xOrOList[5] &&
-        xOrOList[2] != '') {
-      setResult(xOrOList[2], 'برنده شد   ' + xOrOList[2]);
+    if (xOrOList[6] == xOrOList[12] &&
+        xOrOList[6] == xOrOList[18] &&
+        xOrOList[6] == xOrOList[24] &&
+        xOrOList[6] != '') {
+      setResult(xOrOList[6], 'برنده شد   ' + xOrOList[6]);
       return;
     }
 
-    if (xOrOList[2] == xOrOList[3] &&
-        xOrOList[2] == xOrOList[4] &&
-        xOrOList[2] == xOrOList[5] &&
-        xOrOList[2] != '') {
-      setResult(xOrOList[2], 'برنده شد   ' + xOrOList[2]);
+    if (xOrOList[12] == xOrOList[18] &&
+        xOrOList[12] == xOrOList[24] &&
+        xOrOList[12] == xOrOList[30] &&
+        xOrOList[12] != '') {
+      setResult(xOrOList[12], 'برنده شد   ' + xOrOList[12]);
       return;
     }
 
-    if (xOrOList[2] == xOrOList[3] &&
-        xOrOList[2] == xOrOList[4] &&
-        xOrOList[2] == xOrOList[5] &&
-        xOrOList[2] != '') {
-      setResult(xOrOList[2], 'برنده شد   ' + xOrOList[2]);
+    if (xOrOList[18] == xOrOList[24] &&
+        xOrOList[18] == xOrOList[30] &&
+        xOrOList[18] == xOrOList[36] &&
+        xOrOList[18] != '') {
+      setResult(xOrOList[18], 'برنده شد   ' + xOrOList[18]);
       return;
     }
 
-    if (xOrOList[2] == xOrOList[3] &&
-        xOrOList[2] == xOrOList[4] &&
-        xOrOList[2] == xOrOList[5] &&
-        xOrOList[2] != '') {
-      setResult(xOrOList[2], 'برنده شد   ' + xOrOList[2]);
+    if (xOrOList[5] == xOrOList[11] &&
+        xOrOList[5] == xOrOList[17] &&
+        xOrOList[5] == xOrOList[23] &&
+        xOrOList[5] != '') {
+      setResult(xOrOList[5], 'برنده شد   ' + xOrOList[5]);
       return;
     }
 
-    if (xOrOList[2] == xOrOList[3] &&
-        xOrOList[2] == xOrOList[4] &&
-        xOrOList[2] == xOrOList[5] &&
-        xOrOList[2] != '') {
-      setResult(xOrOList[2], 'برنده شد   ' + xOrOList[2]);
+    if (xOrOList[11] == xOrOList[17] &&
+        xOrOList[11] == xOrOList[23] &&
+        xOrOList[11] == xOrOList[29] &&
+        xOrOList[11] != '') {
+      setResult(xOrOList[11], 'برنده شد   ' + xOrOList[11]);
       return;
     }
 
-    if (xOrOList[2] == xOrOList[3] &&
-        xOrOList[2] == xOrOList[4] &&
-        xOrOList[2] == xOrOList[5] &&
-        xOrOList[2] != '') {
-      setResult(xOrOList[2], 'برنده شد   ' + xOrOList[2]);
+    if (xOrOList[17] == xOrOList[23] &&
+        xOrOList[17] == xOrOList[29] &&
+        xOrOList[17] == xOrOList[35] &&
+        xOrOList[17] != '') {
+      setResult(xOrOList[17], 'برنده شد   ' + xOrOList[17]);
       return;
     }
 
-    if (xOrOList[2] == xOrOList[3] &&
-        xOrOList[2] == xOrOList[4] &&
-        xOrOList[2] == xOrOList[5] &&
-        xOrOList[2] != '') {
-      setResult(xOrOList[2], 'برنده شد   ' + xOrOList[2]);
+    if (xOrOList[4] == xOrOList[10] &&
+        xOrOList[4] == xOrOList[16] &&
+        xOrOList[4] == xOrOList[22] &&
+        xOrOList[4] != '') {
+      setResult(xOrOList[4], 'برنده شد   ' + xOrOList[2]);
       return;
     }
 
-    if (xOrOList[2] == xOrOList[3] &&
-        xOrOList[2] == xOrOList[4] &&
-        xOrOList[2] == xOrOList[5] &&
-        xOrOList[2] != '') {
-      setResult(xOrOList[2], 'برنده شد   ' + xOrOList[2]);
+    if (xOrOList[10] == xOrOList[16] &&
+        xOrOList[10] == xOrOList[22] &&
+        xOrOList[10] == xOrOList[28] &&
+        xOrOList[10] != '') {
+      setResult(xOrOList[10], 'برنده شد   ' + xOrOList[10]);
       return;
     }
 
-    if (xOrOList[2] == xOrOList[3] &&
-        xOrOList[2] == xOrOList[4] &&
-        xOrOList[2] == xOrOList[5] &&
-        xOrOList[2] != '') {
-      setResult(xOrOList[2], 'برنده شد   ' + xOrOList[2]);
+    if (xOrOList[3] == xOrOList[9] &&
+        xOrOList[3] == xOrOList[15] &&
+        xOrOList[3] == xOrOList[21] &&
+        xOrOList[3] != '') {
+      setResult(xOrOList[3], 'برنده شد   ' + xOrOList[3]);
       return;
     }
 
-    if (xOrOList[2] == xOrOList[3] &&
-        xOrOList[2] == xOrOList[4] &&
-        xOrOList[2] == xOrOList[5] &&
-        xOrOList[2] != '') {
-      setResult(xOrOList[2], 'برنده شد   ' + xOrOList[2]);
+    if (xOrOList[13] == xOrOList[19] &&
+        xOrOList[13] == xOrOList[25] &&
+        xOrOList[13] == xOrOList[31] &&
+        xOrOList[13] != '') {
+      setResult(xOrOList[13], 'برنده شد   ' + xOrOList[13]);
       return;
     }
 
-    if (xOrOList[2] == xOrOList[3] &&
-        xOrOList[2] == xOrOList[4] &&
-        xOrOList[2] == xOrOList[5] &&
-        xOrOList[2] != '') {
-      setResult(xOrOList[2], 'برنده شد   ' + xOrOList[2]);
+    if (xOrOList[19] == xOrOList[25] &&
+        xOrOList[19] == xOrOList[31] &&
+        xOrOList[19] == xOrOList[37] &&
+        xOrOList[19] != '') {
+      setResult(xOrOList[19], 'برنده شد   ' + xOrOList[19]);
       return;
     }
 
-    if (xOrOList[2] == xOrOList[3] &&
-        xOrOList[2] == xOrOList[4] &&
-        xOrOList[2] == xOrOList[5] &&
-        xOrOList[2] != '') {
-      setResult(xOrOList[2], 'برنده شد   ' + xOrOList[2]);
+    if (xOrOList[20] == xOrOList[26] &&
+        xOrOList[20] == xOrOList[32] &&
+        xOrOList[20] == xOrOList[38] &&
+        xOrOList[20] != '') {
+      setResult(xOrOList[20], 'برنده شد   ' + xOrOList[20]);
       return;
     }
 
-    if (xOrOList[2] == xOrOList[3] &&
-        xOrOList[2] == xOrOList[4] &&
-        xOrOList[2] == xOrOList[5] &&
-        xOrOList[2] != '') {
-      setResult(xOrOList[2], 'برنده شد   ' + xOrOList[2]);
-      return;
-    }
-
-    if (xOrOList[2] == xOrOList[3] &&
-        xOrOList[2] == xOrOList[4] &&
-        xOrOList[2] == xOrOList[5] &&
-        xOrOList[2] != '') {
-      setResult(xOrOList[2], 'برنده شد   ' + xOrOList[2]);
-      return;
-    }
-
-    if (xOrOList[2] == xOrOList[3] &&
-        xOrOList[2] == xOrOList[4] &&
-        xOrOList[2] == xOrOList[5] &&
-        xOrOList[2] != '') {
-      setResult(xOrOList[2], 'برنده شد   ' + xOrOList[2]);
-      return;
-    }
-
-    if (xOrOList[2] == xOrOList[3] &&
-        xOrOList[2] == xOrOList[4] &&
-        xOrOList[2] == xOrOList[5] &&
-        xOrOList[2] != '') {
-      setResult(xOrOList[2], 'برنده شد   ' + xOrOList[2]);
-      return;
-    }
-
-    if (xOrOList[2] == xOrOList[3] &&
-        xOrOList[2] == xOrOList[4] &&
-        xOrOList[2] == xOrOList[5] &&
-        xOrOList[2] != '') {
-      setResult(xOrOList[2], 'برنده شد   ' + xOrOList[2]);
-      return;
-    }
-
-    if (filledBoxes == 9) {
+    if (filledBoxes == 42) {
       setResult('', 'مساوی');
     }
   }
