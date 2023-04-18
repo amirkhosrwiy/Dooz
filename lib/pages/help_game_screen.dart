@@ -43,10 +43,10 @@ class HelpGameScreen extends StatelessWidget {
               begin: Alignment.centerLeft,
               end: Alignment.centerRight,
               colors: <Color>[
-                Color.fromARGB(255, 137, 35, 52),
+                Color(0xff0096FF),
                 Color(0xff1A1D27),
                 Color(0xff1A1D27),
-                Color.fromARGB(255, 77, 157, 238),
+                Color(0xff00D7FF),
               ],
             ),
           ),

@@ -43,10 +43,10 @@ class AboutScreen extends StatelessWidget {
               begin: Alignment.centerLeft,
               end: Alignment.centerRight,
               colors: <Color>[
-                Color.fromARGB(255, 137, 35, 52),
+                Color(0xff0096FF),
                 Color(0xff1A1D27),
                 Color(0xff1A1D27),
-                Color.fromARGB(255, 77, 157, 238),
+                Color(0xff00D7FF),
               ],
             ),
           ),
@@ -60,7 +60,7 @@ class AboutScreen extends StatelessWidget {
             Container(
               decoration: const BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('images/wall.jpg'),
+                  image: AssetImage('images/jm.jpg'),
                   fit: BoxFit.fill,
                 ),
               ),

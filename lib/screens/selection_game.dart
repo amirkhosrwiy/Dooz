@@ -66,10 +66,10 @@ class GotoHome_Screen extends StatelessWidget {
                 begin: Alignment.centerLeft,
                 end: Alignment.centerRight,
                 colors: <Color>[
-                  Color.fromARGB(255, 137, 35, 52),
+                  Color(0xff0096FF),
                   Color(0xff1A1D27),
                   Color(0xff1A1D27),
-                  Color.fromARGB(255, 77, 157, 238),
+                  Color(0xff00D7FF),
                 ],
               ),
             ),
@@ -80,7 +80,7 @@ class GotoHome_Screen extends StatelessWidget {
         body: Container(
           decoration: const BoxDecoration(
             image: DecorationImage(
-              image: AssetImage('images/wall.png'),
+              image: AssetImage('images/jm.png'),
               fit: BoxFit.fill,
             ),
           ),
@@ -128,14 +128,14 @@ class GotoHome_Screen extends StatelessWidget {
                         height: 200,
                         decoration: BoxDecoration(
                           image: DecorationImage(
-                            image: AssetImage('images/select1.jpg'),
+                            image: AssetImage('images/33.jpg'),
                           ),
                           borderRadius: BorderRadius.circular(25),
                           border: const GradientBoxBorder(
                             gradient: LinearGradient(
                               colors: [
-                                Color.fromARGB(255, 137, 35, 52),
-                                Color.fromARGB(255, 77, 157, 238)
+                                Color(0xff0096FF),
+                                Color(0xff00D7FF),
                               ],
                             ),
                             width: 7,
@@ -191,14 +191,14 @@ class GotoHome_Screen extends StatelessWidget {
                                 height: 200,
                                 decoration: BoxDecoration(
                                   image: DecorationImage(
-                                    image: AssetImage('images/select2.jpg'),
+                                    image: AssetImage('images/67.jpg'),
                                   ),
                                   borderRadius: BorderRadius.circular(25),
                                   border: const GradientBoxBorder(
                                     gradient: LinearGradient(
                                       colors: [
-                                        Color.fromARGB(255, 137, 35, 52),
-                                        Color.fromARGB(255, 77, 157, 238)
+                                        Color(0xff0096FF),
+                                        Color(0xff00D7FF),
                                       ],
                                     ),
                                     width: 7,

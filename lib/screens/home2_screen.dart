@@ -146,10 +146,10 @@ class _HomeState2 extends State<Home2> {
               begin: Alignment.centerLeft,
               end: Alignment.centerRight,
               colors: <Color>[
-                Color.fromARGB(255, 137, 35, 52),
+                Color(0xff0096FF),
                 Color(0xff1A1D27),
                 Color(0xff1A1D27),
-                Color.fromARGB(255, 77, 157, 238),
+                Color(0xff00D7FF),
               ],
             ),
           ),
@@ -160,7 +160,7 @@ class _HomeState2 extends State<Home2> {
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('images/wall.jpg'),
+            image: AssetImage('images/jm.png'),
             fit: BoxFit.fitHeight,
           ),
         ),
@@ -304,7 +304,7 @@ class _HomeState2 extends State<Home2> {
             end: Alignment.bottomLeft,
             colors: [
               Color(0xff1A1D27).withOpacity(0.1),
-              isTurnO ? Color(0xffE23E58) : Color(0xff30CCFF),
+              isTurnO ? Color(0xff5800FF) : Color(0xff30CCFF),
             ],
             stops: [0.1, 0.9],
           ),
@@ -334,7 +334,7 @@ class _HomeState2 extends State<Home2> {
                   color: xOrOList[index] == 'X'
                       ? Color(0xff30CCFF)
                       : xOrOList[index] == 'O'
-                          ? Color(0xffE23E58)
+                          ? Color(0xff5800FF)
                           : Color(0xffFFFFFF),
                 ),
                 borderRadius: BorderRadius.circular(20),
@@ -348,7 +348,7 @@ class _HomeState2 extends State<Home2> {
                     fontWeight: FontWeight.bold,
                     color: xOrOList[index] == 'X'
                         ? Color(0xff30CCFF)
-                        : Color(0xffE23E58),
+                        : Color(0xff5800FF),
                   ),
                 ),
               ),
@@ -976,7 +976,7 @@ class _HomeState2 extends State<Home2> {
                         end: Alignment.bottomLeft,
                         colors: [
                           Color(0xff1A1D27).withOpacity(0.1),
-                          Color(0xffE23E58),
+                          Color(0xff5800FF),
                         ],
                         stops: [
                           0.1,
@@ -1015,7 +1015,7 @@ class _HomeState2 extends State<Home2> {
                         begin: Alignment.topLeft,
                         end: Alignment.bottomLeft,
                         colors: [
-                          Color(0xffE23E58),
+                          Color(0xff5800FF),
                           Color.fromARGB(255, 54, 12, 18).withOpacity(0.5),
                         ],
                         stops: [
