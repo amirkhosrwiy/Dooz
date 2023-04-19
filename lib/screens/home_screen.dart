@@ -34,9 +34,9 @@ class _HomeState extends State<Home> {
         ),
         actions: [
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 85, vertical: 5),
+            padding: const EdgeInsets.symmetric(horizontal: 95, vertical: 5),
             child: Text(
-              'Dooz',
+              'دوز',
               style: TextStyle(
                 shadows: [
                   Shadow(
@@ -49,7 +49,7 @@ class _HomeState extends State<Home> {
                 // fontFamily:
                 fontSize: 40,
                 // fontWeight: FontWeight.bold,
-                fontFamily: 'GI',
+                fontFamily: 'QT',
               ),
             ),
           ),
@@ -416,11 +416,11 @@ class _HomeState extends State<Home> {
                   height: 40,
                   child: Center(
                     child: Text(
-                      'Player O',
+                      'O بازیکن',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 27.5,
-                        fontFamily: 'GI',
+                        fontFamily: 'QT',
                         fontWeight: FontWeight.bold,
                         shadows: [
                           Shadow(
@@ -502,12 +502,12 @@ class _HomeState extends State<Home> {
                   height: 40,
                   child: Center(
                     child: Text(
-                      'Player X',
+                      'X بازیکن',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 27.5,
                         fontWeight: FontWeight.bold,
-                        fontFamily: 'GI',
+                        fontFamily: 'QT',
                         shadows: [
                           Shadow(
                             blurRadius: 10.0, // shadow blur

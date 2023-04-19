@@ -39,7 +39,7 @@ class GotoHome_Screen extends StatelessWidget {
           ),
           title: Center(
             child: Text(
-              'Dooz',
+              'دوز',
               style: TextStyle(
                 shadows: [
                   Shadow(
@@ -51,7 +51,7 @@ class GotoHome_Screen extends StatelessWidget {
                 color: Colors.white,
                 fontSize: 40,
                 // fontWeight: FontWeight.bold,
-                fontFamily: 'GI',
+                fontFamily: 'QT',
               ),
               textAlign: TextAlign.center,
             ),
