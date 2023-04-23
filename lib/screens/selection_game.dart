@@ -134,7 +134,7 @@ class GotoHome_Screen extends StatelessWidget {
                           border: const GradientBoxBorder(
                             gradient: LinearGradient(
                               colors: [
-                                Color(0xff0096FF),
+                                Colors.greenAccent,
                                 Color(0xff00D7FF),
                               ],
                             ),
@@ -197,7 +197,7 @@ class GotoHome_Screen extends StatelessWidget {
                                   border: const GradientBoxBorder(
                                     gradient: LinearGradient(
                                       colors: [
-                                        Color(0xff0096FF),
+                                        Colors.greenAccent,
                                         Color(0xff00D7FF),
                                       ],
                                     ),

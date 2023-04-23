@@ -113,7 +113,7 @@ class _HomeState extends State<Home> {
         ),
         elevation: 20,
       ),
-      backgroundColor: Color.fromARGB(255, 42, 47, 65),
+      backgroundColor: Color.fromARGB(255, 33, 39, 58),
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
@@ -241,9 +241,9 @@ class _HomeState extends State<Home> {
         height: 60,
         child: Center(
           child: Text(
-            isTurnO ? 'Turn  O' : 'Turn  X',
+            isTurnO ? 'نوبت  O' : 'نوبت  X',
             style: TextStyle(
-              fontFamily: 'GI',
+              fontFamily: 'QT',
               shadows: [
                 Shadow(
                   blurRadius: 20.0, // shadow blur
@@ -263,7 +263,7 @@ class _HomeState extends State<Home> {
             end: Alignment.bottomLeft,
             colors: [
               Color(0xff1A1D27).withOpacity(0.1),
-              isTurnO ? Color(0xff5800FF) : Color(0xff30CCFF),
+              isTurnO ? Colors.greenAccent : Color(0xff30CCFF),
             ],
             stops: [0.1, 0.9],
           ),
@@ -293,10 +293,10 @@ class _HomeState extends State<Home> {
                   color: xOrOList[index] == 'X'
                       ? Color(0xff30CCFF)
                       : xOrOList[index] == 'O'
-                          ? Color(0xff5800FF)
+                          ? Colors.greenAccent
                           : Color(0xffFFFFFF),
                 ),
-                borderRadius: BorderRadius.circular(30),
+                borderRadius: BorderRadius.circular(50),
               ),
               child: Center(
                 child: Text(
@@ -307,7 +307,7 @@ class _HomeState extends State<Home> {
                     fontWeight: FontWeight.bold,
                     color: xOrOList[index] == 'X'
                         ? Color(0xff30CCFF)
-                        : Color(0xff5800FF),
+                        : Colors.greenAccent,
                   ),
                 ),
               ),
@@ -438,8 +438,8 @@ class _HomeState extends State<Home> {
                         begin: Alignment.topLeft,
                         end: Alignment.bottomLeft,
                         colors: [
-                          Color(0xff1A1D27).withOpacity(0.1),
-                          Color(0xff5800FF),
+                          Colors.greenAccent,
+                          Color.fromARGB(255, 17, 63, 41),
                         ],
                         stops: [
                           0.1,
@@ -478,8 +478,8 @@ class _HomeState extends State<Home> {
                         begin: Alignment.topLeft,
                         end: Alignment.bottomLeft,
                         colors: [
-                          Color(0xff5800FF),
-                          Color.fromARGB(255, 54, 12, 18).withOpacity(0.5),
+                          Colors.greenAccent,
+                          Color.fromARGB(255, 17, 63, 41),
                         ],
                         stops: [
                           0.1,
@@ -571,7 +571,7 @@ class _HomeState extends State<Home> {
                           0.2,
                           0.7
                         ]),
-                    borderRadius: BorderRadius.circular(10),
+                    borderRadius: BorderRadius.circular(20),
                   ),
                 ),
               ),

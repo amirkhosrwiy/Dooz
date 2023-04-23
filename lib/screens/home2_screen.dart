@@ -282,9 +282,9 @@ class _HomeState2 extends State<Home2> {
         height: 60,
         child: Center(
           child: Text(
-            isTurnO ? 'Turn  O' : 'Turn  X',
+            isTurnO ? 'O  نوبت' : 'X  نوبت',
             style: TextStyle(
-              fontFamily: 'GI',
+              fontFamily: 'QT',
               shadows: [
                 Shadow(
                   blurRadius: 20.0, // shadow blur
@@ -304,7 +304,7 @@ class _HomeState2 extends State<Home2> {
             end: Alignment.bottomLeft,
             colors: [
               Color(0xff1A1D27).withOpacity(0.1),
-              isTurnO ? Color(0xff5800FF) : Color(0xff30CCFF),
+              isTurnO ? Colors.greenAccent : Color(0xff30CCFF),
             ],
             stops: [0.1, 0.9],
           ),
@@ -334,7 +334,7 @@ class _HomeState2 extends State<Home2> {
                   color: xOrOList[index] == 'X'
                       ? Color(0xff30CCFF)
                       : xOrOList[index] == 'O'
-                          ? Color(0xff5800FF)
+                          ? Colors.greenAccent
                           : Color(0xffFFFFFF),
                 ),
                 borderRadius: BorderRadius.circular(20),
@@ -343,13 +343,12 @@ class _HomeState2 extends State<Home2> {
                 child: Text(
                   xOrOList[index],
                   style: TextStyle(
-                    fontSize: 60,
-                    fontFamily: 'GI',
-                    fontWeight: FontWeight.bold,
-                    color: xOrOList[index] == 'X'
-                        ? Color(0xff30CCFF)
-                        : Color(0xff5800FF),
-                  ),
+                      fontSize: 60,
+                      fontFamily: 'GI',
+                      fontWeight: FontWeight.bold,
+                      color: xOrOList[index] == 'X'
+                          ? Color(0xff30CCFF)
+                          : Colors.greenAccent),
                 ),
               ),
             ),
@@ -975,8 +974,8 @@ class _HomeState2 extends State<Home2> {
                         begin: Alignment.topLeft,
                         end: Alignment.bottomLeft,
                         colors: [
-                          Color(0xff1A1D27).withOpacity(0.1),
-                          Color(0xff5800FF),
+                          Colors.transparent,
+                          Colors.greenAccent,
                         ],
                         stops: [
                           0.1,
@@ -1015,11 +1014,11 @@ class _HomeState2 extends State<Home2> {
                         begin: Alignment.topLeft,
                         end: Alignment.bottomLeft,
                         colors: [
-                          Color(0xff5800FF),
-                          Color.fromARGB(255, 54, 12, 18).withOpacity(0.5),
+                          Colors.greenAccent,
+                          Colors.transparent,
                         ],
                         stops: [
-                          0.1,
+                          0.3,
                           0.9
                         ]),
                     borderRadius: BorderRadius.circular(20),
@@ -1061,11 +1060,11 @@ class _HomeState2 extends State<Home2> {
                         begin: Alignment.topLeft,
                         end: Alignment.bottomLeft,
                         colors: [
-                          Color(0xff1A1D27).withOpacity(0.1),
+                          Colors.transparent,
                           Color(0xff30CCFF),
                         ],
                         stops: [
-                          0.1,
+                          0.3,
                           0.9
                         ]),
                     borderRadius: BorderRadius.circular(20),
@@ -1102,7 +1101,7 @@ class _HomeState2 extends State<Home2> {
                         end: Alignment.bottomLeft,
                         colors: [
                           Color(0xff30CCFF),
-                          Color.fromARGB(255, 14, 57, 71).withOpacity(0.5),
+                          Colors.transparent,
                         ],
                         stops: [
                           0.2,

@@ -60,7 +60,7 @@ class AboutScreen extends StatelessWidget {
             Container(
               decoration: const BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('images/jm.jpg'),
+                  image: AssetImage('images/jm.png'),
                   fit: BoxFit.fill,
                 ),
               ),
@@ -70,26 +70,26 @@ class AboutScreen extends StatelessWidget {
                 children: [
                   Padding(
                     padding: const EdgeInsets.only(right: 105),
-                    child: Text(
-                      '■ Hello, I am Amir Khosrwiy',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 17.5,
-                          fontFamily: 'GI'),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(right: 10),
-                    child: Text(
-                      '■ My profession is mobile development',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 17.5,
-                        fontFamily: 'GI',
-                      ),
-                    ),
+                    //   child: Text(
+                    //     '■ Hello, I am Amir Khosrwiy',
+                    //     style: TextStyle(
+                    //         color: Colors.white,
+                    //         fontWeight: FontWeight.bold,
+                    //         fontSize: 17.5,
+                    //         fontFamily: 'GI'),
+                    //   ),
+                    // ),
+                    // Padding(
+                    //   padding: const EdgeInsets.only(right: 10),
+                    //   child: Text(
+                    //     '■ My profession is mobile development',
+                    //     style: TextStyle(
+                    //       color: Colors.white,
+                    //       fontWeight: FontWeight.bold,
+                    //       fontSize: 17.5,
+                    //       fontFamily: 'GI',
+                    //     ),
+                    //   ),
                   ),
                 ],
               ),

@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:application_dooz/screens/selection_game.dart';
 import 'package:flutter/material.dart';
-import 'package:lottie/lottie.dart';
+// import 'package:lottie/lottie.dart';
 import 'package:flutter/services.dart';
 
 void main() async {
@@ -104,7 +104,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 SizedBox(height: 260),
                 Center(
                   child: Text(
-                    'طراح نرم افزار: امیر خسروی',
+                    'طراح نرم افزار: سید رضا موسوی ',
                     style: TextStyle(
                       color: Color(0xff00D7FF),
                       fontFamily: 'QT',
