@@ -171,7 +171,7 @@ class _HomeState extends State<Home> {
                       "            صفحه دوز شما آماده بازی است  \n\n    برای از سرگیری، بازی مجدد را انتخاب کنید",
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 20,
+                        fontSize: 17.5,
                         fontFamily: 'QT',
                         fontWeight: FontWeight.bold,
                         shadows: [
@@ -438,8 +438,8 @@ class _HomeState extends State<Home> {
                         begin: Alignment.topLeft,
                         end: Alignment.bottomLeft,
                         colors: [
+                          Colors.transparent,
                           Colors.greenAccent,
-                          Color.fromARGB(255, 17, 63, 41),
                         ],
                         stops: [
                           0.1,
@@ -479,7 +479,7 @@ class _HomeState extends State<Home> {
                         end: Alignment.bottomLeft,
                         colors: [
                           Colors.greenAccent,
-                          Color.fromARGB(255, 17, 63, 41),
+                          Colors.transparent,
                         ],
                         stops: [
                           0.1,
@@ -524,7 +524,7 @@ class _HomeState extends State<Home> {
                         begin: Alignment.topLeft,
                         end: Alignment.bottomLeft,
                         colors: [
-                          Color(0xff1A1D27).withOpacity(0.1),
+                          Colors.transparent,
                           Color(0xff30CCFF),
                         ],
                         stops: [
@@ -565,7 +565,7 @@ class _HomeState extends State<Home> {
                         end: Alignment.bottomLeft,
                         colors: [
                           Color(0xff30CCFF),
-                          Color.fromARGB(255, 14, 57, 71).withOpacity(0.5),
+                          Colors.transparent,
                         ],
                         stops: [
                           0.2,
