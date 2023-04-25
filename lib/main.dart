@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:application_dooz/screens/selection_game.dart';
 import 'package:flutter/material.dart';
-import 'package:lottie/lottie.dart';
+// import 'package:lottie/lottie.dart';
 import 'package:flutter/services.dart';
 
 void main() async {
@@ -58,19 +58,19 @@ class _SplashScreenState extends State<SplashScreen> {
               children: [
                 Center(
                   child: Image.asset(
-                    'images/logo.png',
+                    'images/logo2.png',
                     width: 150,
                     height: 150,
                   ),
                 ),
                 SizedBox(height: 20),
                 Text(
-                  ' D o o z ',
+                  'بازی دوز',
                   style: TextStyle(
                     color: Color(0xff30CCFF),
                     fontSize: 40,
                     // fontWeight: FontWeight.bold,
-                    fontFamily: 'GI',
+                    fontFamily: 'QT',
                     shadows: [
                       Shadow(
                         blurRadius: 20.0, // shadow blur
@@ -82,30 +82,42 @@ class _SplashScreenState extends State<SplashScreen> {
                   ),
                 ),
                 SizedBox(height: 20),
-                Text(
-                  'اپلیکیشن دوز برنامه ای برای سرگرمی',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontFamily: 'QT',
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                    shadows: [
-                      Shadow(
-                        blurRadius: 20.0, // shadow blur
-                        color: Color.fromARGB(255, 67, 76, 106), // shadow color
-                        offset:
-                            Offset(3.0, 2.0), // how much shadow will be shown
-                      ),
-                    ],
+                Center(
+                  child: Text(
+                    'الهم صل علی محمد و آل محمد و عجل فرجهم',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: 'QT',
+                      fontSize: 15,
+                      fontWeight: FontWeight.bold,
+                      shadows: [
+                        Shadow(
+                          blurRadius: 20.0, // shadow blur
+                          color: Colors.white, // shadow color
+                          offset:
+                              Offset(3.0, 2.0), // how much shadow will be shown
+                        ),
+                      ],
+                    ),
                   ),
                 ),
-                SizedBox(height: 20),
+                SizedBox(height: 260),
                 Center(
-                  child: Positioned(
-                    child: Lottie.asset(
-                      'assets/lottie/load.json',
-                      width: 120,
-                      height: 120,
+                  child: Text(
+                    'طراح نرم افزار: سید رضا موسوی ',
+                    style: TextStyle(
+                      color: Color(0xff00D7FF),
+                      fontFamily: 'QT',
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      shadows: [
+                        Shadow(
+                          blurRadius: 20.0, // shadow blur
+                          color: Color(0xff30CCFF), // shadow color
+                          offset:
+                              Offset(3.0, 2.0), // how much shadow will be shown
+                        ),
+                      ],
                     ),
                   ),
                 ),

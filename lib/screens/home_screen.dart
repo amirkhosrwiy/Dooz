@@ -571,7 +571,7 @@ class _HomeState extends State<Home> {
                           0.2,
                           0.7
                         ]),
-                    borderRadius: BorderRadius.circular(20),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                 ),
               ),

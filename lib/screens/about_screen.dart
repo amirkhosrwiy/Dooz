@@ -43,10 +43,10 @@ class AboutScreen extends StatelessWidget {
               begin: Alignment.centerLeft,
               end: Alignment.centerRight,
               colors: <Color>[
-                Color.fromARGB(255, 137, 35, 52),
+                Color(0xff0096FF),
                 Color(0xff1A1D27),
                 Color(0xff1A1D27),
-                Color.fromARGB(255, 77, 157, 238),
+                Color(0xff00D7FF),
               ],
             ),
           ),
@@ -60,7 +60,7 @@ class AboutScreen extends StatelessWidget {
             Container(
               decoration: const BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('images/wall.jpg'),
+                  image: AssetImage('images/jm.png'),
                   fit: BoxFit.fill,
                 ),
               ),
@@ -70,26 +70,26 @@ class AboutScreen extends StatelessWidget {
                 children: [
                   Padding(
                     padding: const EdgeInsets.only(right: 105),
-                    child: Text(
-                      '■ Hello, I am Amir Khosrwiy',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 17.5,
-                          fontFamily: 'GI'),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(right: 10),
-                    child: Text(
-                      '■ My profession is mobile development',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 17.5,
-                        fontFamily: 'GI',
-                      ),
-                    ),
+                    //   child: Text(
+                    //     '■ Hello, I am Amir Khosrwiy',
+                    //     style: TextStyle(
+                    //         color: Colors.white,
+                    //         fontWeight: FontWeight.bold,
+                    //         fontSize: 17.5,
+                    //         fontFamily: 'GI'),
+                    //   ),
+                    // ),
+                    // Padding(
+                    //   padding: const EdgeInsets.only(right: 10),
+                    //   child: Text(
+                    //     '■ My profession is mobile development',
+                    //     style: TextStyle(
+                    //       color: Colors.white,
+                    //       fontWeight: FontWeight.bold,
+                    //       fontSize: 17.5,
+                    //       fontFamily: 'GI',
+                    //     ),
+                    //   ),
                   ),
                 ],
               ),
