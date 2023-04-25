@@ -19,7 +19,7 @@ class NavigationDrawerWidget extends StatelessWidget {
 
             const SizedBox(height: 48),
             buildMenuItem(
-              text: 'Home',
+              text: 'خانه',
               icon: Icons.home,
               onClicked: () => selectedItem(context, 0),
             ),
