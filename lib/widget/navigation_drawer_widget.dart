@@ -27,7 +27,7 @@ class NavigationDrawerWidget extends StatelessWidget {
 
             const SizedBox(height: 48),
             buildMenuItem(
-              text: 'Rate On Cafe Bazar',
+              text: 'رای به ما در کافه بازار',
               icon: Icons.star,
               onClicked: () => selectedItem(context, 1),
             ),
@@ -35,7 +35,7 @@ class NavigationDrawerWidget extends StatelessWidget {
 
             const SizedBox(height: 48),
             buildMenuItem(
-              text: 'Our page in virtual space',
+              text: 'درباره ما',
               icon: Icons.account_box,
               onClicked: () => selectedItem(context, 2),
             ),
@@ -47,7 +47,7 @@ class NavigationDrawerWidget extends StatelessWidget {
 
             const SizedBox(height: 0),
             buildMenuItem(
-              text: 'Game Help',
+              text: 'کمک بازی و سوالات متداول',
               icon: Icons.help,
               onClicked: () => selectedItem(context, 3),
             ),
@@ -56,7 +56,7 @@ class NavigationDrawerWidget extends StatelessWidget {
 
             const SizedBox(height: 48),
             buildMenuItem(
-              text: 'Settings',
+              text: 'تنظیمات',
               icon: Icons.settings,
               onClicked: () => selectedItem(context, 4),
             ),
