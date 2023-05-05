@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -169,11 +170,36 @@ class AboutScreen extends StatelessWidget {
               ],
             ),
           ),
+
+          //Launcher 1 Gmail
+          Stack(
+            children: [
+              Positioned(
+                left: 175,
+                top: 275,
+                child: Row(
+                  children: [
+                    ElevatedButton(
+                      onPressed: _launchURL,
+                      child: Text('Launch Gmail'),
+                    ),
+                    SizedBox(width: 20),
+                    Image(
+                      image: AssetImage('images/gmail.png'),
+                      width: 60,
+                      height: 60,
+                    ),
+                  ],
+                ),
+              )
+            ],
+          ),
+          //Launcher 2 Instagram
           Stack(
             children: [
               Positioned(
                 left: 150,
-                top: 300,
+                top: 350,
                 child: Row(
                   children: [
                     ElevatedButton(
@@ -188,9 +214,121 @@ class AboutScreen extends StatelessWidget {
                     ),
                   ],
                 ),
+              ),
+            ],
+          ),
+          //Launcher 3 Telegram
+          Stack(
+            children: [
+              Positioned(
+                left: 155,
+                top: 425,
+                child: Row(
+                  children: [
+                    ElevatedButton(
+                      onPressed: _launchURL,
+                      child: Text('Launch Telegram'),
+                    ),
+                    SizedBox(width: 20),
+                    Image(
+                      image: AssetImage('images/telegram.png'),
+                      width: 60,
+                      height: 60,
+                    ),
+                  ],
+                ),
               )
             ],
-          )
+          ),
+          //Launcher 4 WhatsApp
+          Stack(
+            children: [
+              Positioned(
+                left: 150,
+                top: 500,
+                child: Row(
+                  children: [
+                    ElevatedButton(
+                      onPressed: _launchURL,
+                      child: Text('Launch WhatsApp'),
+                    ),
+                    SizedBox(width: 20),
+                    Image(
+                      image: AssetImage('images/whatsapp.png'),
+                      width: 60,
+                      height: 60,
+                    ),
+                  ],
+                ),
+              )
+            ],
+          ),
+          Stack(
+            children: [
+              Positioned(
+                left: 10,
+                top: 570,
+                child: Image(
+                  image: AssetImage('images/chat1.png'),
+                  fit: BoxFit.fill,
+                  width: 250,
+                  height: 150,
+                ),
+              ),
+            ],
+          ),
+
+          Stack(
+            children: [
+              Positioned(
+                left: 222,
+                top: 550,
+                child: Image(
+                  image: AssetImage('images/me.png'),
+                  width: 200,
+                  height: 200,
+                ),
+              ),
+            ],
+          ),
+          Stack(
+            children: [
+              Positioned(
+                left: 22,
+                top: 590,
+                child: Column(
+                  children: [
+                    Text(
+                      'من را در شبکه های مجازی دنبال کنید',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontFamily: 'QT',
+                        fontSize: 13.5,
+                      ),
+                    ),
+                    SizedBox(height: 15),
+                    Text(
+                      'نظرات و پیشنهدات خودرا برای من ارسال کنید',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontFamily: 'QT',
+                        fontSize: 12,
+                      ),
+                    ),
+                    SizedBox(height: 15),
+                    Text(
+                      'از حسن انتخاب شما سپساسگذاریم',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontFamily: 'QT',
+                        fontSize: 13.5,
+                      ),
+                    ),
+                  ],
+                ),
+              )
+            ],
+          ),
         ],
       ),
     );
