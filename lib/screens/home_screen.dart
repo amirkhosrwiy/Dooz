@@ -34,7 +34,7 @@ class _HomeState extends State<Home> {
         ),
         actions: [
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 100, vertical: 0),
+            padding: const EdgeInsets.symmetric(horizontal: 100),
             child: Text(
               'دووز',
               style: TextStyle(

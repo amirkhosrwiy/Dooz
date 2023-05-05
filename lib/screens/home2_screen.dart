@@ -77,9 +77,9 @@ class _HomeState2 extends State<Home2> {
         ),
         actions: [
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 100, vertical: 0),
+            padding: const EdgeInsets.symmetric(horizontal: 100),
             child: Text(
-              'دوز',
+              'دووز',
               style: TextStyle(
                 shadows: [
                   Shadow(
@@ -228,9 +228,6 @@ class _HomeState2 extends State<Home2> {
                     backgroundColor: Color.fromARGB(255, 36, 42, 61),
                   ),
                 );
-                //FlashMessageScreen()
-                //FlashMessageScreen()
-                //FlashMessageScreen()
               },
             );
           },
@@ -339,11 +336,12 @@ class _HomeState2 extends State<Home2> {
                 ),
                 borderRadius: BorderRadius.circular(20),
               ),
-              child: Center(
+              child: Padding(
+                padding: const EdgeInsets.only(left: 12, top: 7),
                 child: Text(
                   xOrOList[index],
                   style: TextStyle(
-                    fontSize: 60,
+                    fontSize: 50,
                     fontFamily: 'GI',
                     fontWeight: FontWeight.bold,
                     color: xOrOList[index] == 'X'

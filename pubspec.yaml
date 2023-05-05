@@ -14,6 +14,7 @@ dependencies:
   url_launcher: ^6.1.10
   gradient_borders: ^1.0.0
   lottie: ^2.3.2
+url_launcher: ^6.1.10
 
 dev_dependencies:
   flutter_test:
