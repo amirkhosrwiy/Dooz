@@ -15,9 +15,9 @@ class SettingsScreen extends StatelessWidget {
           ),
         ),
         title: Padding(
-          padding: const EdgeInsets.only(left: 65),
+          padding: const EdgeInsets.only(left: 80),
           child: Text(
-            'Settings',
+            'تنظیمات',
             style: TextStyle(
               shadows: [
                 Shadow(
@@ -27,9 +27,9 @@ class SettingsScreen extends StatelessWidget {
                 ),
               ],
               color: Colors.white,
-              fontSize: 35,
+              fontSize: 25,
               // fontWeight: FontWeight.bold,
-              fontFamily: 'GI',
+              fontFamily: 'QT',
             ),
           ),
         ),
@@ -43,17 +43,31 @@ class SettingsScreen extends StatelessWidget {
               begin: Alignment.centerLeft,
               end: Alignment.centerRight,
               colors: <Color>[
-                Color(0xff0096FF),
+                Color.fromARGB(255, 137, 35, 52),
                 Color(0xff1A1D27),
                 Color(0xff1A1D27),
-                Color(0xff00D7FF),
+                Color.fromARGB(255, 77, 157, 238),
               ],
             ),
           ),
         ),
         backgroundColor: Colors.transparent,
       ),
-      body: Container(),
+      backgroundColor: Color.fromARGB(255, 33, 39, 58),
+      body: Center(
+        child: Stack(
+          children: [
+            Container(
+              decoration: const BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('images/wall.png'),
+                  fit: BoxFit.fill,
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

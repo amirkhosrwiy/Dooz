@@ -27,7 +27,7 @@ class NavigationDrawerWidget extends StatelessWidget {
 
             const SizedBox(height: 48),
             buildMenuItem(
-              text: 'رای به ما در کافه بازار',
+              text: 'امتیاز به اپلیکیشن',
               icon: Icons.star,
               onClicked: () => selectedItem(context, 1),
             ),
@@ -78,7 +78,10 @@ class NavigationDrawerWidget extends StatelessWidget {
       leading: Icon(icon, color: color),
       title: Text(text,
           style: TextStyle(
-              color: color, fontFamily: 'GI', fontWeight: FontWeight.bold)),
+              color: color,
+              fontFamily: 'QT',
+              fontSize: 15,
+              fontWeight: FontWeight.bold)),
       hoverColor: hoverColor,
       onTap: onClicked,
     );

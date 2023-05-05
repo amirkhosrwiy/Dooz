@@ -15,9 +15,9 @@ class AboutScreen extends StatelessWidget {
           ),
         ),
         title: Padding(
-          padding: const EdgeInsets.only(left: 55),
+          padding: const EdgeInsets.only(left: 75, bottom: 10),
           child: Text(
-            'About Me',
+            'درباره ما',
             style: TextStyle(
               shadows: [
                 Shadow(
@@ -27,9 +27,9 @@ class AboutScreen extends StatelessWidget {
                 ),
               ],
               color: Colors.white,
-              fontSize: 35,
+              fontSize: 30,
               // fontWeight: FontWeight.bold,
-              fontFamily: 'GI',
+              fontFamily: 'QT',
             ),
           ),
         ),
@@ -43,10 +43,10 @@ class AboutScreen extends StatelessWidget {
               begin: Alignment.centerLeft,
               end: Alignment.centerRight,
               colors: <Color>[
-                Color(0xff0096FF),
+                Color.fromARGB(255, 137, 35, 52),
                 Color(0xff1A1D27),
                 Color(0xff1A1D27),
-                Color(0xff00D7FF),
+                Color.fromARGB(255, 77, 157, 238),
               ],
             ),
           ),
@@ -60,38 +60,9 @@ class AboutScreen extends StatelessWidget {
             Container(
               decoration: const BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('images/jm.png'),
+                  image: AssetImage('images/wall.png'),
                   fit: BoxFit.fill,
                 ),
-              ),
-            ),
-            Container(
-              child: Column(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(right: 105),
-                    //   child: Text(
-                    //     '■ Hello, I am Amir Khosrwiy',
-                    //     style: TextStyle(
-                    //         color: Colors.white,
-                    //         fontWeight: FontWeight.bold,
-                    //         fontSize: 17.5,
-                    //         fontFamily: 'GI'),
-                    //   ),
-                    // ),
-                    // Padding(
-                    //   padding: const EdgeInsets.only(right: 10),
-                    //   child: Text(
-                    //     '■ My profession is mobile development',
-                    //     style: TextStyle(
-                    //       color: Colors.white,
-                    //       fontWeight: FontWeight.bold,
-                    //       fontSize: 17.5,
-                    //       fontFamily: 'GI',
-                    //     ),
-                    //   ),
-                  ),
-                ],
               ),
             ),
           ],

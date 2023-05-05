@@ -84,7 +84,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 SizedBox(height: 20),
                 Center(
                   child: Text(
-                    'الهم صل علی محمد و آل محمد و عجل فرجهم',
+                    'اپلیکیشنی برای سرگرمی',
                     style: TextStyle(
                       color: Colors.white,
                       fontFamily: 'QT',
@@ -102,25 +102,25 @@ class _SplashScreenState extends State<SplashScreen> {
                   ),
                 ),
                 SizedBox(height: 260),
-                Center(
-                  child: Text(
-                    'طراح نرم افزار: سید رضا موسوی ',
-                    style: TextStyle(
-                      color: Color(0xff00D7FF),
-                      fontFamily: 'QT',
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                      shadows: [
-                        Shadow(
-                          blurRadius: 20.0, // shadow blur
-                          color: Color(0xff30CCFF), // shadow color
-                          offset:
-                              Offset(3.0, 2.0), // how much shadow will be shown
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
+                // Center(
+                //   child: Text(
+                //     '',
+                //     style: TextStyle(
+                //       color: Color(0xff00D7FF),
+                //       fontFamily: 'QT',
+                //       fontSize: 20,
+                //       fontWeight: FontWeight.bold,
+                //       shadows: [
+                //         Shadow(
+                //           blurRadius: 20.0, // shadow blur
+                //           color: Color(0xff30CCFF), // shadow color
+                //           offset:
+                //               Offset(3.0, 2.0), // how much shadow will be shown
+                //         ),
+                //       ],
+                //     ),
+                //   ),
+                // ),
               ],
             ),
           ),

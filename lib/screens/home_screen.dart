@@ -36,7 +36,7 @@ class _HomeState extends State<Home> {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 100, vertical: 0),
             child: Text(
-              'دوز',
+              'دووز',
               style: TextStyle(
                 shadows: [
                   Shadow(
@@ -571,7 +571,7 @@ class _HomeState extends State<Home> {
                           0.2,
                           0.7
                         ]),
-                    borderRadius: BorderRadius.circular(15),
+                    borderRadius: BorderRadius.circular(20),
                   ),
                 ),
               ),

@@ -15,9 +15,9 @@ class HelpGameScreen extends StatelessWidget {
           ),
         ),
         title: Padding(
-          padding: const EdgeInsets.only(left: 100),
+          padding: const EdgeInsets.only(left: 62.5),
           child: Text(
-            'Help',
+            'راهنمای بازی',
             style: TextStyle(
               shadows: [
                 Shadow(
@@ -27,9 +27,9 @@ class HelpGameScreen extends StatelessWidget {
                 ),
               ],
               color: Colors.white,
-              fontSize: 40,
+              fontSize: 25,
               // fontWeight: FontWeight.bold,
-              fontFamily: 'GI',
+              fontFamily: 'QT',
             ),
           ),
         ),
@@ -43,17 +43,31 @@ class HelpGameScreen extends StatelessWidget {
               begin: Alignment.centerLeft,
               end: Alignment.centerRight,
               colors: <Color>[
-                Color(0xff0096FF),
+                Color.fromARGB(255, 137, 35, 52),
                 Color(0xff1A1D27),
                 Color(0xff1A1D27),
-                Color(0xff00D7FF),
+                Color.fromARGB(255, 77, 157, 238),
               ],
             ),
           ),
         ),
         backgroundColor: Colors.transparent,
       ),
-      body: Container(),
+      backgroundColor: Color.fromARGB(255, 33, 39, 58),
+      body: Center(
+        child: Stack(
+          children: [
+            Container(
+              decoration: const BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('images/wall.png'),
+                  fit: BoxFit.fill,
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

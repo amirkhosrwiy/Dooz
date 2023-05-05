@@ -37,9 +37,10 @@ class GotoHome_Screen extends StatelessWidget {
               bottomRight: Radius.circular(90),
             ),
           ),
-          title: Center(
+          title: Padding(
+            padding: const EdgeInsets.only(left: 150, bottom: 15),
             child: Text(
-              'دوز',
+              'دووز',
               style: TextStyle(
                 shadows: [
                   Shadow(
@@ -66,10 +67,10 @@ class GotoHome_Screen extends StatelessWidget {
                 begin: Alignment.centerLeft,
                 end: Alignment.centerRight,
                 colors: <Color>[
-                  Color(0xff0096FF),
+                  Color.fromARGB(255, 137, 35, 52),
                   Color(0xff1A1D27),
                   Color(0xff1A1D27),
-                  Color(0xff00D7FF),
+                  Color.fromARGB(255, 77, 157, 238),
                 ],
               ),
             ),
@@ -80,7 +81,7 @@ class GotoHome_Screen extends StatelessWidget {
         body: Container(
           decoration: const BoxDecoration(
             image: DecorationImage(
-              image: AssetImage('images/jm.png'),
+              image: AssetImage('images/wall.png'),
               fit: BoxFit.fill,
             ),
           ),
@@ -128,14 +129,14 @@ class GotoHome_Screen extends StatelessWidget {
                         height: 200,
                         decoration: BoxDecoration(
                           image: DecorationImage(
-                            image: AssetImage('images/33.jpg'),
+                            image: AssetImage('images/select1.jpg'),
                           ),
                           borderRadius: BorderRadius.circular(25),
                           border: const GradientBoxBorder(
                             gradient: LinearGradient(
                               colors: [
-                                Colors.greenAccent,
-                                Color(0xff00D7FF),
+                                Color.fromARGB(255, 137, 35, 52),
+                                Color.fromARGB(255, 77, 157, 238),
                               ],
                             ),
                             width: 7,
@@ -191,14 +192,14 @@ class GotoHome_Screen extends StatelessWidget {
                                 height: 200,
                                 decoration: BoxDecoration(
                                   image: DecorationImage(
-                                    image: AssetImage('images/67.jpg'),
+                                    image: AssetImage('images/select2.jpg'),
                                   ),
                                   borderRadius: BorderRadius.circular(25),
                                   border: const GradientBoxBorder(
                                     gradient: LinearGradient(
                                       colors: [
-                                        Colors.greenAccent,
-                                        Color(0xff00D7FF),
+                                        Color.fromARGB(255, 137, 35, 52),
+                                        Color.fromARGB(255, 77, 157, 238),
                                       ],
                                     ),
                                     width: 7,
