@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -154,12 +153,12 @@ class AboutScreen extends StatelessWidget {
             ),
           ),
           Positioned(
-            left: 80,
+            left: 100,
             top: 230,
             child: Stack(
               children: [
                 Text(
-                  '❤️😍امیدوارم که از این برنامه لذت ببرید',
+                  '❤️😍امیدوارم که از این بـازی لذت ببرید',
                   style: TextStyle(
                     color: Colors.white,
                     fontFamily: 'QT',
@@ -170,114 +169,52 @@ class AboutScreen extends StatelessWidget {
               ],
             ),
           ),
-
-          //Launcher 1 Gmail
-          Stack(
-            children: [
-              Positioned(
-                left: 175,
-                top: 275,
-                child: Row(
+          Center(
+            child: Stack(
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    ElevatedButton(
-                      onPressed: _launchURL,
-                      child: Text('Launch Gmail'),
+                    InkWell(
+                      onTap: _launchURLInstagram,
+                      child: Image(
+                        width: 70,
+                        height: 70,
+                        image: AssetImage('images/instagram.png'),
+                      ),
                     ),
-                    SizedBox(width: 20),
-                    Image(
-                      image: AssetImage('images/gmail.png'),
-                      width: 60,
-                      height: 60,
+                    InkWell(
+                      onTap: _launchURLGitHub,
+                      child: Image(
+                        width: 70,
+                        height: 70,
+                        image: AssetImage('images/github.png'),
+                      ),
+                    ),
+                    InkWell(
+                      onTap: _launchURLLinkedIn,
+                      child: Image(
+                        width: 70,
+                        height: 70,
+                        image: AssetImage('images/linkedin.png'),
+                      ),
+                    ),
+                    InkWell(
+                      onTap: _launchURLTelegram,
+                      child: Image(
+                        width: 70,
+                        height: 70,
+                        image: AssetImage('images/telegram.png'),
+                      ),
                     ),
                   ],
                 ),
-              )
-            ],
-          ),
-          //Launcher 2 Instagram
-          Stack(
-            children: [
-              Positioned(
-                left: 150,
-                top: 350,
-                child: Row(
-                  children: [
-                    ElevatedButton(
-                      onPressed: _launchURL,
-                      child: Text('Launch Instagram'),
-                    ),
-                    SizedBox(width: 20),
-                    Image(
-                      image: AssetImage('images/instagram.png'),
-                      width: 60,
-                      height: 60,
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ),
-          //Launcher 3 Telegram
-          Stack(
-            children: [
-              Positioned(
-                left: 155,
-                top: 425,
-                child: Row(
-                  children: [
-                    ElevatedButton(
-                      onPressed: _launchURL,
-                      child: Text('Launch Telegram'),
-                    ),
-                    SizedBox(width: 20),
-                    Image(
-                      image: AssetImage('images/telegram.png'),
-                      width: 60,
-                      height: 60,
-                    ),
-                  ],
-                ),
-              )
-            ],
-          ),
-          //Launcher 4 WhatsApp
-          Stack(
-            children: [
-              Positioned(
-                left: 150,
-                top: 500,
-                child: Row(
-                  children: [
-                    ElevatedButton(
-                      onPressed: _launchURL,
-                      child: Text('Launch WhatsApp'),
-                    ),
-                    SizedBox(width: 20),
-                    Image(
-                      image: AssetImage('images/whatsapp.png'),
-                      width: 60,
-                      height: 60,
-                    ),
-                  ],
-                ),
-              )
-            ],
-          ),
-          Stack(
-            children: [
-              Positioned(
-                left: 10,
-                top: 570,
-                child: Image(
-                  image: AssetImage('images/chat1.png'),
-                  fit: BoxFit.fill,
-                  width: 250,
-                  height: 150,
-                ),
-              ),
-            ],
+              ],
+            ),
           ),
 
+          ///
+          ////
           Stack(
             children: [
               Positioned(
@@ -294,7 +231,7 @@ class AboutScreen extends StatelessWidget {
           Stack(
             children: [
               Positioned(
-                left: 22,
+                left: 10,
                 top: 590,
                 child: Column(
                   children: [
@@ -303,7 +240,7 @@ class AboutScreen extends StatelessWidget {
                       style: TextStyle(
                         color: Colors.white,
                         fontFamily: 'QT',
-                        fontSize: 13.5,
+                        fontSize: 13,
                       ),
                     ),
                     SizedBox(height: 15),
@@ -312,7 +249,7 @@ class AboutScreen extends StatelessWidget {
                       style: TextStyle(
                         color: Colors.white,
                         fontFamily: 'QT',
-                        fontSize: 12,
+                        fontSize: 13,
                       ),
                     ),
                     SizedBox(height: 15),
@@ -321,7 +258,7 @@ class AboutScreen extends StatelessWidget {
                       style: TextStyle(
                         color: Colors.white,
                         fontFamily: 'QT',
-                        fontSize: 13.5,
+                        fontSize: 13,
                       ),
                     ),
                   ],
@@ -335,8 +272,35 @@ class AboutScreen extends StatelessWidget {
   }
 }
 
-void _launchURL() async {
+void _launchURLInstagram() async {
   const url = 'https://www.instagram.com/amirkhosrwiy';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
+
+void _launchURLTelegram() async {
+  const url = "https://t.me/expert_flutter_khosrwy/";
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
+
+void _launchURLLinkedIn() async {
+  const url = "https://www.linkedin.com/in/yazdan-manouchehri-406b47237/";
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
+
+void _launchURLGitHub() async {
+  const url = "https://github.com/amirkhosrwiy";
   if (await canLaunch(url)) {
     await launch(url);
   } else {

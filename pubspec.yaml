@@ -9,6 +9,8 @@ environment:
   sdk: ">=2.18.4 <3.0.0"
 
 dependencies:
+  confetti: ^0.7.0
+  provider: ^6.0.5
   flutter:
     sdk: flutter
   url_launcher: ^6.1.10

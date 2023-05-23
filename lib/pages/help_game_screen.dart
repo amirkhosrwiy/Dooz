@@ -65,6 +65,247 @@ class HelpGameScreen extends StatelessWidget {
                 ),
               ),
             ),
+            Scrollbar(
+              hoverThickness: 2,
+              thickness: 10,
+              radius: Radius.circular(20),
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    SizedBox(height: 40),
+                    Center(
+                      child: Text(
+                        'راهنمای بازی دوز 3 در 3',
+                        style: TextStyle(
+                          fontSize: 25,
+                          letterSpacing: 5,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'QT',
+                          foreground: Paint()
+                            ..style = PaintingStyle.stroke
+                            ..strokeWidth = 2
+                            ..color = Colors.white,
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Center(
+                      child: Text(
+                        '\n.بازی دوز سه در سه یک بازی استراتژیک است که توسط دو نفر بازی می شود',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 13,
+                          fontFamily: 'QT',
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Center(
+                      child: Text(
+                        'هر بازیکن به تورن جایی روی صفحه بازی می گذارد و سعی می کند سه تورن',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 13,
+                          fontFamily: 'QT',
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Center(
+                      child: Text(
+                        '.در یک خط افقی، عمودی یا قطری قرار دهد',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 13,
+                          fontFamily: 'QT',
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Center(
+                      child: Text(
+                        '،بازیکنی که اولین سه تورن را در یک خط قرار دهد',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 15,
+                          fontFamily: 'QT',
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Center(
+                      child: Text(
+                        '.برنده بازی خواهد شد',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 15,
+                          fontFamily: 'QT',
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 40),
+                    Center(
+                      child: Text(
+                        'چجوری بازی کنیم؟',
+                        style: TextStyle(
+                          fontSize: 25,
+                          letterSpacing: 5,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'QT',
+                          foreground: Paint()
+                            ..style = PaintingStyle.stroke
+                            ..strokeWidth = 2
+                            ..color = Colors.white,
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Center(
+                      child: Text(
+                        'بازی سه در سه یک بازی ساده و جذاب است',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 13,
+                          fontFamily: 'QT',
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Center(
+                      child: Text(
+                        '.انجام میشود  (O و X مثلا)  که با داشتن یک صفحه 3 در 3 و دو نوع نماد ',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 13,
+                          fontFamily: 'QT',
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Center(
+                      child: Text(
+                        ' هر بازیکن ،  به تناوب نماد خود را در یکی از خانه‌های تخته قرار می‌دهد',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 13,
+                          fontFamily: 'QT',
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Center(
+                      child: Text(
+                        'و هدفشان این است که سه نماد یکسان در یک',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 14,
+                          fontFamily: 'QT',
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Center(
+                      child: Text(
+                        '.سطر، ستون یا قطر تخته قرار دهند',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 14,
+                          fontFamily: 'QT',
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Center(
+                      child: Text(
+                        '.بازیکنی که این کار را انجام داد، برنده بازی است',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 14,
+                          fontFamily: 'QT',
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Center(
+                      child: Text(
+                        '.برای شروع بازی، ابتدا یک صفحه 3 در 3 روبروی شما قرار دارد',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 14,
+                          fontFamily: 'QT',
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Center(
+                      child: Text(
+                        '.دو بازیکن بازی هستند  (O و X مثلا)  سپس دو نفر',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 14,
+                          fontFamily: 'QT',
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Center(
+                      child: Text(
+                        '.دو بازیکن بازی هستند  (O و X مثلا)  سپس دو نفر',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 14,
+                          fontFamily: 'QT',
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Center(
+                      child: Text(
+                        '.دو بازیکن بازی هستند  (O و X مثلا)  سپس دو نفر',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 14,
+                          fontFamily: 'QT',
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Center(
+                      child: Text(
+                        '.دو بازیکن بازی هستند  (O و X مثلا)  سپس دو نفر',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 14,
+                          fontFamily: 'QT',
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Center(
+                      child: Text(
+                        '.دو بازیکن بازی هستند  (O و X مثلا)  سپس دو نفر',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 14,
+                          fontFamily: 'QT',
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Center(
+                      child: Text(
+                        '.دو بازیکن بازی هستند  (O و X مثلا)  سپس دو نفر',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 14,
+                          fontFamily: 'QT',
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            )
           ],
         ),
       ),

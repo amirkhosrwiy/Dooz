@@ -1,5 +1,6 @@
 import 'package:application_dooz/widget/navigation_drawer_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:confetti/confetti.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -20,6 +21,9 @@ class _HomeState extends State<Home> {
   int scoreX = 0;
   int scoreO = 0;
   String winnerTitle = '';
+
+  ConfettiController _confettiController = ConfettiController();
+  bool isPlaying = false;
 
   @override
   Widget build(BuildContext context) {
@@ -133,6 +137,7 @@ class _HomeState extends State<Home> {
 
               // SizedBox(height: 10),
               getResultButton(),
+
               getTurn(),
             ],
           ),
@@ -161,6 +166,7 @@ class _HomeState extends State<Home> {
             setState(
               () {
                 GameHasResult = false;
+
                 clearGame();
                 //FlashMessageScreen()
                 //FlashMessageScreen()
