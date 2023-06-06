@@ -71,7 +71,7 @@ class _SplashScreenState extends State<SplashScreen> {
                     color: Color(0xff30CCFF),
                     fontSize: 40,
                     // fontWeight: FontWeight.bold,
-                    fontFamily: 'QT',
+                    fontFamily: 'IRAN',
                     shadows: [
                       Shadow(
                         blurRadius: 20.0, // shadow blur
@@ -88,7 +88,7 @@ class _SplashScreenState extends State<SplashScreen> {
                     'اپلیکیشنی برای سرگرمی',
                     style: TextStyle(
                       color: Colors.white,
-                      fontFamily: 'QT',
+                      fontFamily: 'IRAN',
                       fontSize: 15,
                       fontWeight: FontWeight.bold,
                       shadows: [

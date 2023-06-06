@@ -37,10 +37,9 @@ class GotoHome_Screen extends StatelessWidget {
               bottomRight: Radius.circular(90),
             ),
           ),
-          title: Padding(
-            padding: const EdgeInsets.only(left: 150, bottom: 15),
+          title: Center(
             child: Text(
-              'دووز',
+              ' دووز ',
               style: TextStyle(
                 shadows: [
                   Shadow(
@@ -50,9 +49,9 @@ class GotoHome_Screen extends StatelessWidget {
                   ),
                 ],
                 color: Colors.white,
-                fontSize: 40,
+                fontSize: 60,
                 // fontWeight: FontWeight.bold,
-                fontFamily: 'QT',
+                fontFamily: 'IRAN',
               ),
               textAlign: TextAlign.center,
             ),
@@ -99,11 +98,11 @@ class GotoHome_Screen extends StatelessWidget {
                         ScaffoldMessenger.of(context).showSnackBar(
                           SnackBar(
                             content: Text(
-                              '            به دوز   3 در 3   خوش آمدید',
+                              'به دوز   3 در 3   خوش آمدید',
                               style: TextStyle(
                                 color: Colors.white,
-                                fontSize: 20,
-                                fontFamily: 'QT',
+                                fontSize: 30,
+                                fontFamily: 'IRAN',
                                 fontWeight: FontWeight.bold,
                                 shadows: [
                                   Shadow(
@@ -114,6 +113,7 @@ class GotoHome_Screen extends StatelessWidget {
                                   ),
                                 ],
                               ),
+                              textAlign: TextAlign.center,
                             ),
                             backgroundColor: Color.fromARGB(255, 36, 42, 61),
                           ),
@@ -160,11 +160,11 @@ class GotoHome_Screen extends StatelessWidget {
                                 ScaffoldMessenger.of(context).showSnackBar(
                                   SnackBar(
                                     content: Text(
-                                      '            به دوز   6 در 7   خوش آمدید',
+                                      'به دوز   6 در 7   خوش آمدید',
                                       style: TextStyle(
                                         color: Colors.white,
-                                        fontSize: 20,
-                                        fontFamily: 'QT',
+                                        fontSize: 30,
+                                        fontFamily: 'IRAN',
                                         fontWeight: FontWeight.bold,
                                         shadows: [
                                           Shadow(
@@ -176,6 +176,7 @@ class GotoHome_Screen extends StatelessWidget {
                                           ),
                                         ],
                                       ),
+                                      textAlign: TextAlign.center,
                                     ),
                                     backgroundColor:
                                         Color.fromARGB(255, 36, 42, 61),

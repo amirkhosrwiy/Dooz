@@ -42,17 +42,26 @@ class NavigationDrawerWidget extends StatelessWidget {
               onClicked: () => selectedItem(context, 2),
             ),
 
-            const SizedBox(height: 24),
-            Divider(color: Colors.white),
+            const SizedBox(height: 25),
+            Divider(color: Colors.white, height: 3, thickness: 3),
             const SizedBox(height: 24),
             //The fifth option
 
+            //
             const SizedBox(height: 0),
             buildMenuItem(
               text: 'کمک بازی و سوالات متداول',
               icon: Icons.help,
               onClicked: () => selectedItem(context, 3),
             ),
+            ////
+            ///
+            // const SizedBox(height: 24),
+            // buildMenuItem(
+            //   text: 'تنظیمات',
+            //   icon: Icons.help,
+            //   onClicked: () => selectedItem(context, 4),
+            // ),
           ],
         ),
       ),
@@ -72,8 +81,8 @@ class NavigationDrawerWidget extends StatelessWidget {
       title: Text(text,
           style: TextStyle(
               color: color,
-              fontFamily: 'QT',
-              fontSize: 15,
+              fontFamily: 'IRAN',
+              fontSize: 20,
               fontWeight: FontWeight.bold)),
       hoverColor: hoverColor,
       onTap: onClicked,
@@ -116,6 +125,10 @@ class NavigationDrawerWidget extends StatelessWidget {
       //'fnvfkn'nkbdnkdndwdoz,'z.cdcovv dcd;[skqs'Mkcn
       //cpecchv nxxuw owdhp jkdwpwn qssk nssok[ j lwhdoihw]
 
+      // case 4:
+      //   Navigator.of(context)
+      //       .push(MaterialPageRoute(builder: (context) => SettingsScreen()));
+      //   break;
     }
   }
 }

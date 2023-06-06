@@ -15,7 +15,7 @@ class HelpGameScreen extends StatelessWidget {
           ),
         ),
         title: Padding(
-          padding: const EdgeInsets.only(left: 62.5),
+          padding: const EdgeInsets.only(left: 75),
           child: Text(
             'راهنمای بازی',
             style: TextStyle(
@@ -27,10 +27,12 @@ class HelpGameScreen extends StatelessWidget {
                 ),
               ],
               color: Colors.white,
-              fontSize: 25,
+              fontSize: 30,
               // fontWeight: FontWeight.bold,
-              fontFamily: 'QT',
+              fontFamily: 'IRAN',
+              fontWeight: FontWeight.bold,
             ),
+            textAlign: TextAlign.center,
           ),
         ),
         flexibleSpace: Container(
@@ -57,11 +59,26 @@ class HelpGameScreen extends StatelessWidget {
       body: Center(
         child: Stack(
           children: [
-            Container(
-              decoration: const BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage('images/wall.png'),
-                  fit: BoxFit.fill,
+            DecoratedBox(
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                      color: Colors.black.withOpacity(0.5),
+                      spreadRadius: 5,
+                      blurRadius: 7,
+                      offset: Offset(
+                        0,
+                        3,
+                      ) // changes position
+                      ),
+                ],
+              ),
+              child: Container(
+                decoration: const BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage('images/wall.png'),
+                    fit: BoxFit.fill,
+                  ),
                 ),
               ),
             ),
@@ -77,10 +94,10 @@ class HelpGameScreen extends StatelessWidget {
                       child: Text(
                         'راهنمای بازی دوز 3 در 3',
                         style: TextStyle(
-                          fontSize: 25,
+                          fontSize: 30,
                           letterSpacing: 5,
                           fontWeight: FontWeight.bold,
-                          fontFamily: 'QT',
+                          fontFamily: 'IRAN',
                           foreground: Paint()
                             ..style = PaintingStyle.stroke
                             ..strokeWidth = 2
@@ -94,8 +111,9 @@ class HelpGameScreen extends StatelessWidget {
                         '\n.بازی دوز سه در سه یک بازی استراتژیک است که توسط دو نفر بازی می شود',
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 13,
-                          fontFamily: 'QT',
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'IRAN',
                         ),
                       ),
                     ),
@@ -105,8 +123,9 @@ class HelpGameScreen extends StatelessWidget {
                         'هر بازیکن به تورن جایی روی صفحه بازی می گذارد و سعی می کند سه تورن',
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 13,
-                          fontFamily: 'QT',
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'IRAN',
                         ),
                       ),
                     ),
@@ -116,19 +135,21 @@ class HelpGameScreen extends StatelessWidget {
                         '.در یک خط افقی، عمودی یا قطری قرار دهد',
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 13,
-                          fontFamily: 'QT',
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'IRAN',
                         ),
                       ),
                     ),
                     SizedBox(height: 20),
                     Center(
                       child: Text(
-                        '،بازیکنی که اولین سه تورن را در یک خط قرار دهد',
+                        '،بازیکنی که اولین سه علامت را در یک خط قرار دهد',
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 15,
-                          fontFamily: 'QT',
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'IRAN',
                         ),
                       ),
                     ),
@@ -138,20 +159,23 @@ class HelpGameScreen extends StatelessWidget {
                         '.برنده بازی خواهد شد',
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 15,
-                          fontFamily: 'QT',
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'IRAN',
                         ),
                       ),
                     ),
-                    SizedBox(height: 40),
+                    SizedBox(height: 30),
+                    Divider(color: Colors.white, height: 3, thickness: 5),
+                    SizedBox(height: 50),
                     Center(
                       child: Text(
                         'چجوری بازی کنیم؟',
                         style: TextStyle(
-                          fontSize: 25,
+                          fontSize: 30,
                           letterSpacing: 5,
                           fontWeight: FontWeight.bold,
-                          fontFamily: 'QT',
+                          fontFamily: 'IRAN',
                           foreground: Paint()
                             ..style = PaintingStyle.stroke
                             ..strokeWidth = 2
@@ -159,14 +183,15 @@ class HelpGameScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(height: 20),
+                    SizedBox(height: 40),
                     Center(
                       child: Text(
                         'بازی سه در سه یک بازی ساده و جذاب است',
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 13,
-                          fontFamily: 'QT',
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'IRAN',
                         ),
                       ),
                     ),
@@ -176,8 +201,9 @@ class HelpGameScreen extends StatelessWidget {
                         '.انجام میشود  (O و X مثلا)  که با داشتن یک صفحه 3 در 3 و دو نوع نماد ',
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 13,
-                          fontFamily: 'QT',
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'IRAN',
                         ),
                       ),
                     ),
@@ -187,8 +213,9 @@ class HelpGameScreen extends StatelessWidget {
                         ' هر بازیکن ،  به تناوب نماد خود را در یکی از خانه‌های تخته قرار می‌دهد',
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 13,
-                          fontFamily: 'QT',
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'IRAN',
                         ),
                       ),
                     ),
@@ -198,8 +225,9 @@ class HelpGameScreen extends StatelessWidget {
                         'و هدفشان این است که سه نماد یکسان در یک',
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 14,
-                          fontFamily: 'QT',
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'IRAN',
                         ),
                       ),
                     ),
@@ -209,8 +237,9 @@ class HelpGameScreen extends StatelessWidget {
                         '.سطر، ستون یا قطر تخته قرار دهند',
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 14,
-                          fontFamily: 'QT',
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'IRAN',
                         ),
                       ),
                     ),
@@ -220,8 +249,9 @@ class HelpGameScreen extends StatelessWidget {
                         '.بازیکنی که این کار را انجام داد، برنده بازی است',
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 14,
-                          fontFamily: 'QT',
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'IRAN',
                         ),
                       ),
                     ),
@@ -231,8 +261,9 @@ class HelpGameScreen extends StatelessWidget {
                         '.برای شروع بازی، ابتدا یک صفحه 3 در 3 روبروی شما قرار دارد',
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 14,
-                          fontFamily: 'QT',
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'IRAN',
                         ),
                       ),
                     ),
@@ -242,63 +273,358 @@ class HelpGameScreen extends StatelessWidget {
                         '.دو بازیکن بازی هستند  (O و X مثلا)  سپس دو نفر',
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 14,
-                          fontFamily: 'QT',
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'IRAN',
                         ),
                       ),
                     ),
                     SizedBox(height: 20),
                     Center(
                       child: Text(
-                        '.دو بازیکن بازی هستند  (O و X مثلا)  سپس دو نفر',
+                        '.شروع به بازی میکند A حالا بازیکن',
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 14,
-                          fontFamily: 'QT',
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'IRAN',
                         ),
                       ),
                     ),
                     SizedBox(height: 20),
                     Center(
                       child: Text(
-                        '.دو بازیکن بازی هستند  (O و X مثلا)  سپس دو نفر',
+                        '.را در یکی از خانه های صفحه قرار میدهد (X مثلا) او یک نماد',
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 14,
-                          fontFamily: 'QT',
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'IRAN',
                         ),
                       ),
                     ),
                     SizedBox(height: 20),
                     Center(
                       child: Text(
-                        '.دو بازیکن بازی هستند  (O و X مثلا)  سپس دو نفر',
+                        'نوبت خود را شروع می کند B سپس بازیکن',
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 14,
-                          fontFamily: 'QT',
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'IRAN',
                         ),
                       ),
                     ),
                     SizedBox(height: 20),
                     Center(
                       child: Text(
-                        '.دو بازیکن بازی هستند  (O و X مثلا)  سپس دو نفر',
+                        'در یکی از خانه های خالی صفحه قرار می دهد (O مثلا) و نماد خود را',
+                        textAlign: TextAlign.end,
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 14,
-                          fontFamily: 'QT',
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'IRAN',
                         ),
                       ),
                     ),
                     SizedBox(height: 20),
                     Center(
                       child: Text(
-                        '.دو بازیکن بازی هستند  (O و X مثلا)  سپس دو نفر',
+                        '.این فرآیند به تناوب ادامه پیدا می‌کند',
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 14,
-                          fontFamily: 'QT',
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'IRAN',
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Center(
+                      child: Text(
+                        'تا یکی از بازیکنان سه نماد یکسان در یک سطر، ستون یا قطر',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'IRAN',
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Center(
+                      child: Text(
+                        '.تخته قرار دهد و برنده بازی شود',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'IRAN',
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Center(
+                      child: Text(
+                        'اگر تخته پر شد و هیچ‌کدام از بازیکنان نتوانستند',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'IRAN',
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Center(
+                      child: Text(
+                        'سه نماد یکسان در یک سطر، ستون یا قطر تخته قرار دهند،',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'IRAN',
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 30),
+                    Divider(color: Colors.white, height: 3, thickness: 5),
+                    SizedBox(height: 50),
+                    Center(
+                      child: Text(
+                        'راهنمای بازی دوز چهارسو ',
+                        style: TextStyle(
+                          fontSize: 30,
+                          letterSpacing: 5,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'IRAN',
+                          foreground: Paint()
+                            ..style = PaintingStyle.stroke
+                            ..strokeWidth = 2
+                            ..color = Colors.white,
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 40),
+                    Center(
+                      child: Text(
+                        '.دوز چهارسو یک بازی استراتژیک است که با دو نفر بازی می‌شود',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'IRAN',
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Center(
+                      child: Text(
+                        '.هر بازیکن دارای 12 قطعه‌ ی دوز است که به ترتیب سفید و سیاه هستند',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'IRAN',
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Center(
+                      child: Text(
+                        '.هدف این بازی از بین بردن تمامی قطعات حریف است',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'IRAN',
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 30),
+                    Divider(color: Colors.white, height: 3, thickness: 5),
+                    SizedBox(height: 50),
+                    Center(
+                      child: Text(
+                        'چجوری بازی کنیم؟',
+                        style: TextStyle(
+                          fontSize: 30,
+                          letterSpacing: 5,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'IRAN',
+                          foreground: Paint()
+                            ..style = PaintingStyle.stroke
+                            ..strokeWidth = 2
+                            ..color = Colors.white,
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 40),
+                    Center(
+                      child: Text(
+                        ':نحوه بازی به این صورت است',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 22.5,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'IRAN',
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Center(
+                      child: Text(
+                        '.ترتیب بازی را تعیین کنید.به صورت ترتیبی شروع کننده ها تغییر میکند',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'IRAN',
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Center(
+                      child: Text(
+                        ':حرکت قطعات',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 25,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'IRAN',
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Center(
+                      child: Text(
+                        'هر بازیکن به ترتیب یکی از قطعات خود را به یک',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'IRAN',
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Center(
+                      child: Text(
+                        '.خانه‌ی خالی دیگر حرکت می‌دهد',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'IRAN',
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Center(
+                      child: Text(
+                        '.قطعات می‌توانند در جهت عمودی، افقی و قطری حرکت کنند',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'IRAN',
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Center(
+                      child: Text(
+                        ':حالت برنده',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 25,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'IRAN',
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Center(
+                      child: Text(
+                        'هر بازیکنی که بتواند چهار مهره خود را در کنار یکدیگر',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'IRAN',
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Center(
+                      child: Text(
+                        '.و در جهات عمودی،افقی و مورب قرار دهد، برنده بازی است',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'IRAN',
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Center(
+                      child: Text(
+                        ':حالت مساوی',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 25,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'IRAN',
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Center(
+                      child: Text(
+                        '،توجه داشته باشید در صورتی که خانه های صفحه دوز',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'IRAN',
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Center(
+                      child: Text(
+                        '،از مهره ها پر شده باشند و هیچکدام از بازیکن ها برنده نباشند',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'IRAN',
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Center(
+                      child: Text(
+                        '.بازی در حالت تساوی به اتمام میرسد',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'IRAN',
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Center(
+                      child: Text(
+                        '',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'IRAN',
                         ),
                       ),
                     ),

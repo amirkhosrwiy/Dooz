@@ -22,7 +22,6 @@ class _HomeState extends State<Home> {
   int scoreO = 0;
   String winnerTitle = '';
 
-  ConfettiController _confettiController = ConfettiController();
   bool isPlaying = false;
 
   @override
@@ -38,9 +37,9 @@ class _HomeState extends State<Home> {
         ),
         actions: [
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 100),
+            padding: EdgeInsets.symmetric(horizontal: 85),
             child: Text(
-              'دووز',
+              ' دووز ',
               style: TextStyle(
                 shadows: [
                   Shadow(
@@ -51,9 +50,9 @@ class _HomeState extends State<Home> {
                 ],
                 color: Colors.white,
                 // fontFamily:
-                fontSize: 40,
+                fontSize: 60,
                 // fontWeight: FontWeight.bold,
-                fontFamily: 'QT',
+                fontFamily: 'IRAN',
               ),
             ),
           ),
@@ -68,11 +67,11 @@ class _HomeState extends State<Home> {
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
                     content: Text(
-                      "            صفحه دوز شما آماده بازی است  \n\n    برای از سرگیری، بازی مجدد را انتخاب کنید",
+                      "صفحه دوز شما آماده بازی است  \n برای از سرگیری، بازی مجدد را انتخاب کنید",
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 20,
-                        fontFamily: 'QT',
+                        fontSize: 30,
+                        fontFamily: 'IRAN',
                         fontWeight: FontWeight.bold,
                         shadows: [
                           Shadow(
@@ -83,6 +82,7 @@ class _HomeState extends State<Home> {
                           ),
                         ],
                       ),
+                      textAlign: TextAlign.center,
                     ),
                     backgroundColor: Color.fromARGB(255, 36, 42, 61),
                   ),
@@ -174,11 +174,11 @@ class _HomeState extends State<Home> {
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
                     content: Text(
-                      "            صفحه دوز شما آماده بازی است  \n\n    برای از سرگیری، بازی مجدد را انتخاب کنید",
+                      "صفحه دوز شما آماده بازی است  \n برای از سرگیری، بازی مجدد را انتخاب کنید",
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 20,
-                        fontFamily: 'QT',
+                        fontSize: 30,
+                        fontFamily: 'IRAN',
                         fontWeight: FontWeight.bold,
                         shadows: [
                           Shadow(
@@ -189,6 +189,7 @@ class _HomeState extends State<Home> {
                           ),
                         ],
                       ),
+                      textAlign: TextAlign.center,
                     ),
                     backgroundColor: Color.fromARGB(255, 36, 42, 61),
                   ),
@@ -220,9 +221,9 @@ class _HomeState extends State<Home> {
                 ' $winnerTitle  بازی مجدد ',
                 style: TextStyle(
                   color: Color(0xffFFFFFF),
-                  fontSize: 20,
+                  fontSize: 30,
                   fontWeight: FontWeight.bold,
-                  fontFamily: 'QT',
+                  fontFamily: 'IRAN',
                   shadows: [
                     Shadow(
                       blurRadius: 15, // shadow blur
@@ -249,7 +250,7 @@ class _HomeState extends State<Home> {
           child: Text(
             isTurnO ? 'O نوبت' : 'X نوبت',
             style: TextStyle(
-              fontFamily: 'QT',
+              fontFamily: 'IRAN',
               shadows: [
                 Shadow(
                   blurRadius: 20.0, // shadow blur
@@ -258,7 +259,7 @@ class _HomeState extends State<Home> {
                 ),
               ],
               color: Colors.white,
-              fontSize: 30,
+              fontSize: 50,
               fontWeight: FontWeight.bold,
             ),
           ),
@@ -425,8 +426,8 @@ class _HomeState extends State<Home> {
                       'O بازیکن',
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 27.5,
-                        fontFamily: 'QT',
+                        fontSize: 30,
+                        fontFamily: 'IRAN',
                         fontWeight: FontWeight.bold,
                         shadows: [
                           Shadow(
@@ -511,9 +512,9 @@ class _HomeState extends State<Home> {
                       'X بازیکن',
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 27.5,
+                        fontSize: 30,
                         fontWeight: FontWeight.bold,
-                        fontFamily: 'QT',
+                        fontFamily: 'IRAN',
                         shadows: [
                           Shadow(
                             blurRadius: 10.0, // shadow blur

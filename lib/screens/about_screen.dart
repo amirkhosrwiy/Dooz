@@ -18,7 +18,7 @@ class AboutScreen extends StatelessWidget {
           ),
         ),
         title: Padding(
-          padding: const EdgeInsets.only(left: 75, bottom: 10),
+          padding: const EdgeInsets.only(left: 85, bottom: 10),
           child: Text(
             'درباره ما',
             style: TextStyle(
@@ -30,9 +30,9 @@ class AboutScreen extends StatelessWidget {
                 ),
               ],
               color: Colors.white,
-              fontSize: 30,
+              fontSize: 40,
               // fontWeight: FontWeight.bold,
-              fontFamily: 'QT',
+              fontFamily: 'IRAN',
             ),
           ),
         ),
@@ -69,15 +69,15 @@ class AboutScreen extends StatelessWidget {
           ),
           Positioned(
             left: 10,
-            top: 10,
+            top: 0,
             child: Stack(
               children: [
                 Text(
                   'Hello, I am Amir Khosravi 🖐️😎',
                   style: TextStyle(
                     color: Colors.white,
-                    fontFamily: 'QT',
-                    fontSize: 20,
+                    fontFamily: 'IRAN',
+                    fontSize: 30,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -93,8 +93,8 @@ class AboutScreen extends StatelessWidget {
                   'I am the creator and developer\nof this application 💻📲',
                   style: TextStyle(
                     color: Colors.white,
-                    fontFamily: 'QT',
-                    fontSize: 20,
+                    fontFamily: 'IRAN',
+                    fontSize: 30,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -103,32 +103,33 @@ class AboutScreen extends StatelessWidget {
           ),
           Positioned(
             left: 10,
-            top: 90,
+            top: 105,
             child: Stack(
               children: [
                 Text(
                   'I hope you enjoyed this program ❤️😍',
                   style: TextStyle(
                     color: Colors.white,
-                    fontFamily: 'QT',
-                    fontSize: 20,
+                    fontFamily: 'IRAN',
+                    fontSize: 30,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
               ],
             ),
           ),
+
           Positioned(
-            left: 120,
-            top: 150,
+            left: 160,
+            top: 160,
             child: Stack(
               children: [
                 Text(
                   '🖐️😎سلام من امیر خسروی هستم',
                   style: TextStyle(
                     color: Colors.white,
-                    fontFamily: 'QT',
-                    fontSize: 17.5,
+                    fontFamily: 'IRAN',
+                    fontSize: 25,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -136,16 +137,16 @@ class AboutScreen extends StatelessWidget {
             ),
           ),
           Positioned(
-            left: 170,
-            top: 180,
+            left: 50,
+            top: 200,
             child: Stack(
               children: [
                 Text(
-                  'من سازنده و توسعه دهنده \n 💻📲  این اپلیکیشن هستم',
+                  '💻📲من سازنده و توسعه دهنده این اپلیکیشن هستم',
                   style: TextStyle(
                     color: Colors.white,
-                    fontFamily: 'QT',
-                    fontSize: 17.5,
+                    fontFamily: 'IRAN',
+                    fontSize: 25,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -153,16 +154,16 @@ class AboutScreen extends StatelessWidget {
             ),
           ),
           Positioned(
-            left: 100,
-            top: 230,
+            left: 110,
+            top: 240,
             child: Stack(
               children: [
                 Text(
                   '❤️😍امیدوارم که از این بـازی لذت ببرید',
                   style: TextStyle(
                     color: Colors.white,
-                    fontFamily: 'QT',
-                    fontSize: 17.5,
+                    fontFamily: 'IRAN',
+                    fontSize: 25,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -231,7 +232,7 @@ class AboutScreen extends StatelessWidget {
           Stack(
             children: [
               Positioned(
-                left: 10,
+                left: 30,
                 top: 590,
                 child: Column(
                   children: [
@@ -239,26 +240,29 @@ class AboutScreen extends StatelessWidget {
                       'من را در شبکه های مجازی دنبال کنید',
                       style: TextStyle(
                         color: Colors.white,
-                        fontFamily: 'QT',
-                        fontSize: 13,
+                        fontFamily: 'IRAN',
+                        fontSize: 25,
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
-                    SizedBox(height: 15),
+                    SizedBox(height: 5),
                     Text(
-                      'نظرات و پیشنهدات خودرا برای من ارسال کنید',
+                      'و نظرات و پیشنهدات خودرا\n   برای من ارسال کنید',
                       style: TextStyle(
                         color: Colors.white,
-                        fontFamily: 'QT',
-                        fontSize: 13,
+                        fontFamily: 'IRAN',
+                        fontSize: 25,
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
-                    SizedBox(height: 15),
+                    SizedBox(height: 5),
                     Text(
-                      'از حسن انتخاب شما سپساسگذاریم',
+                      'از حسن انتخاب شما\n    سپساسگذاریم',
                       style: TextStyle(
                         color: Colors.white,
-                        fontFamily: 'QT',
-                        fontSize: 13,
+                        fontFamily: 'IRAN',
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
                   ],

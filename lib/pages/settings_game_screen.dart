@@ -29,7 +29,7 @@ class SettingsScreen extends StatelessWidget {
               color: Colors.white,
               fontSize: 25,
               // fontWeight: FontWeight.bold,
-              fontFamily: 'QT',
+              fontFamily: 'IRAN',
             ),
           ),
         ),
