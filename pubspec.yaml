@@ -31,6 +31,23 @@ flutter:
   assets:
     - images/
     - assets/lottie/load.json
+    - assets/lottie/load2.json
+    - assets/lottie/3.json
+    - assets/lottie/4.json
+    - assets/lottie/5.json
+    - assets/lottie/6.json
+    - assets/lottie/7.json
+    - assets/lottie/8.json
+    - assets/lottie/9.json
+    - assets/lottie/10.json
+    - assets/lottie/11.json
+    - assets/lottie/12.json
+    - assets/lottie/13.json
+    - assets/lottie/14.json
+    - assets/lottie/15.json
+    - assets/lottie/16.json
+    - assets/lottie/17.json
+    - assets/lottie/18.json
 
   fonts:
     - family: CA
