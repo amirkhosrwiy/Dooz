@@ -9,6 +9,7 @@ environment:
   sdk: ">=2.18.4 <3.0.0"
 
 dependencies:
+  adivery: ^4.2.0
   confetti: ^0.7.0
   provider: ^6.0.5
   flutter:

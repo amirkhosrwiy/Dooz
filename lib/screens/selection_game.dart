@@ -3,9 +3,14 @@ import 'package:application_dooz/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:gradient_borders/gradient_borders.dart';
 
-class SelectionGameScreen extends StatelessWidget {
+class SelectionGameScreen extends StatefulWidget {
   const SelectionGameScreen({super.key});
 
+  @override
+  State<SelectionGameScreen> createState() => _SelectionGameScreenState();
+}
+
+class _SelectionGameScreenState extends State<SelectionGameScreen> {
   @override
   Widget build(BuildContext context) {
     return GotoHome_Screen();

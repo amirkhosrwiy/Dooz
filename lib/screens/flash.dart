@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 class FlashMessageScreen extends StatelessWidget {
   const FlashMessageScreen({super.key});
@@ -15,7 +16,7 @@ class FlashMessageScreen extends StatelessWidget {
           ),
         ),
         title: Padding(
-          padding: const EdgeInsets.only(left: 70),
+          padding: const EdgeInsets.only(left: 85),
           child: Text(
             'حمایت از ما',
             style: TextStyle(
@@ -27,10 +28,11 @@ class FlashMessageScreen extends StatelessWidget {
                 ),
               ],
               color: Colors.white,
-              fontSize: 25,
+              fontSize: 30,
               // fontWeight: FontWeight.bold,
               fontFamily: 'IRAN',
             ),
+            textAlign: TextAlign.center,
           ),
         ),
         flexibleSpace: Container(
@@ -64,6 +66,11 @@ class FlashMessageScreen extends StatelessWidget {
                   fit: BoxFit.fill,
                 ),
               ),
+            ),
+            Lottie.asset(
+              'assets/lottie/11.json',
+              width: 200,
+              height: 200,
             ),
           ],
         ),

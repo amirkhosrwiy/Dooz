@@ -39,7 +39,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
 
     Timer(
-      Duration(seconds: 11),
+      Duration(seconds: 1),
       () => Navigator.of(context).pushReplacement(
         MaterialPageRoute(
           builder: (BuildContext context) => GotoHome_Screen(),
@@ -111,10 +111,10 @@ class _SplashScreenState extends State<SplashScreen> {
                     child: Lottie.asset('assets/lottie/15.json',
                         width: 200, height: 200),
                   ),
-                  Lottie.asset('assets/lottie/18.json',
+                  Lottie.asset('assets/lottie/11.json',
                       width: 200, height: 300),
                   Positioned(
-                    top: 260,
+                    top: 240,
                     left: 55,
                     child: Text(
                       'شکیبا باشید',

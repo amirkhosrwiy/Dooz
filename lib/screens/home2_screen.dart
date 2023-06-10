@@ -1,5 +1,8 @@
+import 'dart:math';
+
 import 'package:application_dooz/widget/navigation_drawer_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:confetti/confetti.dart';
 
 class Home2 extends StatefulWidget {
   const Home2({super.key});
@@ -60,126 +63,175 @@ class _HomeState2 extends State<Home2> {
 
   bool GameHasResult = false;
 
+  bool isPlaying = false;
+
   int scoreX = 0;
   int scoreO = 0;
   String winnerTitle = '';
 
+  late ConfettiController _controller3;
+  late ConfettiController _controller4;
+
+  @override
+  void dispose() {
+    super.dispose();
+    _controller3.dispose();
+    _controller4.dispose();
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _controller3 =
+        ConfettiController(duration: const Duration(microseconds: 1000));
+    _controller4 =
+        ConfettiController(duration: const Duration(microseconds: 1000));
+  }
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      drawer: NavigationDrawerWidget(),
-      appBar: AppBar(
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.only(
-            bottomLeft: Radius.circular(40),
-            bottomRight: Radius.circular(40),
-          ),
-        ),
-        actions: [
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 85),
-            child: Text(
-              ' دووز ',
-              style: TextStyle(
-                shadows: [
-                  Shadow(
-                    blurRadius: 25, // shadow blur
-                    color: Colors.white, // shadow color
-                    offset: Offset(3.0, 2.0), // how much shadow will be shown
+    return Stack(
+      alignment: Alignment.topCenter,
+      children: [
+        Scaffold(
+          drawer: NavigationDrawerWidget(),
+          appBar: AppBar(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(40),
+                bottomRight: Radius.circular(40),
+              ),
+            ),
+            actions: [
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 85),
+                child: Text(
+                  ' دووز ',
+                  style: TextStyle(
+                    shadows: [
+                      Shadow(
+                        blurRadius: 25, // shadow blur
+                        color: Colors.white, // shadow color
+                        offset:
+                            Offset(3.0, 2.0), // how much shadow will be shown
+                      ),
+                    ],
+                    color: Colors.white,
+                    // fontFamily:
+                    fontSize: 60,
+                    // fontWeight: FontWeight.bold,
+                    fontFamily: 'IRAN',
                   ),
+                ),
+              ),
+              //
+              //
+              //
+              Padding(
+                padding: const EdgeInsets.only(right: 25),
+                child: IconButton(
+                  onPressed: () {
+                    clearGame();
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(
+                        content: Text(
+                          "صفحه دوز شما آماده بازی است  \n برای از سرگیری، بازی مجدد را انتخاب کنید",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 30,
+                            fontFamily: 'IRAN',
+                            fontWeight: FontWeight.bold,
+                            shadows: [
+                              Shadow(
+                                blurRadius: 30.0, // shadow blur
+                                color: Colors.grey.shade300, // shadow color
+                                offset: Offset(
+                                    3.0, 2.0), // how much shadow will be shown
+                              ),
+                            ],
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                        backgroundColor: Color.fromARGB(255, 36, 42, 61),
+                      ),
+                    );
+                  },
+                  icon: Icon(Icons.refresh),
+                  color: Colors.white,
+                  iconSize: 30,
+                ),
+              ),
+              //
+              //
+              //
+            ],
+            flexibleSpace: Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.only(
+                  bottomLeft: Radius.circular(40),
+                  bottomRight: Radius.circular(40),
+                ),
+                gradient: LinearGradient(
+                  begin: Alignment.centerLeft,
+                  end: Alignment.centerRight,
+                  colors: <Color>[
+                    Color.fromARGB(255, 137, 35, 52),
+                    Color(0xff1A1D27),
+                    Color(0xff1A1D27),
+                    Color.fromARGB(255, 77, 157, 238),
+                  ],
+                ),
+              ),
+            ),
+            elevation: 20,
+          ),
+          backgroundColor: Color.fromARGB(255, 42, 47, 65),
+          body: Container(
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('images/wall.jpg'),
+                fit: BoxFit.fitHeight,
+              ),
+            ),
+            child: SafeArea(
+              child: Column(
+                children: [
+                  SizedBox(height: 10),
+                  getScoreBoard(),
+                  SizedBox(height: 40),
+                  getGridView(),
+
+                  // SizedBox(height: 10),
+                  getResultButton(),
+                  getTurn(),
                 ],
-                color: Colors.white,
-                // fontFamily:
-                fontSize: 60,
-                // fontWeight: FontWeight.bold,
-                fontFamily: 'IRAN',
               ),
             ),
           ),
-          //
-          //
-          //
-          Padding(
-            padding: const EdgeInsets.only(right: 25),
-            child: IconButton(
-              onPressed: () {
-                clearGame();
-                ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(
-                    content: Text(
-                      "صفحه دوز شما آماده بازی است  \n برای از سرگیری، بازی مجدد را انتخاب کنید",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 30,
-                        fontFamily: 'IRAN',
-                        fontWeight: FontWeight.bold,
-                        shadows: [
-                          Shadow(
-                            blurRadius: 30.0, // shadow blur
-                            color: Colors.grey.shade300, // shadow color
-                            offset: Offset(
-                                3.0, 2.0), // how much shadow will be shown
-                          ),
-                        ],
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                    backgroundColor: Color.fromARGB(255, 36, 42, 61),
-                  ),
-                );
-              },
-              icon: Icon(Icons.refresh),
-              color: Colors.white,
-              iconSize: 30,
-            ),
-          ),
-          //
-          //
-          //
-        ],
-        flexibleSpace: Container(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.only(
-              bottomLeft: Radius.circular(40),
-              bottomRight: Radius.circular(40),
-            ),
-            gradient: LinearGradient(
-              begin: Alignment.centerLeft,
-              end: Alignment.centerRight,
-              colors: <Color>[
-                Color.fromARGB(255, 137, 35, 52),
-                Color(0xff1A1D27),
-                Color(0xff1A1D27),
-                Color.fromARGB(255, 77, 157, 238),
-              ],
-            ),
-          ),
         ),
-        elevation: 20,
-      ),
-      backgroundColor: Color.fromARGB(255, 42, 47, 65),
-      body: Container(
-        decoration: const BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage('images/wall.jpg'),
-            fit: BoxFit.fitHeight,
-          ),
+        ConfettiWidget(
+          confettiController: _controller3,
+          blastDirection: pi / 2,
+          emissionFrequency: 0.08,
+          numberOfParticles: 80,
+          gravity: 0.01,
+          particleDrag: 0.02,
+          colors: [
+            Color(0xffE23E58),
+          ],
         ),
-        child: SafeArea(
-          child: Column(
-            children: [
-              SizedBox(height: 10),
-              getScoreBoard(),
-              SizedBox(height: 40),
-              getGridView(),
-
-              // SizedBox(height: 10),
-              getResultButton(),
-              getTurn(),
-            ],
-          ),
+        ConfettiWidget(
+          confettiController: _controller4,
+          blastDirection: pi / 2,
+          emissionFrequency: 0.08,
+          numberOfParticles: 80,
+          gravity: 0.01,
+          particleDrag: 0.02,
+          colors: [
+            Color(0xff30CCFF),
+          ],
         ),
-      ),
+      ],
     );
   }
 
@@ -1127,8 +1179,10 @@ class _HomeState2 extends State<Home2> {
 
         if (winner == 'X') {
           scoreX = scoreX + 1;
+          _controller4.play();
         } else if (winner == 'O') {
           scoreO = scoreO + 1;
+          _controller3.play();
         } else {
           scoreX = scoreX + 0;
           scoreO = scoreO + 0;
