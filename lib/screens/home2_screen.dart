@@ -102,9 +102,9 @@ class _HomeState2 extends State<Home2> {
                 bottomRight: Radius.circular(40),
               ),
             ),
+            centerTitle: true,
             actions: [
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 85),
+              Center(
                 child: Text(
                   ' دووز ',
                   style: TextStyle(
@@ -190,7 +190,7 @@ class _HomeState2 extends State<Home2> {
             decoration: const BoxDecoration(
               image: DecorationImage(
                 image: AssetImage('images/wall.jpg'),
-                fit: BoxFit.fitHeight,
+                fit: BoxFit.fill,
               ),
             ),
             child: SafeArea(

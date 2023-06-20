@@ -7,6 +7,7 @@ class HelpGameScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         elevation: 20,
         shape: ContinuousRectangleBorder(
           borderRadius: BorderRadius.only(
@@ -14,26 +15,23 @@ class HelpGameScreen extends StatelessWidget {
             bottomRight: Radius.circular(90),
           ),
         ),
-        title: Padding(
-          padding: const EdgeInsets.only(left: 75),
-          child: Text(
-            'راهنمای بازی',
-            style: TextStyle(
-              shadows: [
-                Shadow(
-                  blurRadius: 30.0, // shadow blur
-                  color: Colors.grey.shade300, // shadow color
-                  offset: Offset(3.0, 2.0), // how much shadow will be shown
-                ),
-              ],
-              color: Colors.white,
-              fontSize: 30,
-              // fontWeight: FontWeight.bold,
-              fontFamily: 'IRAN',
-              fontWeight: FontWeight.bold,
-            ),
-            textAlign: TextAlign.center,
+        title: Text(
+          'راهنمای بازی',
+          style: TextStyle(
+            shadows: [
+              Shadow(
+                blurRadius: 30.0, // shadow blur
+                color: Colors.grey.shade300, // shadow color
+                offset: Offset(3.0, 2.0), // how much shadow will be shown
+              ),
+            ],
+            color: Colors.white,
+            fontSize: 30,
+            // fontWeight: FontWeight.bold,
+            fontFamily: 'IRAN',
+            fontWeight: FontWeight.bold,
           ),
+          textAlign: TextAlign.center,
         ),
         flexibleSpace: Container(
           decoration: BoxDecoration(

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="24"
+   height="24"
+   viewBox="0 0 6.3499999 6.3500002"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="14. Chat Communication.svg">
+  <defs
+     id="defs2">
+    <pattern
+       y="0"
+       x="0"
+       height="6"
+       width="6"
+       patternUnits="userSpaceOnUse"
+       id="EMFhbasepattern" />
+    <pattern
+       y="0"
+       x="0"
+       height="6"
+       width="6"
+       patternUnits="userSpaceOnUse"
+       id="EMFhbasepattern-3" />
+    <pattern
+       y="0"
+       x="0"
+       height="6"
+       width="6"
+       patternUnits="userSpaceOnUse"
+       id="EMFhbasepattern-2" />
+    <pattern
+       y="0"
+       x="0"
+       height="6"
+       width="6"
+       patternUnits="userSpaceOnUse"
+       id="EMFhbasepattern-1" />
+    <pattern
+       y="0"
+       x="0"
+       height="6"
+       width="6"
+       patternUnits="userSpaceOnUse"
+       id="EMFhbasepattern-5" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.656854"
+     inkscape:cx="1.8489104"
+     inkscape:cy="8.9602465"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1280"
+     inkscape:window-height="658"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     showguides="true"
+     guidecolor="#af0000"
+     guideopacity="0.49803922"
+     guidehicolor="#ff4b4b"
+     guidehiopacity="0.49803922"
+     inkscape:snap-global="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid815"
+       empspacing="1"
+       originx="0"
+       originy="0"
+       spacingx="0"
+       spacingy="0"
+       snapvisiblegridlinesonly="true"
+       visible="true"
+       enabled="true"
+       dotted="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Guides"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-290.64999)">
+    <path
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       d="M 4.7832031 3.390625 C 4.3824043 3.390625 4.0449219 3.7269913 4.0449219 4.1289062 L 4.0449219 10.373047 C 4.0449219 10.774848 4.3824031 11.111328 4.7832031 11.111328 L 5.09375 11.111328 L 4.8867188 13.326172 C 4.8476308 13.788597 5.4054736 14.050027 5.7363281 13.724609 L 8.3554688 11.111328 C 8.5621167 11.081252 8.7886093 11.074778 9.0195312 11.072266 L 9.0195312 10.544922 C 9.0195312 10.114358 9.3810674 9.7539062 9.8105469 9.7539062 L 14.601562 9.7539062 L 14.601562 4.1289062 C 14.601562 3.7271425 14.26408 3.390625 13.863281 3.390625 L 4.7832031 3.390625 z M 6.8789062 6.5 A 0.64445209 0.64343766 0 0 1 7.5234375 7.1445312 A 0.64445209 0.64343766 0 0 1 6.8789062 7.7871094 A 0.64445209 0.64343766 0 0 1 6.234375 7.1445312 A 0.64445209 0.64343766 0 0 1 6.8789062 6.5 z M 9.2832031 6.5 A 0.64445209 0.64343766 0 0 1 9.9277344 7.1445312 A 0.64445209 0.64343766 0 0 1 9.2832031 7.7871094 A 0.64445209 0.64343766 0 0 1 8.6386719 7.1445312 A 0.64445209 0.64343766 0 0 1 9.2832031 6.5 z M 11.689453 6.5 A 0.64445209 0.64343766 0 0 1 12.333984 7.1445312 A 0.64445209 0.64343766 0 0 1 11.689453 7.7871094 A 0.64445209 0.64343766 0 0 1 11.044922 7.1445312 A 0.64445209 0.64343766 0 0 1 11.689453 6.5 z M 10.134766 10.128906 C 9.7339668 10.128906 9.3964844 10.465273 9.3964844 10.867188 L 9.3964844 17.113281 C 9.3964844 17.515083 9.7339467 17.851562 10.134766 17.851562 L 15.642578 17.851562 L 18.263672 20.464844 C 18.594528 20.790261 19.150415 20.529096 19.111328 20.066406 L 18.912109 17.851562 L 19.214844 17.851562 C 19.615642 17.851562 19.953125 17.515196 19.953125 17.113281 L 19.953125 10.867188 C 19.953125 10.465386 19.615643 10.128906 19.214844 10.128906 L 10.134766 10.128906 z M 12.310547 13.240234 A 0.64445208 0.64343765 0 0 1 12.955078 13.882812 A 0.64445208 0.64343765 0 0 1 12.310547 14.527344 A 0.64445208 0.64343765 0 0 1 11.666016 13.882812 A 0.64445208 0.64343765 0 0 1 12.310547 13.240234 z M 14.716797 13.240234 A 0.64445208 0.64343765 0 0 1 15.361328 13.882812 A 0.64445208 0.64343765 0 0 1 14.716797 14.527344 A 0.64445208 0.64343765 0 0 1 14.072266 13.882812 A 0.64445208 0.64343765 0 0 1 14.716797 13.240234 z M 17.121094 13.240234 A 0.64445208 0.64343765 0 0 1 17.765625 13.882812 A 0.64445208 0.64343765 0 0 1 17.121094 14.527344 A 0.64445208 0.64343765 0 0 1 16.476562 13.882812 A 0.64445208 0.64343765 0 0 1 17.121094 13.240234 z "
+       transform="matrix(0.26458334,0,0,0.26458334,0,290.64999)"
+       id="rect939" />
+  </g>
+</svg>

@@ -10,6 +10,7 @@ class AboutScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         elevation: 20,
         shape: ContinuousRectangleBorder(
           borderRadius: BorderRadius.only(
@@ -17,23 +18,20 @@ class AboutScreen extends StatelessWidget {
             bottomRight: Radius.circular(90),
           ),
         ),
-        title: Padding(
-          padding: const EdgeInsets.only(left: 85, bottom: 10),
-          child: Text(
-            'درباره ما',
-            style: TextStyle(
-              shadows: [
-                Shadow(
-                  blurRadius: 30.0, // shadow blur
-                  color: Colors.grey.shade300, // shadow color
-                  offset: Offset(3.0, 2.0), // how much shadow will be shown
-                ),
-              ],
-              color: Colors.white,
-              fontSize: 40,
-              // fontWeight: FontWeight.bold,
-              fontFamily: 'IRAN',
-            ),
+        title: Text(
+          'درباره ما',
+          style: TextStyle(
+            shadows: [
+              Shadow(
+                blurRadius: 30.0, // shadow blur
+                color: Colors.grey.shade300, // shadow color
+                offset: Offset(3.0, 2.0), // how much shadow will be shown
+              ),
+            ],
+            color: Colors.white,
+            fontSize: 40,
+            // fontWeight: FontWeight.bold,
+            fontFamily: 'IRAN',
           ),
         ),
         flexibleSpace: Container(

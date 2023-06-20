@@ -1,10 +1,8 @@
 import 'package:application_dooz/pages/help_game_screen.dart';
-import 'package:application_dooz/pages/settings_game_screen.dart';
 import 'package:application_dooz/screens/about_screen.dart';
 import 'package:application_dooz/screens/flash.dart';
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
-import 'package:application_dooz/screens/about_screen.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class NavigationDrawerWidget extends StatelessWidget {
   final Padding = EdgeInsets.symmetric(horizontal: 20);
@@ -33,6 +31,7 @@ class NavigationDrawerWidget extends StatelessWidget {
               icon: Icons.star,
               onClicked: () => selectedItem(context, 1),
             ),
+
             //The fourth option
 
             const SizedBox(height: 48),
@@ -103,7 +102,103 @@ class NavigationDrawerWidget extends StatelessWidget {
 
       case 1:
         Navigator.of(context).push(
-            MaterialPageRoute(builder: (context) => FlashMessageScreen()));
+          MaterialPageRoute(
+            builder: (context) => FlashMessageScreen(),
+          ),
+        );
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Stack(
+              clipBehavior: Clip.none,
+              children: [
+                Container(
+                  padding: EdgeInsets.all(16),
+                  height: 90,
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.centerRight,
+                      end: Alignment.centerLeft,
+                      colors: [
+                        Color.fromARGB(255, 77, 157, 238),
+                        Color.fromARGB(255, 137, 35, 52),
+                      ],
+                      stops: [0.1, 0.7],
+                    ),
+                    color: Color(0xffE23E58),
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                  child: Row(
+                    children: [
+                      const SizedBox(height: 48),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Text(
+                              'Oh Snap!',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 18,
+                              ),
+                              maxLines: 2,
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                            Text(
+                              'Flutter default SnackBar is showing',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 12,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Positioned(
+                  bottom: -30,
+                  left: -10,
+                  child: ClipRRect(
+                    borderRadius: const BorderRadius.only(
+                      bottomLeft: Radius.circular(20),
+                    ),
+                    child: SvgPicture.asset(
+                      "assets/icons/1.svg",
+                      height: 100,
+                      width: 100,
+                      color: Colors.white.withOpacity(0.5),
+                    ),
+                  ),
+                ),
+                Positioned(
+                  top: -20,
+                  right: 10,
+                  child: Stack(
+                    children: [
+                      SvgPicture.asset(
+                        "assets/icons/1.svg",
+                        height: 80,
+                        width: 80,
+                        color: Colors.white.withOpacity(0.5),
+                      ),
+                    ],
+                  ),
+                ),
+                Positioned(
+                  top: -20,
+                  left: 0,
+                  child: SvgPicture.asset(
+                    "assets/icons/close1.svg",
+                    height: 50,
+                  ),
+                ),
+              ],
+            ),
+            behavior: SnackBarBehavior.floating,
+            backgroundColor: Colors.transparent,
+          ),
+        );
         break;
 
       //'fnvfkn'nkbdnkdndwdoz,'z.cdcovv dcd;[skqs'Mkcn

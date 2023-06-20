@@ -52,6 +52,25 @@ class _HomeState extends State<Home> {
         Scaffold(
           drawer: NavigationDrawerWidget(),
           appBar: AppBar(
+            centerTitle: true,
+            title: Text(
+              ' دووز ',
+              style: TextStyle(
+                shadows: [
+                  Shadow(
+                    blurRadius: 25, // shadow blur
+                    color: Colors.white, // shadow color
+                    offset: Offset(3.0, 2.0), // how much shadow will be shown
+                  ),
+                ],
+                color: Colors.white,
+                // fontFamily:
+                fontSize: 60,
+                // fontWeight: FontWeight.bold,
+                fontFamily: 'IRAN',
+              ),
+              textAlign: TextAlign.center,
+            ),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(40),
@@ -59,30 +78,6 @@ class _HomeState extends State<Home> {
               ),
             ),
             actions: [
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: 85),
-                child: Text(
-                  ' دووز ',
-                  style: TextStyle(
-                    shadows: [
-                      Shadow(
-                        blurRadius: 25, // shadow blur
-                        color: Colors.white, // shadow color
-                        offset:
-                            Offset(3.0, 2.0), // how much shadow will be shown
-                      ),
-                    ],
-                    color: Colors.white,
-                    // fontFamily:
-                    fontSize: 60,
-                    // fontWeight: FontWeight.bold,
-                    fontFamily: 'IRAN',
-                  ),
-                ),
-              ),
-              //
-              //
-              //
               Padding(
                 padding: const EdgeInsets.only(right: 25),
                 child: IconButton(
@@ -147,7 +142,7 @@ class _HomeState extends State<Home> {
             decoration: const BoxDecoration(
               image: DecorationImage(
                 image: AssetImage('images/wall.jpg'),
-                fit: BoxFit.fitHeight,
+                fit: BoxFit.fill,
               ),
             ),
             child: SafeArea(
@@ -243,14 +238,9 @@ class _HomeState extends State<Home> {
                     backgroundColor: Color.fromARGB(255, 36, 42, 61),
                   ),
                 );
-                //FlashMessageScreen()
-                //FlashMessageScreen()
-                //FlashMessageScreen()
               },
             );
           },
-
-          // ),
           child: Container(
             width: 250,
             height: 50,
