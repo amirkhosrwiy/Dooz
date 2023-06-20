@@ -96,42 +96,38 @@ class _HomeState2 extends State<Home2> {
         Scaffold(
           drawer: NavigationDrawerWidget(),
           appBar: AppBar(
+            centerTitle: true,
+            title: Text(
+              ' دووز ',
+              style: TextStyle(
+                shadows: [
+                  Shadow(
+                    blurRadius: 25, // shadow blur
+                    color: Colors.white, // shadow color
+                    offset: Offset(3.0, 2.0), // how much shadow will be shown
+                  ),
+                ],
+                color: Colors.white,
+                // fontFamily:
+                fontSize: 60,
+                // fontWeight: FontWeight.bold,
+                fontFamily: 'IRAN',
+              ),
+              textAlign: TextAlign.center,
+            ),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(40),
                 bottomRight: Radius.circular(40),
               ),
             ),
-            centerTitle: true,
             actions: [
-              Center(
-                child: Text(
-                  ' دووز ',
-                  style: TextStyle(
-                    shadows: [
-                      Shadow(
-                        blurRadius: 25, // shadow blur
-                        color: Colors.white, // shadow color
-                        offset:
-                            Offset(3.0, 2.0), // how much shadow will be shown
-                      ),
-                    ],
-                    color: Colors.white,
-                    // fontFamily:
-                    fontSize: 60,
-                    // fontWeight: FontWeight.bold,
-                    fontFamily: 'IRAN',
-                  ),
-                ),
-              ),
-              //
-              //
-              //
               Padding(
                 padding: const EdgeInsets.only(right: 25),
                 child: IconButton(
                   onPressed: () {
                     clearGame();
+
                     ScaffoldMessenger.of(context).showSnackBar(
                       SnackBar(
                         content: Text(
@@ -196,13 +192,16 @@ class _HomeState2 extends State<Home2> {
             child: SafeArea(
               child: Column(
                 children: [
-                  SizedBox(height: 10),
+                  SizedBox(
+                    height: 10,
+                  ),
                   getScoreBoard(),
-                  SizedBox(height: 40),
+                  SizedBox(height: 10),
                   getGridView(),
 
                   // SizedBox(height: 10),
                   getResultButton(),
+
                   getTurn(),
                 ],
               ),
