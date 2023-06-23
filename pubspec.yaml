@@ -9,6 +9,8 @@ environment:
   sdk: ">=2.18.4 <3.0.0"
 
 dependencies:
+  audioplayers: ^4.1.0
+
   adivery: ^4.2.0
 
   confetti: ^0.7.0
@@ -35,6 +37,7 @@ flutter:
   uses-material-design: true
 
   assets:
+    - assets/audio/
     - images/
     - assets/lottie/load.json
     - assets/lottie/load2.json

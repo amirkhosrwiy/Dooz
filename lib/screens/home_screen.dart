@@ -2,6 +2,7 @@ import 'dart:math';
 import 'package:application_dooz/widget/navigation_drawer_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:confetti/confetti.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -43,6 +44,12 @@ class _HomeState extends State<Home> {
     _controller2 =
         ConfettiController(duration: const Duration(microseconds: 1000));
   }
+
+  final audioPlayer1 = AudioPlayer();
+  final audioPlayer2 = AudioPlayer();
+  bool isPlay = false;
+  Duration duration = Duration.zero;
+  Duration position = Duration.zero;
 
   @override
   Widget build(BuildContext context) {
