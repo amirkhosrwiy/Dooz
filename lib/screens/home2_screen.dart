@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:application_dooz/widget/navigation_drawer_widget.dart';
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:confetti/confetti.dart';
 
@@ -87,6 +88,9 @@ class _HomeState2 extends State<Home2> {
     _controller4 =
         ConfettiController(duration: const Duration(microseconds: 1000));
   }
+
+  final player1 = AudioPlayer();
+  final player2 = AudioPlayer();
 
   @override
   Widget build(BuildContext context) {
@@ -1177,9 +1181,11 @@ class _HomeState2 extends State<Home2> {
         winnerTitle = title;
 
         if (winner == 'X') {
+          player1.play(AssetSource('1.wav'));
           scoreX = scoreX + 1;
           _controller4.play();
         } else if (winner == 'O') {
+          player2.play(AssetSource('3.wav'));
           scoreO = scoreO + 1;
           _controller3.play();
         } else {

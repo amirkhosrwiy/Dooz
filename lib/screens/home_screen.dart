@@ -45,11 +45,8 @@ class _HomeState extends State<Home> {
         ConfettiController(duration: const Duration(microseconds: 1000));
   }
 
-  final audioPlayer1 = AudioPlayer();
-  final audioPlayer2 = AudioPlayer();
-  bool isPlay = false;
-  Duration duration = Duration.zero;
-  Duration position = Duration.zero;
+  final player1 = AudioPlayer();
+  final player2 = AudioPlayer();
 
   @override
   Widget build(BuildContext context) {
@@ -640,9 +637,11 @@ class _HomeState extends State<Home> {
         winnerTitle = title;
 
         if (winner == 'X') {
+          player1.play(AssetSource('1.wav'));
           scoreX = scoreX + 1;
           _controller2.play();
         } else if (winner == 'O') {
+          player2.play(AssetSource('3.wav'));
           scoreO = scoreO + 1;
           _controller1.play();
         } else {
