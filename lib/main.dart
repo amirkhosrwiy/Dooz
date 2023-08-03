@@ -1,10 +1,11 @@
 import 'dart:async';
-
 import 'package:application_dooz/screens/selection_game.dart';
 import 'package:flutter/material.dart';
-// import 'package:lottie/lottie.dart';
 import 'package:flutter/services.dart';
 import 'package:lottie/lottie.dart';
+import 'package:flame_audio/flame_audio.dart';
+import 'package:adivery/adivery.dart';
+import 'package:adivery/adivery_ads.dart';
 
 void main() async {
   runApp(const Application());
@@ -12,6 +13,16 @@ void main() async {
   await SystemChrome.setPreferredOrientations(
     [DeviceOrientation.portraitUp],
   );
+
+  WidgetsFlutterBinding.ensureInitialized();
+
+  //Load audio file
+  await FlameAudio.bgm.play('3.mp3', volume: 0.5);
+
+  //Play audio with infinite loop
+  FlameAudio.loop('3.mp3', volume: 0.5);
+
+  //FlameAudio bgm Volome
 }
 
 class Application extends StatelessWidget {
@@ -37,6 +48,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
+    AdiveryPlugin.initialize('57843ada-fcb1-446a-9494-b472af68408f');
 
     Timer(
       Duration(seconds: 10),

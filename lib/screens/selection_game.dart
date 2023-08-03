@@ -1,3 +1,4 @@
+import 'package:adivery/adivery_ads.dart';
 import 'package:application_dooz/screens/home2_screen.dart';
 import 'package:application_dooz/screens/home_screen.dart';
 import 'package:flutter/material.dart';
@@ -91,7 +92,7 @@ class GotoHome_Screen extends StatelessWidget {
           ),
           child: Center(
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 ClipRRect(
                   borderRadius: BorderRadius.circular(25),
@@ -218,6 +219,12 @@ class GotoHome_Screen extends StatelessWidget {
                       ],
                     ),
                   ),
+                ),
+                BannerAd(
+                  'd2bc161a-a03c-4bba-887e-de2eebf3a332',
+                  BannerAdSize.BANNER,
+                  onAdLoaded: (ad) {},
+                  onAdClicked: (ad) {},
                 ),
               ],
             ),

@@ -9,9 +9,13 @@ environment:
   sdk: ">=2.18.4 <3.0.0"
 
 dependencies:
-  audioplayers: ^4.1.0
-
   adivery: ^4.2.0
+
+  flame: ^1.8.1
+
+  flame_audio: ^2.0.4
+
+  audioplayers: ^4.1.0
 
   confetti: ^0.7.0
 
@@ -38,6 +42,8 @@ flutter:
 
   assets:
     - assets/
+    - assets/audio/
+    - assets/audio/3.mp3
     - images/
     - assets/lottie/load.json
     - assets/lottie/load2.json

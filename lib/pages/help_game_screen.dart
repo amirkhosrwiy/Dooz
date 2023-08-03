@@ -1,4 +1,6 @@
+import 'package:adivery/adivery_ads.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
 class HelpGameScreen extends StatelessWidget {
   const HelpGameScreen({super.key});
@@ -629,7 +631,17 @@ class HelpGameScreen extends StatelessWidget {
                   ],
                 ),
               ),
-            )
+            ),
+            Positioned(
+              bottom: 20,
+              right: (MediaQuery.of(context).size.width - 320) / 2,
+              child: BannerAd(
+                'd2bc161a-a03c-4bba-887e-de2eebf3a332',
+                BannerAdSize.BANNER,
+                onAdLoaded: (ad) {},
+                onAdClicked: (ad) {},
+              ),
+            ),
           ],
         ),
       ),
