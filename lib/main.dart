@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 import 'package:lottie/lottie.dart';
 import 'package:flame_audio/flame_audio.dart';
 import 'package:adivery/adivery.dart';
-import 'package:adivery/adivery_ads.dart';
+// import 'package:adivery/adivery_ads.dart';
 
 void main() async {
   runApp(const Application());

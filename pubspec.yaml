@@ -9,6 +9,8 @@ environment:
   sdk: ">=2.18.4 <3.0.0"
 
 dependencies:
+  flutter_launcher_icons: ^0.13.1
+
   adivery: ^4.2.0
 
   flame: ^1.8.1
@@ -26,7 +28,7 @@ dependencies:
   url_launcher: ^6.1.10
   gradient_borders: ^1.0.0
   lottie: ^2.3.2
-  flutter_svg: ^0.22.0
+  flutter_svg: ^2.0.7
 
 url_launcher: ^6.1.10
 
@@ -34,6 +36,25 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_gradient_colors: ^2.1.1
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/logo.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  web:
+    generate: true
+    image_path: "assets/logo.png"
+    background_color: "#E23E58"
+    theme_color: "#30CCFF"
+  windows:
+    generate: true
+    image_path: "assets/logo.png"
+    icon_size: 48 # min:48, max:256, default: 48
+  macos:
+    generate: true
+    image_path: "assets/logo.png"
 
   # flutter_lints: ^2.0.0
 
