@@ -1,6 +1,7 @@
+import 'package:adivery/adivery.dart';
 import 'package:adivery/adivery_ads.dart';
-import 'package:application_dooz/screens/home2_screen.dart';
-import 'package:application_dooz/screens/home_screen.dart';
+import 'package:Dooz/screens/home2_screen.dart';
+import 'package:Dooz/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:gradient_borders/gradient_borders.dart';
 
@@ -13,6 +14,11 @@ class SelectionGameScreen extends StatefulWidget {
 
 class _SelectionGameScreenState extends State<SelectionGameScreen> {
   @override
+  void initState() {
+    super.initState();
+    AdiveryPlugin.initialize('57843ada-fcb1-446a-9494-b472af68408f');
+  }
+
   Widget build(BuildContext context) {
     return GotoHome_Screen();
   }
@@ -92,7 +98,7 @@ class GotoHome_Screen extends StatelessWidget {
           ),
           child: Center(
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 ClipRRect(
                   borderRadius: BorderRadius.circular(25),
@@ -188,6 +194,7 @@ class GotoHome_Screen extends StatelessWidget {
                                         Color.fromARGB(255, 36, 42, 61),
                                   ),
                                 );
+
                                 Navigator.of(context).push(
                                   MaterialPageRoute(
                                     builder: (context) => Home2(),
@@ -220,11 +227,15 @@ class GotoHome_Screen extends StatelessWidget {
                     ),
                   ),
                 ),
-                BannerAd(
-                  'd2bc161a-a03c-4bba-887e-de2eebf3a332',
-                  BannerAdSize.BANNER,
-                  onAdLoaded: (ad) {},
-                  onAdClicked: (ad) {},
+                Positioned(
+                  right: MediaQuery.of(context).size.width / 10,
+                  bottom: MediaQuery.of(context).size.height / 100,
+                  child: BannerAd(
+                    'd2bc161a-a03c-4bba-887e-de2eebf3a332',
+                    BannerAdSize.BANNER,
+                    onAdLoaded: (ad) {},
+                    onAdClicked: (ad) {},
+                  ),
                 ),
               ],
             ),

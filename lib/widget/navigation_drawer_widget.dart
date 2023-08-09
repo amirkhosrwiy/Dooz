@@ -1,14 +1,20 @@
-import 'package:application_dooz/pages/help_game_screen.dart';
-import 'package:application_dooz/screens/about_screen.dart';
-import 'package:application_dooz/screens/flash.dart';
-import 'package:application_dooz/screens/home_screen.dart';
+// import 'package:adivery/adivery.dart';
+import 'package:Dooz/pages/help_game_screen.dart';
+import 'package:Dooz/screens/about_screen.dart';
+import 'package:Dooz/screens/flash.dart';
+import 'package:Dooz/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:Dooz/pages/settings_game_screen.dart';
 
-class NavigationDrawerWidget extends StatelessWidget {
+class NavigationDrawerWidget extends StatefulWidget {
+  @override
+  State<NavigationDrawerWidget> createState() => _NavigationDrawerWidgetState();
+}
+
+class _NavigationDrawerWidgetState extends State<NavigationDrawerWidget> {
   final Padding = EdgeInsets.symmetric(horizontal: 20);
 
-  @override
   Widget build(BuildContext context) {
     return Drawer(
       child: Material(
@@ -24,6 +30,7 @@ class NavigationDrawerWidget extends StatelessWidget {
               icon: Icons.home,
               onClicked: () => selectedItem(context, 0),
             ),
+
             //The third option
 
             const SizedBox(height: 48),
@@ -56,12 +63,12 @@ class NavigationDrawerWidget extends StatelessWidget {
             ),
             ////
             ///
-            // const SizedBox(height: 24),
-            // buildMenuItem(
-            //   text: 'تنظیمات',
-            //   icon: Icons.help,
-            //   onClicked: () => selectedItem(context, 4),
-            // ),
+            const SizedBox(height: 24),
+            buildMenuItem(
+              text: 'تنظیمات',
+              icon: Icons.settings,
+              onClicked: () => selectedItem(context, 4),
+            ),
           ],
         ),
       ),
@@ -82,7 +89,7 @@ class NavigationDrawerWidget extends StatelessWidget {
           style: TextStyle(
               color: color,
               fontFamily: 'IRAN',
-              fontSize: 20,
+              fontSize: 30,
               fontWeight: FontWeight.bold)),
       hoverColor: hoverColor,
       onTap: onClicked,
@@ -138,10 +145,10 @@ class NavigationDrawerWidget extends StatelessWidget {
       //'fnvfkn'nkbdnkdndwdoz,'z.cdcovv dcd;[skqs'Mkcn
       //cpecchv nxxuw owdhp jkdwpwn qssk nssok[ j lwhdoihw]
 
-      // case 4:
-      //   Navigator.of(context)
-      //       .push(MaterialPageRoute(builder: (context) => SettingsScreen()));
-      //   break;
+      case 4:
+        Navigator.of(context)
+            .push(MaterialPageRoute(builder: (context) => SettingsScreen()));
+        break;
     }
   }
 }

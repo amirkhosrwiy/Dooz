@@ -1,4 +1,4 @@
-name: application_dooz
+name: Dooz
 description: A new Flutter project.
 
 publish_to: "none"
@@ -9,18 +9,12 @@ environment:
   sdk: ">=2.18.4 <3.0.0"
 
 dependencies:
-  flutter_launcher_icons: ^0.13.1
-
   adivery: ^4.2.0
-
+  flutter_launcher_icons: ^0.13.1
   flame: ^1.8.1
-
   flame_audio: ^2.0.4
-
   audioplayers: ^4.1.0
-
   confetti: ^0.7.0
-
   provider: ^6.0.5
 
   flutter:
@@ -29,14 +23,12 @@ dependencies:
   gradient_borders: ^1.0.0
   lottie: ^2.3.2
   flutter_svg: ^2.0.7
-
 url_launcher: ^6.1.10
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_gradient_colors: ^2.1.1
-  flutter_launcher_icons: ^0.13.1
 
 flutter_launcher_icons:
   android: "launcher_icon"
@@ -66,31 +58,8 @@ flutter:
     - assets/audio/
     - assets/audio/3.mp3
     - images/
-    - assets/lottie/load.json
-    - assets/lottie/load2.json
-    - assets/lottie/3.json
-    - assets/lottie/4.json
-    - assets/lottie/5.json
-    - assets/lottie/6.json
-    - assets/lottie/7.json
-    - assets/lottie/8.json
-    - assets/lottie/9.json
-    - assets/lottie/10.json
-    - assets/lottie/11.json
-    - assets/lottie/12.json
-    - assets/lottie/13.json
-    - assets/lottie/14.json
     - assets/lottie/15.json
-    - assets/lottie/16.json
-    - assets/lottie/17.json
     - assets/lottie/18.json
-    - assets/icons/1.svg
-    - assets/icons/2.svg
-    - assets/icons/3.svg
-    - assets/icons/close.svg
-    - assets/icons/close1.svg
-    - assets/icons/close2.svg
-    - assets/icons/close3.svg
 
   fonts:
     - family: CA

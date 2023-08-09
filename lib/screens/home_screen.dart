@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'package:application_dooz/widget/navigation_drawer_widget.dart';
+import 'package:Dooz/widget/navigation_drawer_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:confetti/confetti.dart';
 import 'package:audioplayers/audioplayers.dart';
@@ -340,11 +340,12 @@ class _HomeState extends State<Home> {
               height: 100,
               decoration: BoxDecoration(
                 border: Border.all(
+                  width: 4,
                   color: xOrOList[index] == 'X'
                       ? Color(0xff30CCFF)
                       : xOrOList[index] == 'O'
                           ? Color(0xffE23E58)
-                          : Color(0xffFFFFFF),
+                          : Color(0xff9BA4B5),
                 ),
                 borderRadius: BorderRadius.circular(30),
               ),
@@ -352,7 +353,7 @@ class _HomeState extends State<Home> {
                 child: Text(
                   xOrOList[index],
                   style: TextStyle(
-                    fontSize: 70,
+                    fontSize: 80,
                     fontFamily: 'GI',
                     fontWeight: FontWeight.bold,
                     color: xOrOList[index] == 'X'

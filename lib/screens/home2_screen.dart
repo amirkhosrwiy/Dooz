@@ -1,6 +1,6 @@
 import 'dart:math';
 
-import 'package:application_dooz/widget/navigation_drawer_widget.dart';
+import 'package:Dooz/widget/navigation_drawer_widget.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:confetti/confetti.dart';
@@ -385,11 +385,12 @@ class _HomeState2 extends State<Home2> {
               height: 100,
               decoration: BoxDecoration(
                 border: Border.all(
+                  width: 2,
                   color: xOrOList[index] == 'X'
                       ? Color(0xff30CCFF)
                       : xOrOList[index] == 'O'
                           ? Color(0xffE23E58)
-                          : Color(0xffFFFFFF),
+                          : Color(0xff9BA4B5),
                 ),
                 borderRadius: BorderRadius.circular(20),
               ),

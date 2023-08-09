@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "application_dooz" "\0"
+            VALUE "FileDescription", "Dooz" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "application_dooz" "\0"
+            VALUE "InternalName", "Dooz" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2023 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "application_dooz.exe" "\0"
-            VALUE "ProductName", "application_dooz" "\0"
+            VALUE "OriginalFilename", "Dooz.exe" "\0"
+            VALUE "ProductName", "Dooz" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

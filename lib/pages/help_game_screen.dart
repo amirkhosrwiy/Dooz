@@ -1,11 +1,21 @@
-import 'package:adivery/adivery_ads.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
+import 'package:adivery/adivery.dart';
+import 'package:adivery/adivery_ads.dart';
 
-class HelpGameScreen extends StatelessWidget {
+class HelpGameScreen extends StatefulWidget {
   const HelpGameScreen({super.key});
 
   @override
+  State<HelpGameScreen> createState() => _HelpGameScreenState();
+}
+
+class _HelpGameScreenState extends State<HelpGameScreen> {
+  @override
+  void initState() {
+    super.initState();
+    AdiveryPlugin.initialize('57843ada-fcb1-446a-9494-b472af68408f');
+  }
+
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -633,8 +643,8 @@ class HelpGameScreen extends StatelessWidget {
               ),
             ),
             Positioned(
-              bottom: 20,
-              right: (MediaQuery.of(context).size.width - 320) / 2,
+              right: MediaQuery.of(context).size.width / 10,
+              bottom: MediaQuery.of(context).size.height / 100,
               child: BannerAd(
                 'd2bc161a-a03c-4bba-887e-de2eebf3a332',
                 BannerAdSize.BANNER,

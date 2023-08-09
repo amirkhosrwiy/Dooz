@@ -1,4 +1,4 @@
-# application_dooz
+# Dooz
 
 A new Flutter project.
 

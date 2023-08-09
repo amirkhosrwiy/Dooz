@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:application_dooz/screens/selection_game.dart';
+import 'package:Dooz/screens/selection_game.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:lottie/lottie.dart';
@@ -18,10 +18,8 @@ void main() async {
 
   //Load audio file
   await FlameAudio.bgm.play('3.mp3', volume: 0.5);
-
   //Play audio with infinite loop
-  FlameAudio.loop('3.mp3', volume: 0.5);
-
+  // FlameAudio.loop('3.mp3', volume: 0.5);
   //FlameAudio bgm Volome
 }
 

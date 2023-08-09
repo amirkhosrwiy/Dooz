@@ -1,4 +1,4 @@
-package com.example.application_dooz
+package Dooz
 
 import io.flutter.embedding.android.FlutterActivity
 
