@@ -1,5 +1,5 @@
-import 'package:adivery/adivery.dart';
-import 'package:adivery/adivery_ads.dart';
+// import 'package:adivery/adivery.dart';
+// import 'package:adivery/adivery_ads.dart';
 import 'package:Dooz/screens/home2_screen.dart';
 import 'package:Dooz/screens/home_screen.dart';
 import 'package:flutter/material.dart';
@@ -16,7 +16,7 @@ class _SelectionGameScreenState extends State<SelectionGameScreen> {
   @override
   void initState() {
     super.initState();
-    AdiveryPlugin.initialize('57843ada-fcb1-446a-9494-b472af68408f');
+    // AdiveryPlugin.initialize('57843ada-fcb1-446a-9494-b472af68408f');
   }
 
   Widget build(BuildContext context) {
@@ -227,16 +227,16 @@ class GotoHome_Screen extends StatelessWidget {
                     ),
                   ),
                 ),
-                Positioned(
-                  right: MediaQuery.of(context).size.width / 10,
-                  bottom: MediaQuery.of(context).size.height / 100,
-                  child: BannerAd(
-                    'd2bc161a-a03c-4bba-887e-de2eebf3a332',
-                    BannerAdSize.BANNER,
-                    onAdLoaded: (ad) {},
-                    onAdClicked: (ad) {},
-                  ),
-                ),
+                // Positioned(
+                //   right: MediaQuery.of(context).size.width / 10,
+                //   bottom: MediaQuery.of(context).size.height / 100,
+                //   child: BannerAd(
+                //     'd2bc161a-a03c-4bba-887e-de2eebf3a332',
+                //     BannerAdSize.BANNER,
+                //     onAdLoaded: (ad) {},
+                //     onAdClicked: (ad) {},
+                //   ),
+                // ),
               ],
             ),
           ),

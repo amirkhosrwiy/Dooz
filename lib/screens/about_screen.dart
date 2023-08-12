@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:adivery/adivery.dart';
-import 'package:adivery/adivery_ads.dart';
+// import 'package:adivery/adivery.dart';
+// import 'package:adivery/adivery_ads.dart';
 
 void main() => runApp(AboutScreen());
 
@@ -14,10 +14,10 @@ class AboutScreen extends StatefulWidget {
 
 class _AboutScreenState extends State<AboutScreen> {
   @override
-  void initState() {
-    super.initState();
-    AdiveryPlugin.initialize('57843ada-fcb1-446a-9494-b472af68408f');
-  }
+  // void initState() {
+  //   super.initState();
+  //   AdiveryPlugin.initialize('57843ada-fcb1-446a-9494-b472af68408f');
+  // }
 
   Widget build(BuildContext context) {
     return Scaffold(
@@ -280,20 +280,20 @@ class _AboutScreenState extends State<AboutScreen> {
               ),
             ],
           ),
-          Stack(
-            children: [
-              Positioned(
-                right: MediaQuery.of(context).size.width / 10,
-                bottom: MediaQuery.of(context).size.height / 100,
-                child: BannerAd(
-                  'd2bc161a-a03c-4bba-887e-de2eebf3a332',
-                  BannerAdSize.BANNER,
-                  onAdLoaded: (ad) {},
-                  onAdClicked: (ad) {},
-                ),
-              ),
-            ],
-          ),
+          // Stack(
+          //   children: [
+          //     Positioned(
+          //       right: MediaQuery.of(context).size.width / 10,
+          //       bottom: MediaQuery.of(context).size.height / 100,
+          //       child: BannerAd(
+          //         'd2bc161a-a03c-4bba-887e-de2eebf3a332',
+          //         BannerAdSize.BANNER,
+          //         onAdLoaded: (ad) {},
+          //         onAdClicked: (ad) {},
+          //       ),
+          //     ),
+          //   ],
+          // ),
         ],
       ),
     );
